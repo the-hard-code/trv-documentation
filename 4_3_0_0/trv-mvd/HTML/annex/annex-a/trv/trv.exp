@@ -1,0 +1,1018 @@
+(*
+Copyright by:
+buildingSMART International Limited, 1996-2023
+
+Any technical documentation made available by buildingSMART International Limited
+is the copyrighted work of buildingSMART International Limited and is owned by the 
+buildingSMART International Limited. It may be photocopied, used in software development, 
+or translated into another computer language without prior written consent from 
+buildingSMART International Limited provided that full attribution is given. 
+Prior written consent is required if changes are made to the technical specification.
+
+This material is delivered to you as is and buildingSMART International Limited makes 
+no warranty of any kind with regard to it, including, but not limited to, the implied 
+warranties as to its accuracy or fitness for a particular purpose. Any use of the 
+technical documentation or the information contained therein is at the risk of the user. 
+Documentation may include technical or other inaccuracies or typographical errors. 
+buildingSMART International Limited shall not be liable for errors contained therein or 
+for incidental consequential damages in connection with the furnishing, performance or use 
+of the material. The information contained in this document is subject to change without notice.
+
+Issue date:
+Friday, 6 October 2023
+
+*)
+
+SCHEMA IFC4X3;
+
+TYPE IfcStrippedOptional = BOOLEAN;
+END_TYPE;
+
+TYPE IfcAreaDensityMeasure = REAL;
+END_TYPE;
+
+TYPE IfcAreaMeasure = REAL;
+END_TYPE;
+
+TYPE IfcBoolean = BOOLEAN;
+END_TYPE;
+
+TYPE IfcCountMeasure = NUMBER;
+END_TYPE;
+
+TYPE IfcDate = STRING;
+END_TYPE;
+
+TYPE IfcGloballyUniqueId = STRING(22) FIXED;
+END_TYPE;
+
+TYPE IfcIdentifier = STRING(255);
+END_TYPE;
+
+TYPE IfcLabel = STRING(255);
+END_TYPE;
+
+TYPE IfcLengthMeasure = REAL;
+END_TYPE;
+
+TYPE IfcMassDensityMeasure = REAL;
+END_TYPE;
+
+TYPE IfcMassMeasure = REAL;
+END_TYPE;
+
+TYPE IfcPlaneAngleMeasure = REAL;
+END_TYPE;
+
+TYPE IfcPositiveLengthMeasure = IfcLengthMeasure;
+ WHERE
+	WR1 : SELF > 0.;
+END_TYPE;
+
+TYPE IfcText = STRING;
+END_TYPE;
+
+TYPE IfcThermalTransmittanceMeasure = REAL;
+END_TYPE;
+
+TYPE IfcTimeMeasure = REAL;
+END_TYPE;
+
+TYPE IfcURIReference = STRING;
+END_TYPE;
+
+TYPE IfcVolumeMeasure = REAL;
+END_TYPE;
+
+TYPE IfcBeamTypeEnum = ENUMERATION OF
+	(BEAM
+	,JOIST
+	,HOLLOWCORE
+	,LINTEL
+	,SPANDREL
+	,T_BEAM
+	,GIRDER_SEGMENT
+	,DIAPHRAGM
+	,PIERCAP
+	,HATSTONE
+	,CORNICE
+	,EDGEBEAM
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcBridgePartTypeEnum = ENUMERATION OF
+	(ABUTMENT
+	,DECK
+	,DECK_SEGMENT
+	,FOUNDATION
+	,PIER
+	,PIER_SEGMENT
+	,PYLON
+	,SUBSTRUCTURE
+	,SUPERSTRUCTURE
+	,SURFACESTRUCTURE
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcBridgeTypeEnum = ENUMERATION OF
+	(ARCHED
+	,CABLE_STAYED
+	,CANTILEVER
+	,CULVERT
+	,FRAMEWORK
+	,GIRDER
+	,SUSPENSION
+	,TRUSS
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcCurveInterpolationEnum = ENUMERATION OF
+	(LINEAR
+	,LOG_LINEAR
+	,LOG_LOG
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcDuctSegmentTypeEnum = ENUMERATION OF
+	(RIGIDSEGMENT
+	,FLEXIBLESEGMENT
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcFacilityUsageEnum = ENUMERATION OF
+	(LATERAL
+	,REGION
+	,VERTICAL
+	,LONGITUDINAL
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcFootingTypeEnum = ENUMERATION OF
+	(CAISSON_FOUNDATION
+	,FOOTING_BEAM
+	,PAD_FOOTING
+	,PILE_CAP
+	,STRIP_FOOTING
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcRailingTypeEnum = ENUMERATION OF
+	(HANDRAIL
+	,GUARDRAIL
+	,BALUSTRADE
+	,FENCE
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcSensorTypeEnum = ENUMERATION OF
+	(COSENSOR
+	,CO2SENSOR
+	,CONDUCTANCESENSOR
+	,CONTACTSENSOR
+	,FIRESENSOR
+	,FLOWSENSOR
+	,FROSTSENSOR
+	,GASSENSOR
+	,HEATSENSOR
+	,HUMIDITYSENSOR
+	,IDENTIFIERSENSOR
+	,IONCONCENTRATIONSENSOR
+	,LEVELSENSOR
+	,LIGHTSENSOR
+	,MOISTURESENSOR
+	,MOVEMENTSENSOR
+	,PHSENSOR
+	,PRESSURESENSOR
+	,RADIATIONSENSOR
+	,RADIOACTIVITYSENSOR
+	,SMOKESENSOR
+	,SOUNDSENSOR
+	,TEMPERATURESENSOR
+	,WINDSENSOR
+	,EARTHQUAKESENSOR
+	,FOREIGNOBJECTDETECTIONSENSOR
+	,OBSTACLESENSOR
+	,RAINSENSOR
+	,SNOWDEPTHSENSOR
+	,TRAINSENSOR
+	,TURNOUTCLOSURESENSOR
+	,WHEELSENSOR
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcSlabTypeEnum = ENUMERATION OF
+	(FLOOR
+	,ROOF
+	,LANDING
+	,BASESLAB
+	,APPROACH_SLAB
+	,PAVING
+	,WEARING
+	,SIDEWALK
+	,TRACKSLAB
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcWallTypeEnum = ENUMERATION OF
+	(MOVABLE
+	,PARAPET
+	,PARTITIONING
+	,PLUMBINGWALL
+	,SHEAR
+	,SOLIDWALL
+	,STANDARD
+	,POLYGONAL
+	,ELEMENTEDWALL
+	,RETAININGWALL
+	,WAVEWALL
+	,USERDEFINED
+	,NOTDEFINED);
+END_TYPE;
+
+TYPE IfcClassificationReferenceSelect = SELECT
+	(IfcClassification
+	,IfcClassificationReference);
+END_TYPE;
+
+TYPE IfcClassificationSelect = SELECT
+	(IfcClassification
+	,IfcClassificationReference);
+END_TYPE;
+
+TYPE IfcDefinitionSelect = SELECT
+	(IfcObjectDefinition
+	,IfcPropertyDefinition);
+END_TYPE;
+
+TYPE IfcMaterialSelect = SELECT
+	(IfcMaterialDefinition
+	,IfcMaterialList
+	,IfcMaterialUsageDefinition);
+END_TYPE;
+
+TYPE IfcPropertySetDefinitionSelect = SELECT
+	(IfcPropertySetDefinition);
+END_TYPE;
+
+TYPE IfcSimpleValue = SELECT
+	(IfcBoolean
+	,IfcDate
+	,IfcIdentifier
+	,IfcLabel
+	,IfcText);
+END_TYPE;
+
+TYPE IfcValue = SELECT
+	(IfcSimpleValue);
+END_TYPE;
+
+ENTITY IfcBeam
+ SUBTYPE OF (IfcBuiltElement);
+	PredefinedType : OPTIONAL IfcBeamTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType <> IfcBeamTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcBeamTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+  ('IFC4X3.IFCBEAMTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcBridge
+ SUBTYPE OF (IfcFacility);
+	PredefinedType : IfcBridgeTypeEnum;
+ WHERE
+	HasObjectType : (PredefinedType <> IfcBridgeTypeEnum.USERDEFINED) OR 
+
+EXISTS(SELF\IfcObject.ObjectType);
+END_ENTITY;
+
+ENTITY IfcBridgePart
+ SUBTYPE OF (IfcFacilityPart);
+	PredefinedType : IfcBridgePartTypeEnum;
+ WHERE
+	HasObjectType : (PredefinedType <> IfcBridgePartTypeEnum.USERDEFINED) OR 
+
+EXISTS(SELF\IfcObject.ObjectType);
+END_ENTITY;
+
+ENTITY IfcBuiltElement
+ SUPERTYPE OF (ONEOF
+    (IfcBeam
+    ,IfcFooting
+    ,IfcRailing
+    ,IfcSlab
+    ,IfcWall))
+ SUBTYPE OF (IfcElement);
+ WHERE
+	MaxOneMaterialAssociation : SIZEOF (QUERY(temp <* SELF\IfcObjectDefinition.HasAssociations |
+  'IFC4X3.IFCRELASSOCIATESMATERIAL' IN TYPEOF(temp)
+  )) <= 1;
+END_ENTITY;
+
+ENTITY IfcClassification
+ SUBTYPE OF (IfcExternalInformation);
+	Source : OPTIONAL IfcLabel;
+	Edition : OPTIONAL IfcLabel;
+	EditionDate : OPTIONAL IfcDate;
+	Name : IfcLabel;
+	Description : OPTIONAL IfcText;
+	Location : OPTIONAL IfcURIReference;
+	ReferenceTokens : OPTIONAL LIST [1:?] OF IfcIdentifier;
+ INVERSE
+	ClassificationForObjects : SET [0:?] OF IfcRelAssociatesClassification FOR RelatingClassification;
+	HasReferences : SET [0:?] OF IfcClassificationReference FOR ReferencedSource;
+END_ENTITY;
+
+ENTITY IfcClassificationReference
+ SUBTYPE OF (IfcExternalReference);
+	ReferencedSource : OPTIONAL IfcClassificationReferenceSelect;
+	Description : OPTIONAL IfcText;
+	Sort : OPTIONAL IfcIdentifier;
+ INVERSE
+	ClassificationRefForObjects : SET [0:?] OF IfcRelAssociatesClassification FOR RelatingClassification;
+	HasReferences : SET [0:?] OF IfcClassificationReference FOR ReferencedSource;
+END_ENTITY;
+
+ENTITY IfcContext
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcProject))
+ SUBTYPE OF (IfcObjectDefinition);
+	ObjectType : OPTIONAL IfcLabel;
+	LongName : OPTIONAL IfcLabel;
+	Phase : OPTIONAL IfcLabel;
+	RepresentationContexts : OPTIONAL SET [1:?] OF IfcStrippedOptional;
+	UnitsInContext : OPTIONAL IfcStrippedOptional;
+ INVERSE
+	IsDefinedBy : SET [0:?] OF IfcRelDefinesByProperties FOR RelatedObjects;
+END_ENTITY;
+
+ENTITY IfcDistributionControlElement
+ SUPERTYPE OF (ONEOF
+    (IfcSensor))
+ SUBTYPE OF (IfcDistributionElement);
+END_ENTITY;
+
+ENTITY IfcDistributionElement
+ SUPERTYPE OF (ONEOF
+    (IfcDistributionControlElement
+    ,IfcDistributionFlowElement))
+ SUBTYPE OF (IfcElement);
+END_ENTITY;
+
+ENTITY IfcDistributionFlowElement
+ SUPERTYPE OF (ONEOF
+    (IfcFlowSegment))
+ SUBTYPE OF (IfcDistributionElement);
+END_ENTITY;
+
+ENTITY IfcDuctSegment
+ SUBTYPE OF (IfcFlowSegment);
+	PredefinedType : OPTIONAL IfcDuctSegmentTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType <> IfcDuctSegmentTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcDuctSegmentTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR 
+  ('IFC4X3.IFCDUCTSEGMENTTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcElement
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcBuiltElement
+    ,IfcDistributionElement))
+ SUBTYPE OF (IfcProduct);
+	Tag : OPTIONAL IfcStrippedOptional;
+ INVERSE
+	ContainedInStructure : SET [0:1] OF IfcRelContainedInSpatialStructure FOR RelatedElements;
+END_ENTITY;
+
+ENTITY IfcElementQuantity
+ SUBTYPE OF (IfcQuantitySet);
+	MethodOfMeasurement : OPTIONAL IfcLabel;
+	Quantities : SET [1:?] OF IfcPhysicalQuantity;
+ WHERE
+	UniqueQuantityNames : IfcUniqueQuantityNames(Quantities);
+END_ENTITY;
+
+ENTITY IfcExternalInformation
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcClassification));
+END_ENTITY;
+
+ENTITY IfcExternalReference
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcClassificationReference));
+	Location : OPTIONAL IfcURIReference;
+	Identification : OPTIONAL IfcIdentifier;
+	Name : OPTIONAL IfcLabel;
+ WHERE
+	WR1 : EXISTS(Identification) OR EXISTS(Location) OR EXISTS(Name);
+END_ENTITY;
+
+ENTITY IfcFacility
+ SUPERTYPE OF (ONEOF
+    (IfcBridge))
+ SUBTYPE OF (IfcSpatialStructureElement);
+END_ENTITY;
+
+ENTITY IfcFacilityPart
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcBridgePart))
+ SUBTYPE OF (IfcSpatialStructureElement);
+	UsageType : IfcFacilityUsageEnum;
+END_ENTITY;
+
+ENTITY IfcFlowSegment
+ SUPERTYPE OF (ONEOF
+    (IfcDuctSegment))
+ SUBTYPE OF (IfcDistributionFlowElement);
+END_ENTITY;
+
+ENTITY IfcFooting
+ SUBTYPE OF (IfcBuiltElement);
+	PredefinedType : OPTIONAL IfcFootingTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT EXISTS(PredefinedType) OR
+(PredefinedType <> IfcFootingTypeEnum.USERDEFINED) OR
+((PredefinedType = IfcFootingTypeEnum.USERDEFINED) AND EXISTS(SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+('IFC4X3.IFCFOOTINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcMaterial
+ SUBTYPE OF (IfcMaterialDefinition);
+	Name : IfcLabel;
+	Description : OPTIONAL IfcText;
+	Category : OPTIONAL IfcLabel;
+END_ENTITY;
+
+ENTITY IfcMaterialDefinition
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcMaterial));
+ INVERSE
+	AssociatedTo : SET [0:?] OF IfcRelAssociatesMaterial FOR RelatingMaterial;
+END_ENTITY;
+
+ENTITY IfcMaterialList;
+	Materials : LIST [1:?] OF IfcMaterial;
+END_ENTITY;
+
+ENTITY IfcMaterialUsageDefinition
+ ABSTRACT;
+ INVERSE
+	AssociatedTo : SET [1:?] OF IfcRelAssociatesMaterial FOR RelatingMaterial;
+END_ENTITY;
+
+ENTITY IfcObject
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcProduct))
+ SUBTYPE OF (IfcObjectDefinition);
+	ObjectType : OPTIONAL IfcLabel;
+ INVERSE
+	IsTypedBy : SET [0:1] OF IfcRelDefinesByType FOR RelatedObjects;
+	IsDefinedBy : SET [0:?] OF IfcRelDefinesByProperties FOR RelatedObjects;
+ WHERE
+	UniquePropertySetNames : ((SIZEOF(IsDefinedBy) = 0) OR IfcUniqueDefinitionNames(IsDefinedBy));
+END_ENTITY;
+
+ENTITY IfcObjectDefinition
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcContext
+    ,IfcObject
+    ,IfcTypeObject))
+ SUBTYPE OF (IfcRoot);
+ INVERSE
+	IsDecomposedBy : SET [0:?] OF IfcRelAggregates FOR RelatingObject;
+	Decomposes : SET [0:1] OF IfcRelAggregates FOR RelatedObjects;
+	HasAssociations : SET [0:?] OF IfcRelAssociates FOR RelatedObjects;
+END_ENTITY;
+
+ENTITY IfcPhysicalQuantity
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcPhysicalSimpleQuantity));
+	Name : IfcLabel;
+	Description : OPTIONAL IfcText;
+END_ENTITY;
+
+ENTITY IfcPhysicalSimpleQuantity
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcQuantityArea
+    ,IfcQuantityCount
+    ,IfcQuantityLength
+    ,IfcQuantityTime
+    ,IfcQuantityVolume
+    ,IfcQuantityWeight))
+ SUBTYPE OF (IfcPhysicalQuantity);
+	Unit : OPTIONAL IfcStrippedOptional;
+END_ENTITY;
+
+ENTITY IfcProduct
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcElement
+    ,IfcSpatialElement))
+ SUBTYPE OF (IfcObject);
+	ObjectPlacement : OPTIONAL IfcStrippedOptional;
+	Representation : OPTIONAL IfcStrippedOptional;
+ WHERE
+	PlacementForShapeRepresentation : (EXISTS(Representation) AND EXISTS(ObjectPlacement))
+            OR (EXISTS(Representation) AND 
+			   (SIZEOF(QUERY(temp <* Representation.Representations | 'IFC4X3.IFCSHAPEREPRESENTATION' IN TYPEOF(temp))) = 0))
+            OR (NOT(EXISTS(Representation)));
+END_ENTITY;
+
+ENTITY IfcProject
+ SUBTYPE OF (IfcContext);
+ WHERE
+	HasName : EXISTS(SELF\IfcRoot.Name);
+	CorrectContext : NOT(EXISTS(SELF\IfcContext.RepresentationContexts)) OR
+(SIZEOF(QUERY(Temp <* SELF\IfcContext.RepresentationContexts |
+ 'IFC4X3.IFCGEOMETRICREPRESENTATIONSUBCONTEXT' IN TYPEOF(Temp)
+  )) = 0);
+	NoDecomposition : SIZEOF(SELF\IfcObjectDefinition.Decomposes) = 0;
+END_ENTITY;
+
+ENTITY IfcProperty
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcSimpleProperty))
+ SUBTYPE OF (IfcPropertyAbstraction);
+	Name : IfcIdentifier;
+	Description : OPTIONAL IfcText;
+ INVERSE
+	PartOfPset : SET [0:?] OF IfcPropertySet FOR HasProperties;
+END_ENTITY;
+
+ENTITY IfcPropertyAbstraction
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcProperty
+    ,IfcPropertyEnumeration));
+END_ENTITY;
+
+ENTITY IfcPropertyBoundedValue
+ SUBTYPE OF (IfcSimpleProperty);
+	UpperBoundValue : OPTIONAL IfcValue;
+	LowerBoundValue : OPTIONAL IfcValue;
+	Unit : OPTIONAL IfcStrippedOptional;
+	SetPointValue : OPTIONAL IfcValue;
+ WHERE
+	SameUnitUpperLower : NOT(EXISTS(UpperBoundValue)) OR NOT(EXISTS(LowerBoundValue)) OR
+(TYPEOF(UpperBoundValue) = TYPEOF(LowerBoundValue));
+	SameUnitUpperSet : NOT(EXISTS(UpperBoundValue)) OR NOT(EXISTS(SetPointValue)) OR
+(TYPEOF(UpperBoundValue) = TYPEOF(SetPointValue));
+	SameUnitLowerSet : NOT(EXISTS(LowerBoundValue)) OR NOT(EXISTS(SetPointValue)) OR
+(TYPEOF(LowerBoundValue) = TYPEOF(SetPointValue));
+END_ENTITY;
+
+ENTITY IfcPropertyDefinition
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcPropertySetDefinition))
+ SUBTYPE OF (IfcRoot);
+ INVERSE
+	HasAssociations : SET [0:?] OF IfcRelAssociates FOR RelatedObjects;
+END_ENTITY;
+
+ENTITY IfcPropertyEnumeratedValue
+ SUBTYPE OF (IfcSimpleProperty);
+	EnumerationValues : OPTIONAL LIST [1:?] OF IfcValue;
+	EnumerationReference : OPTIONAL IfcPropertyEnumeration;
+ WHERE
+	WR21 : NOT(EXISTS(EnumerationReference)) 
+OR  NOT(EXISTS(EnumerationValues)) 
+OR  (SIZEOF(QUERY(temp <* EnumerationValues |
+    temp IN EnumerationReference.EnumerationValues))
+    = SIZEOF(EnumerationValues));
+END_ENTITY;
+
+ENTITY IfcPropertyEnumeration
+ SUBTYPE OF (IfcPropertyAbstraction);
+	Name : IfcLabel;
+	EnumerationValues : LIST [1:?] OF UNIQUE IfcValue;
+	Unit : OPTIONAL IfcStrippedOptional;
+ UNIQUE
+	UR1 : Name;
+ WHERE
+	WR01 : SIZEOF(QUERY(temp <* SELF.EnumerationValues | 
+  NOT(TYPEOF(SELF.EnumerationValues[1]) = TYPEOF(temp))
+  )) = 0;
+END_ENTITY;
+
+ENTITY IfcPropertyListValue
+ SUBTYPE OF (IfcSimpleProperty);
+	ListValues : OPTIONAL LIST [1:?] OF IfcValue;
+	Unit : OPTIONAL IfcStrippedOptional;
+ WHERE
+	WR31 : SIZEOF(QUERY(temp <* SELF.ListValues | 
+  NOT(TYPEOF(SELF.ListValues[1]) = TYPEOF(temp))
+  )) = 0;
+END_ENTITY;
+
+ENTITY IfcPropertySet
+ SUBTYPE OF (IfcPropertySetDefinition);
+	HasProperties : SET [1:?] OF IfcProperty;
+ WHERE
+	ExistsName : EXISTS(SELF\IfcRoot.Name);
+	UniquePropertyNames : IfcUniquePropertyName(HasProperties);
+END_ENTITY;
+
+ENTITY IfcPropertySetDefinition
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcPropertySet
+    ,IfcQuantitySet))
+ SUBTYPE OF (IfcPropertyDefinition);
+ INVERSE
+	DefinesType : SET [0:?] OF IfcTypeObject FOR HasPropertySets;
+	DefinesOccurrence : SET [0:?] OF IfcRelDefinesByProperties FOR RelatingPropertyDefinition;
+END_ENTITY;
+
+ENTITY IfcPropertySingleValue
+ SUBTYPE OF (IfcSimpleProperty);
+	NominalValue : OPTIONAL IfcValue;
+	Unit : OPTIONAL IfcStrippedOptional;
+END_ENTITY;
+
+ENTITY IfcPropertyTableValue
+ SUBTYPE OF (IfcSimpleProperty);
+	DefiningValues : OPTIONAL LIST [1:?] OF UNIQUE IfcValue;
+	DefinedValues : OPTIONAL LIST [1:?] OF IfcValue;
+	Expression : OPTIONAL IfcText;
+	DefiningUnit : OPTIONAL IfcStrippedOptional;
+	DefinedUnit : OPTIONAL IfcStrippedOptional;
+	CurveInterpolation : OPTIONAL IfcCurveInterpolationEnum;
+ WHERE
+	WR21 : (NOT(EXISTS(DefiningValues)) AND NOT(EXISTS(DefinedValues)))
+OR (SIZEOF(DefiningValues) = SIZEOF(DefinedValues));
+	WR22 : NOT(EXISTS(DefiningValues)) OR 
+(SIZEOF(QUERY(temp <* SELF.DefiningValues | TYPEOF(temp) <> TYPEOF(SELF.DefiningValues[1])
+)) = 0);
+	WR23 : NOT(EXISTS(DefinedValues)) OR 
+(SIZEOF(QUERY(temp <* SELF.DefinedValues | TYPEOF(temp) <> TYPEOF(SELF.DefinedValues[1])
+)) = 0);
+END_ENTITY;
+
+ENTITY IfcQuantityArea
+ SUBTYPE OF (IfcPhysicalSimpleQuantity);
+	AreaValue : IfcAreaMeasure;
+	Formula : OPTIONAL IfcLabel;
+ WHERE
+	WR21 : NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.AREAUNIT);
+	WR22 : AreaValue >= 0.;
+END_ENTITY;
+
+ENTITY IfcQuantityCount
+ SUBTYPE OF (IfcPhysicalSimpleQuantity);
+	CountValue : IfcCountMeasure;
+	Formula : OPTIONAL IfcLabel;
+ WHERE
+	WR21 : CountValue >= 0.;
+END_ENTITY;
+
+ENTITY IfcQuantityLength
+ SUBTYPE OF (IfcPhysicalSimpleQuantity);
+	LengthValue : IfcLengthMeasure;
+	Formula : OPTIONAL IfcLabel;
+ WHERE
+	WR21 : NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.LENGTHUNIT);
+	WR22 : LengthValue >= 0.;
+END_ENTITY;
+
+ENTITY IfcQuantitySet
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcElementQuantity))
+ SUBTYPE OF (IfcPropertySetDefinition);
+END_ENTITY;
+
+ENTITY IfcQuantityTime
+ SUBTYPE OF (IfcPhysicalSimpleQuantity);
+	TimeValue : IfcTimeMeasure;
+	Formula : OPTIONAL IfcLabel;
+ WHERE
+	WR21 : NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.TIMEUNIT);
+	WR22 : TimeValue >= 0.;
+END_ENTITY;
+
+ENTITY IfcQuantityVolume
+ SUBTYPE OF (IfcPhysicalSimpleQuantity);
+	VolumeValue : IfcVolumeMeasure;
+	Formula : OPTIONAL IfcLabel;
+ WHERE
+	WR21 : NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.VOLUMEUNIT);
+	WR22 : VolumeValue >= 0.;
+END_ENTITY;
+
+ENTITY IfcQuantityWeight
+ SUBTYPE OF (IfcPhysicalSimpleQuantity);
+	WeightValue : IfcMassMeasure;
+	Formula : OPTIONAL IfcLabel;
+ WHERE
+	WR21 : NOT(EXISTS(SELF\IfcPhysicalSimpleQuantity.Unit)) OR
+   (SELF\IfcPhysicalSimpleQuantity.Unit.UnitType = IfcUnitEnum.MASSUNIT);
+	WR22 : WeightValue >= 0.;
+END_ENTITY;
+
+ENTITY IfcRailing
+ SUBTYPE OF (IfcBuiltElement);
+	PredefinedType : OPTIONAL IfcRailingTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType <> IfcRailingTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcRailingTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+  ('IFC4X3.IFCRAILINGTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcRelAggregates
+ SUBTYPE OF (IfcRelDecomposes);
+	RelatingObject : IfcObjectDefinition;
+	RelatedObjects : SET [1:?] OF IfcObjectDefinition;
+ WHERE
+	NoSelfReference : SIZEOF(QUERY(Temp <* RelatedObjects | RelatingObject :=: Temp)) = 0;
+END_ENTITY;
+
+ENTITY IfcRelAssociates
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcRelAssociatesClassification
+    ,IfcRelAssociatesMaterial))
+ SUBTYPE OF (IfcRelationship);
+	RelatedObjects : SET [1:?] OF IfcDefinitionSelect;
+END_ENTITY;
+
+ENTITY IfcRelAssociatesClassification
+ SUBTYPE OF (IfcRelAssociates);
+	RelatingClassification : IfcClassificationSelect;
+END_ENTITY;
+
+ENTITY IfcRelAssociatesMaterial
+ SUBTYPE OF (IfcRelAssociates);
+	RelatingMaterial : IfcMaterialSelect;
+ WHERE
+	NoVoidElement : SIZEOF(QUERY(temp <* SELF\IfcRelAssociates.RelatedObjects | 
+  ('IFC4X3.IFCFEATUREELEMENTSUBTRACTION' IN TYPEOF(temp)) OR 
+  ('IFC4X3.IFCVIRTUALELEMENT' IN TYPEOF(temp)) 
+)) = 0;
+	AllowedElements : SIZEOF(QUERY(temp <* SELF\IfcRelAssociates.RelatedObjects | (
+  SIZEOF(TYPEOF(temp) * [   
+    'IFC4X3.IFCELEMENT', 
+    'IFC4X3.IFCELEMENTTYPE',
+    'IFC4X3.IFCWINDOWSTYLE',
+    'IFC4X3.IFCDOORSTYLE',
+    'IFC4X3.IFCSTRUCTURALMEMBER',
+    'IFC4X3.IFCPORT']) = 0) 
+)) = 0;
+END_ENTITY;
+
+ENTITY IfcRelConnects
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcRelContainedInSpatialStructure))
+ SUBTYPE OF (IfcRelationship);
+END_ENTITY;
+
+ENTITY IfcRelContainedInSpatialStructure
+ SUBTYPE OF (IfcRelConnects);
+	RelatedElements : SET [1:?] OF IfcProduct;
+	RelatingStructure : IfcSpatialElement;
+ WHERE
+	WR31 : SIZEOF(QUERY(temp <* RelatedElements | 'IFC4X3.IFCSPATIALSTRUCTUREELEMENT' IN TYPEOF(temp))) = 0;
+END_ENTITY;
+
+ENTITY IfcRelDecomposes
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcRelAggregates))
+ SUBTYPE OF (IfcRelationship);
+END_ENTITY;
+
+ENTITY IfcRelDefines
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcRelDefinesByProperties
+    ,IfcRelDefinesByType))
+ SUBTYPE OF (IfcRelationship);
+END_ENTITY;
+
+ENTITY IfcRelDefinesByProperties
+ SUBTYPE OF (IfcRelDefines);
+	RelatedObjects : SET [1:?] OF IfcObjectDefinition;
+	RelatingPropertyDefinition : IfcPropertySetDefinitionSelect;
+ WHERE
+	NoRelatedTypeObject : SIZEOF(QUERY(Types <* SELF\IfcRelDefinesByProperties.RelatedObjects |  'IFC4X3.IFCTYPEOBJECT' IN TYPEOF(Types))) = 0;
+END_ENTITY;
+
+ENTITY IfcRelDefinesByType
+ SUBTYPE OF (IfcRelDefines);
+	RelatedObjects : SET [1:?] OF IfcObject;
+	RelatingType : IfcTypeObject;
+END_ENTITY;
+
+ENTITY IfcRelationship
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcRelAssociates
+    ,IfcRelConnects
+    ,IfcRelDecomposes
+    ,IfcRelDefines))
+ SUBTYPE OF (IfcRoot);
+END_ENTITY;
+
+ENTITY IfcRoot
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcObjectDefinition
+    ,IfcPropertyDefinition
+    ,IfcRelationship));
+	GlobalId : IfcGloballyUniqueId;
+	OwnerHistory : OPTIONAL IfcStrippedOptional;
+	Name : OPTIONAL IfcLabel;
+	Description : OPTIONAL IfcText;
+ UNIQUE
+	UR1 : GlobalId;
+END_ENTITY;
+
+ENTITY IfcSensor
+ SUBTYPE OF (IfcDistributionControlElement);
+	PredefinedType : OPTIONAL IfcSensorTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR 
+ (PredefinedType <> IfcSensorTypeEnum.USERDEFINED) OR 
+ ((PredefinedType = IfcSensorTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR 
+('IFC4X3.IFCSENSORTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcSimpleProperty
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcPropertyBoundedValue
+    ,IfcPropertyEnumeratedValue
+    ,IfcPropertyListValue
+    ,IfcPropertySingleValue
+    ,IfcPropertyTableValue))
+ SUBTYPE OF (IfcProperty);
+END_ENTITY;
+
+ENTITY IfcSite
+ SUBTYPE OF (IfcSpatialStructureElement);
+	RefLatitude : OPTIONAL IfcStrippedOptional;
+	RefLongitude : OPTIONAL IfcStrippedOptional;
+	RefElevation : OPTIONAL IfcStrippedOptional;
+	LandTitleNumber : OPTIONAL IfcStrippedOptional;
+	SiteAddress : OPTIONAL IfcStrippedOptional;
+END_ENTITY;
+
+ENTITY IfcSlab
+ SUBTYPE OF (IfcBuiltElement);
+	PredefinedType : OPTIONAL IfcSlabTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType <> IfcSlabTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcSlabTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+  ('IFC4X3.IFCSLABTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+ENTITY IfcSpatialElement
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcSpatialStructureElement))
+ SUBTYPE OF (IfcProduct);
+	LongName : OPTIONAL IfcStrippedOptional;
+ INVERSE
+	ContainsElements : SET [0:?] OF IfcRelContainedInSpatialStructure FOR RelatingStructure;
+END_ENTITY;
+
+ENTITY IfcSpatialStructureElement
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcFacility
+    ,IfcFacilityPart
+    ,IfcSite))
+ SUBTYPE OF (IfcSpatialElement);
+	CompositionType : OPTIONAL IfcStrippedOptional;
+ WHERE
+	WR41 : (HIINDEX(SELF\IfcObjectDefinition.Decomposes) = 1) 
+AND
+('IFC4X3.IFCRELAGGREGATES' IN TYPEOF(SELF\IfcObjectDefinition.Decomposes[1])) 
+AND
+(('IFC4X3.IFCPROJECT' IN TYPEOF (SELF\IfcObjectDefinition.Decomposes[1].RelatingObject)) OR
+ ('IFC4X3.IFCSPATIALSTRUCTUREELEMENT' IN TYPEOF (SELF\IfcObjectDefinition.Decomposes[1].RelatingObject))
+);
+END_ENTITY;
+
+ENTITY IfcTypeObject
+ SUBTYPE OF (IfcObjectDefinition);
+	ApplicableOccurrence : OPTIONAL IfcStrippedOptional;
+	HasPropertySets : OPTIONAL SET [1:?] OF IfcStrippedOptional;
+ INVERSE
+	Types : SET [0:1] OF IfcRelDefinesByType FOR RelatingType;
+ WHERE
+	NameRequired : EXISTS(SELF\IfcRoot.Name);
+	UniquePropertySetNames : (NOT(EXISTS(HasPropertySets))) OR IfcUniquePropertySetNames(HasPropertySets);
+END_ENTITY;
+
+ENTITY IfcWall
+ SUBTYPE OF (IfcBuiltElement);
+	PredefinedType : OPTIONAL IfcWallTypeEnum;
+ WHERE
+	CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR
+ (PredefinedType <> IfcWallTypeEnum.USERDEFINED) OR
+ ((PredefinedType = IfcWallTypeEnum.USERDEFINED) AND EXISTS (SELF\IfcObject.ObjectType));
+	CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR
+  ('IFC4X3.IFCWALLTYPE' IN TYPEOF(SELF\IfcObject.IsTypedBy[1].RelatingType));
+END_ENTITY;
+
+FUNCTION IfcUniqueDefinitionNames
+(Relations : SET [1:?] OF IfcRelDefinesByProperties)
+:LOGICAL;
+
+LOCAL
+  Definition : IfcPropertySetDefinitionSelect;
+  DefinitionSet : IfcPropertySetDefinitionSet;
+  Properties : SET OF IfcPropertySetDefinition := [];
+  Result : LOGICAL;
+END_LOCAL;
+
+IF SIZEOF(Relations) = 0 THEN
+  RETURN(TRUE);
+END_IF;
+
+REPEAT i:=1 TO HIINDEX(Relations);
+  Definition := Relations[i].RelatingPropertyDefinition;
+  IF 'IFC4X3.IFCPROPERTYSETDEFINITION' IN TYPEOF(Definition) THEN
+    Properties := Properties + Definition;
+  ELSE 
+    IF 'IFC4X3.IFCPROPERTYSETDEFINITIONSET' IN TYPEOF(Definition) THEN
+      BEGIN
+        DefinitionSet := Definition;
+        REPEAT j:= 1 TO HIINDEX(DefinitionSet);
+          Properties := Properties + DefinitionSet[j];
+        END_REPEAT;
+      END;
+	END_IF;
+  END_IF;
+END_REPEAT;
+
+Result := IfcUniquePropertySetNames(Properties);
+RETURN (Result);
+END_FUNCTION;
+
+FUNCTION IfcUniquePropertyName
+(Properties : SET [1:?] OF IfcProperty)
+ :LOGICAL;
+
+ LOCAL
+   Names : SET OF IfcIdentifier := [];
+ END_LOCAL;
+
+ REPEAT i:=1 TO HIINDEX(Properties);
+   Names := Names + Properties[i].Name;
+ END_REPEAT;
+
+ RETURN (SIZEOF(Names) = SIZEOF(Properties));
+END_FUNCTION;
+
+FUNCTION IfcUniquePropertySetNames
+(Properties : SET [1:?] OF IfcPropertySetDefinition)
+:LOGICAL;
+
+LOCAL
+  Names : SET OF IfcLabel := [];
+  Unnamed : INTEGER := 0;
+END_LOCAL;
+
+REPEAT i:=1 TO HIINDEX(Properties);
+  IF 'IFC4X3.IFCPROPERTYSET' IN TYPEOF(Properties[i]) THEN
+    Names := Names + Properties[i]\IfcRoot.Name;
+  ELSE
+    Unnamed := Unnamed + 1;
+  END_IF;
+END_REPEAT;
+
+RETURN (SIZEOF(Names) + Unnamed = SIZEOF(Properties));
+END_FUNCTION;
+
+FUNCTION IfcUniqueQuantityNames
+(Properties : SET [1:?] OF IfcPhysicalQuantity)
+:LOGICAL;
+
+LOCAL
+  Names : SET OF IfcLabel := [];
+END_LOCAL;
+
+REPEAT i:=1 TO HIINDEX(Properties);
+  Names := Names + Properties[i].Name;
+END_REPEAT;
+RETURN (SIZEOF(Names) = SIZEOF(Properties));
+END_FUNCTION;
+
+RULE IfcSingleProjectInstance FOR
+	(IfcProject);
+
+    WHERE
+      WR1 : SIZEOF(IfcProject) <= 1;
+END_RULE;
+
+END_SCHEMA;

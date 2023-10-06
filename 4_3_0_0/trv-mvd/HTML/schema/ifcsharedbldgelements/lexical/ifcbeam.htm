@@ -1,0 +1,746 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcBeam</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 6 index2 1 index3 3 index4 0 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-6.htm#6.1.3.1");
+//-->
+</script>
+
+<h4 class="num">IfcBeam</h4>
+<section>
+<h5 class="num">Definitions applying to TRV</h5>
+<p><a href="../../../annex/annex-d/trv/ifcbeam.htm"><img style="border: 0px" src="../../../img/diagram.png" />&nbsp;Instance diagram</a></p><hr />
+<h5>Kantbalk</h5><p>Kantbalk fungerar som infästning för räcke samt utgör i vissa fall ett bärande element, till exempel vid brobanekonsol.</p>
+<p><table><tr><td style="width: 600px"><img src="../../../figures/kantbalk.png" alt="&quot;Kantbalk&quot;" title="Figure 1 — Kantbalk"></td></tr><tr><td><p class="figure">Figure 1 — Kantbalk</p></td></tr></table></p>
+<details open="open">
+<summary>Concept usage</summary>
+<a id="object-user-identity" />
+<p class="use-head">Identity</p>
+<p>The <a href="../../templates/object-user-identity.htm">Object User Identity</a> concept template applies to this entity as shown in Table 26.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>ObjectName</b></th><th><b>TypeName</b></th></tr>
+<tr><td>Kantbalk</td><td>KantbalkForhojd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 26 &mdash; IfcBeam Object User Identity</td></tr></table>
+
+
+<br/><br/>
+
+<a id="material-single" />
+<p class="use-head">Material</p>
+<p>The <a href="../../templates/material-single.htm">Material Single</a> concept template applies to this entity as shown in Table 27.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>MaterialName</b></th></tr>
+<tr><td>Betong</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 27 &mdash; IfcBeam Material Single</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Reference</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 28.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th><th><b>Value</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgelements/pset/pset_beamcommon.htm">Pset_BeamCommon</a></td><td></td><td>Reference</td><td>KantbalkForhojd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 28 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">ExposureClass</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 29.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td><a href="../../ifcstructuralelementsdomain/pset/pset_concreteelementgeneral.htm">Pset_ConcreteElementGeneral</a></td><td></td><td>ExposureClass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 29 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">StrengthClass</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 30.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td><a href="../../ifcstructuralelementsdomain/pset/pset_concreteelementgeneral.htm">Pset_ConcreteElementGeneral</a></td><td></td><td>StrengthClass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 30 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">MLCT-Cementklass</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 31.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SECC_Concrete</td><td></td><td>MLCT-Cementklass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 31 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">MLVX-Vattencementtal</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 32.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SECC_Concrete</td><td></td><td>MLVX-Vattencementtal</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 32 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">TOLL-Livslangdsklass</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 33.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SECC_Concrete</td><td></td><td>TOLL-Livslangdsklass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 33 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Konfidentialitetsniva</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 34.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SETRV_Metadata</td><td></td><td>Konfidentialitetsniva</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 34 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">KantbalkLangd</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 35.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SETRVx_BaTManKantbalk</td><td></td><td>KantbalkLangd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 35 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Lage</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 36.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SETRVx_BaTManKantbalk</td><td></td><td>Lage</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 36 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">USDM-Bredd</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 37.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>QuantityName</b></th></tr>
+<tr><td>SECC_DimensionNominella</td><td></td><td>USDM-Bredd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 37 &mdash; IfcBeam Quantity Sets</td></tr></table>
+
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">USDM-Hojd</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 38.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>QuantityName</b></th></tr>
+<tr><td>SECC_DimensionNominella</td><td></td><td>USDM-Hojd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 38 &mdash; IfcBeam Quantity Sets</td></tr></table>
+
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">USDM-Langd</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 39.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>QuantityName</b></th></tr>
+<tr><td>SECC_DimensionNominella</td><td></td><td>USDM-Langd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 39 &mdash; IfcBeam Quantity Sets</td></tr></table>
+
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">USDM-Volym</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 40.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>QuantityName</b></th></tr>
+<tr><td>SECC_DimensionNominella</td><td></td><td>USDM-Volym</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 40 &mdash; IfcBeam Quantity Sets</td></tr></table>
+
+
+<br/><br/>
+
+<a id="classification-association" />
+<p class="use-head">UGA00</p>
+<p>The <a href="../../templates/classification-association.htm">Classification Association</a> concept template applies to this entity as shown in Table 41.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identification</b></th><th><b>Name</b></th></tr>
+<tr><td>UGA00</td><td>Kantbalk</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 41 &mdash; IfcBeam Classification Association</td></tr></table>
+
+
+<br/><br/>
+
+<a id="classification-association" />
+<p class="use-head">31HC--</p>
+<p>The <a href="../../templates/classification-association.htm">Classification Association</a> concept template applies to this entity as shown in Table 42.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identification</b></th><th><b>Name</b></th></tr>
+<tr><td>31HC--</td><td>Kantbalk</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 42 &mdash; IfcBeam Classification Association</td></tr></table>
+
+
+<br/><br/>
+
+<a id="classification-association" />
+<p class="use-head">EBE.111</p>
+<p>The <a href="../../templates/classification-association.htm">Classification Association</a> concept template applies to this entity as shown in Table 43.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identification</b></th><th><b>Name</b></th></tr>
+<tr><td>EBE.111</td><td>Betonggjutning Kategori A vid nybyggnad av bro</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 43 &mdash; IfcBeam Classification Association</td></tr></table>
+
+
+<br/><br/>
+
+</details>
+<details><summary>mvdXML Specification</summary>
+<div class="xsd"><code class="xsd">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br/>
+&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; uuid=&quot;1d690175-641b-4a92-a796-7691b2ef2370&quot; name=&quot;Kantbalk&quot; applicableRootEntity=&quot;IfcBeam&quot;&gt;<br/>
+&nbsp;&lt;Applicability&gt;<br/>
+&nbsp;&nbsp;&lt;Template ref=&quot;58940e71-54b5-4ac5-9d00-76a62b3cac1b&quot; /&gt;<br/>
+&nbsp;&lt;/Applicability&gt;<br/>
+&nbsp;&lt;Concepts&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;af3b8805-6c38-4449-9fca-d9f4d26fddfa&quot; name=&quot;Identity&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;c19ec186-9cfd-47fc-a4d4-9fb35008d04a&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;ObjectName[Value]=&amp;apos;Kantbalk&amp;apos; AND TypeName[Value]=&amp;apos;KantbalkForhojd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;02c1eaa7-2b94-4a04-aa4d-8e879fb4429b&quot; name=&quot;Material&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;5f39a814-44a0-4fb3-8dc6-ddaa0560fc54&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;MaterialName[Value]=&amp;apos;Betong&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;cdc6276c-bb3b-4db4-b4e1-bfe36dbd26e5&quot; name=&quot;Reference&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;Pset_BeamCommon&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;a82ba348-49c0-4234-a1f8-c97eb9f74bcd&quot; name=&quot;ExposureClass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;Pset_ConcreteElementGeneral&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;43c09259-9a0e-4379-9e34-e731157ce5d4&quot; name=&quot;StrengthClass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;Pset_ConcreteElementGeneral&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;61112482-8b32-4172-bf58-59676e700fec&quot; name=&quot;MLCT-Cementklass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SECC_Concrete&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;e5340260-5648-4b37-868a-5878d4955803&quot; name=&quot;MLVX-Vattencementtal&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SECC_Concrete&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;3c2fd265-ee2b-43ab-a293-5398757f8307&quot; name=&quot;TOLL-Livslangdsklass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SECC_Concrete&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;bd582674-ba6b-4291-b544-c9340878f368&quot; name=&quot;Konfidentialitetsniva&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SETRV_Metadata&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;81efda63-57ef-46c8-9cd0-42b33e0c9862&quot; name=&quot;KantbalkLangd&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SETRVx_BaTManKantbalk&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos; AND PropertyName[Value]=&amp;apos;KantbalkLangd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;7b3469ef-7e44-4bee-b640-076b16c5e07a&quot; name=&quot;Lage&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SETRVx_BaTManKantbalk&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos; AND PropertyName[Value]=&amp;apos;Lage&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;cbd1f7fe-1f21-4e6f-865b-dab9259a1d37&quot; name=&quot;USDM-Bredd&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;QsetName[Value]=&amp;apos;SECC_DimensionNominella&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;89a2787f-c890-4968-8cf1-70b2b682bb71&quot; name=&quot;USDM-Hojd&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;QsetName[Value]=&amp;apos;SECC_DimensionNominella&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;4f366580-2daa-40c5-a6db-6a9f65e13fc1&quot; name=&quot;USDM-Langd&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;QsetName[Value]=&amp;apos;SECC_DimensionNominella&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;7fc6ad14-b7ce-41ca-9115-b540188412cc&quot; name=&quot;USDM-Volym&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;QsetName[Value]=&amp;apos;SECC_DimensionNominella&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;3f6ee3b3-2a12-4bea-bd5f-3fc883afc18a&quot; name=&quot;UGA00&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;4a224609-6578-4c75-afcf-8affa86e5ef2&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;Identification[Value]=&amp;apos;UGA00&amp;apos; AND Name[Value]=&amp;apos;Kantbalk&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;aacf5368-e0db-4def-bc9a-e527517bd399&quot; name=&quot;31HC--&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;4a224609-6578-4c75-afcf-8affa86e5ef2&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;Identification[Value]=&amp;apos;31HC--&amp;apos; AND Name[Value]=&amp;apos;Kantbalk&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;c143cd35-7547-4ec4-87ed-cb586570dc2c&quot; name=&quot;EBE.111&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;4a224609-6578-4c75-afcf-8affa86e5ef2&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;Identification[Value]=&amp;apos;EBE.111&amp;apos; AND Name[Value]=&amp;apos;Betonggjutning Kategori A vid nybyggnad av bro&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&lt;/Concepts&gt;<br/>
+&lt;/ConceptRoot&gt;<br/>
+
+</code></div></details>
+<h5>Upplagsklack</h5><details open="open">
+<summary>Concept usage</summary>
+<a id="object-user-identity" />
+<p class="use-head">Identity</p>
+<p>The <a href="../../templates/object-user-identity.htm">Object User Identity</a> concept template applies to this entity as shown in Table 44.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>ObjectName</b></th><th><b>TypeName</b></th></tr>
+<tr><td>Upplagsklack</td><td>UpplagsklackLankplatta</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 44 &mdash; IfcBeam Object User Identity</td></tr></table>
+
+
+<br/><br/>
+
+<a id="material-single" />
+<p class="use-head">Material</p>
+<p>The <a href="../../templates/material-single.htm">Material Single</a> concept template applies to this entity as shown in Table 45.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>MaterialName</b></th></tr>
+<tr><td>Betong</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 45 &mdash; IfcBeam Material Single</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Reference</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 46.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th><th><b>Value</b></th></tr>
+<tr><td><a href="../../ifcsharedbldgelements/pset/pset_beamcommon.htm">Pset_BeamCommon</a></td><td></td><td>Reference</td><td>KantbalkForhojd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 46 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">ExposureClass</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 47.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td><a href="../../ifcstructuralelementsdomain/pset/pset_concreteelementgeneral.htm">Pset_ConcreteElementGeneral</a></td><td></td><td>ExposureClass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 47 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">StrengthClass</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 48.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td><a href="../../ifcstructuralelementsdomain/pset/pset_concreteelementgeneral.htm">Pset_ConcreteElementGeneral</a></td><td></td><td>StrengthClass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 48 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">MLCT-Cementklass</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 49.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SECC_Concrete</td><td></td><td>MLCT-Cementklass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 49 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">MLVX-Vattencementtal</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 50.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SECC_Concrete</td><td></td><td>MLVX-Vattencementtal</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 50 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">TOLL-Livslangdsklass</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 51.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SECC_Concrete</td><td></td><td>TOLL-Livslangdsklass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 51 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="property-sets-for-objects" />
+<p class="use-head">Konfidentialitetsniva</p>
+<p>The <a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a> concept template applies to this entity as shown in Table 52.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>PsetName</b></th><th><b>Properties</b></th><th><b>PropertyName</b></th></tr>
+<tr><td>SETRV_Metadata</td><td></td><td>Konfidentialitetsniva</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 52 &mdash; IfcBeam Property Sets for Objects</td></tr></table>
+
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">USDM-Bredd</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 53.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>QuantityName</b></th></tr>
+<tr><td>SECC_DimensionNominella</td><td></td><td>USDM-Bredd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 53 &mdash; IfcBeam Quantity Sets</td></tr></table>
+
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">USDM-Hojd</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 54.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>QuantityName</b></th></tr>
+<tr><td>SECC_DimensionNominella</td><td></td><td>USDM-Hojd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 54 &mdash; IfcBeam Quantity Sets</td></tr></table>
+
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">USDM-Langd</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 55.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>QuantityName</b></th></tr>
+<tr><td>SECC_DimensionNominella</td><td></td><td>USDM-Langd</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 55 &mdash; IfcBeam Quantity Sets</td></tr></table>
+
+
+<br/><br/>
+
+<a id="quantity-sets" />
+<p class="use-head">USDM-Volym</p>
+<p>The <a href="../../templates/quantity-sets.htm">Quantity Sets</a> concept template applies to this entity as shown in Table 56.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>QsetName</b></th><th><b>Quantities</b></th><th><b>QuantityName</b></th></tr>
+<tr><td>SECC_DimensionNominella</td><td></td><td>USDM-Volym</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 56 &mdash; IfcBeam Quantity Sets</td></tr></table>
+
+
+<br/><br/>
+
+<a id="classification-association" />
+<p class="use-head">EBE.111</p>
+<p>The <a href="../../templates/classification-association.htm">Classification Association</a> concept template applies to this entity as shown in Table 57.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>Identification</b></th><th><b>Name</b></th></tr>
+<tr><td>EBE.111</td><td>Betonggjutning Kategori A vid nybyggnad av bro</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 57 &mdash; IfcBeam Classification Association</td></tr></table>
+
+
+<br/><br/>
+
+</details>
+<details><summary>mvdXML Specification</summary>
+<div class="xsd"><code class="xsd">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br/>
+&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; uuid=&quot;cab14f1c-eac6-42cf-9c36-0ea9875874db&quot; name=&quot;Upplagsklack&quot; applicableRootEntity=&quot;IfcBeam&quot;&gt;<br/>
+&nbsp;&lt;Applicability&gt;<br/>
+&nbsp;&nbsp;&lt;Template ref=&quot;dc673f9c-a82c-468d-9774-15e92d90fc91&quot; /&gt;<br/>
+&nbsp;&lt;/Applicability&gt;<br/>
+&nbsp;&lt;Concepts&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;d4fbc896-da10-4fc6-8c2b-cc7a70cbd67c&quot; name=&quot;Identity&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;c19ec186-9cfd-47fc-a4d4-9fb35008d04a&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;ObjectName[Value]=&amp;apos;Upplagsklack&amp;apos; AND TypeName[Value]=&amp;apos;UpplagsklackLankplatta&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;5108da2a-40a7-42b2-bd72-3a94444d7364&quot; name=&quot;Material&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;5f39a814-44a0-4fb3-8dc6-ddaa0560fc54&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;MaterialName[Value]=&amp;apos;Betong&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;cdfe197a-60c8-4962-b073-f0c9fea8842a&quot; name=&quot;Reference&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;Pset_BeamCommon&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND PropertyName[Value]=&amp;apos;Reference&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos; AND Value[Value]=&amp;apos;KantbalkForhojd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;e1c187c3-affc-4fa4-928d-d85042457745&quot; name=&quot;ExposureClass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;Pset_ConcreteElementGeneral&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos; AND PropertyName[Value]=&amp;apos;ExposureClass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;aa9418dd-34b4-48f3-923c-eec66dd2be4d&quot; name=&quot;StrengthClass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;Pset_ConcreteElementGeneral&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos; AND PropertyName[Value]=&amp;apos;StrengthClass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;3728a3b7-76a0-4180-a5bb-845f6bf024ec&quot; name=&quot;MLCT-Cementklass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SECC_Concrete&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos; AND PropertyName[Value]=&amp;apos;MLCT-Cementklass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;d09bf424-e9fe-4967-b983-a9f48009d525&quot; name=&quot;MLVX-Vattencementtal&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SECC_Concrete&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos; AND PropertyName[Value]=&amp;apos;MLVX-Vattencementtal&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;f50e35fa-d228-4b94-a52b-a66f743b0930&quot; name=&quot;TOLL-Livslangdsklass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SECC_Concrete&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos; AND PropertyName[Value]=&amp;apos;TOLL-Livslangdsklass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;8c2a9349-fa28-496b-93e7-195898ab81b2&quot; name=&quot;Konfidentialitetsniva&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;f74255a6-0c0e-4f31-84ad-24981db62461&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;PsetName[Value]=&amp;apos;SETRV_Metadata&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos; AND PropertyName[Value]=&amp;apos;Konfidentialitetsniva&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;b47a7b33-ed84-4525-add1-1411ad8818f8&quot; name=&quot;USDM-Bredd&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;QsetName[Value]=&amp;apos;SECC_DimensionNominella&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Bredd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;745e8349-6e4f-4efe-b6ee-443df80aa46a&quot; name=&quot;USDM-Hojd&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;QsetName[Value]=&amp;apos;SECC_DimensionNominella&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Hojd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;fa1a723d-b87c-47c2-88c2-e3261b0caae7&quot; name=&quot;USDM-Langd&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;QsetName[Value]=&amp;apos;SECC_DimensionNominella&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Langd&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;c690abce-6da7-46c0-bf77-c5e1a2bb95a3&quot; name=&quot;USDM-Volym&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;6652398e-6579-4460-8cb4-26295acfacc7&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;QsetName[Value]=&amp;apos;SECC_DimensionNominella&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos; AND QuantityName[Value]=&amp;apos;USDM-Volym&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;98cb0d65-11d4-4fd4-a29d-cb1b12f31ddb&quot; name=&quot;EBE.111&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;4a224609-6578-4c75-afcf-8affa86e5ef2&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;Identification[Value]=&amp;apos;EBE.111&amp;apos; AND Name[Value]=&amp;apos;Betonggjutning Kategori A vid nybyggnad av bro&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&lt;/Concepts&gt;<br/>
+&lt;/ConceptRoot&gt;<br/>
+
+</code></div></details>
+<section>
+<details>
+<summary>Concept inheritance</summary>
+<p><table class="attributes">
+<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
+<tr><td colspan="3"><a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm">IfcBeam</a></td></tr><tr><td> </td><td><a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm#object-user-identity">Identity</a></td><td><a href="../../templates/object-user-identity.htm">Object User Identity</a></td><td>TRV</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm#material-single">Material</a></td><td><a href="../../templates/material-single.htm">Material Single</a></td><td>TRV</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm#property-sets-for-objects">Reference</a></td><td><a href="../../templates/property-sets-for-objects.htm">Property Sets for Objects</a></td><td>TRV</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm#quantity-sets">USDM-Bredd</a></td><td><a href="../../templates/quantity-sets.htm">Quantity Sets</a></td><td>TRV</td></tr>
+<tr><td> </td><td><a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm#classification-association">UGA00</a></td><td><a href="../../templates/classification-association.htm">Classification Association</a></td><td>TRV</td></tr>
+
+</table>
+</details>
+</section>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm">IfcBeam</a>&quot; type=&quot;ifc:<a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm">IfcBeam</a>&quot; substitutionGroup=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifcsharedbldgelements/lexical/ifcbeam.htm">IfcBeam</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;PredefinedType&quot; type=&quot;ifc:<a href="../../ifcsharedbldgelements/lexical/ifcbeamtypeenum.htm">IfcBeamTypeEnum</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcBeam<br/>
+&nbsp;<span class="keyword">SUPERTYPE</span><br/>
+&nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcproductextension/lexical/ifcbuiltelement.htm">IfcBuiltElement</a>)<b>;</b><br/>
+&nbsp;&nbsp;PredefinedType : <span class="keyword">OPTIONAL</span> <a href="../../ifcsharedbldgelements/lexical/ifcbeamtypeenum.htm">IfcBeamTypeEnum</a>;<br/>
+&nbsp;<span class="keyword">WHERE</span><br/>
+&nbsp;&nbsp;CorrectPredefinedType : NOT(EXISTS(PredefinedType)) OR<br/>
+ (PredefinedType &lt;&gt; <a href="../../ifcsharedbldgelements/lexical/ifcbeamtypeenum.htm">IfcBeamTypeEnum</a>.<span class="self-ref">USERDEFINED</span>) OR<br/>
+ ((PredefinedType = <a href="../../ifcsharedbldgelements/lexical/ifcbeamtypeenum.htm">IfcBeamTypeEnum</a>.<span class="self-ref">USERDEFINED</span>) AND EXISTS (SELF\<a href="../../ifckernel/lexical/ifcobject.htm">IfcObject</a>.ObjectType));<br/>&nbsp;&nbsp;CorrectTypeAssigned : (SIZEOF(IsTypedBy) = 0) OR<br/>
+  (&#39;IFCSHAREDBLDGELEMENTS.<span class="self-ref">IfcStrippedOptional</span>&#39; IN TYPEOF(SELF\<a href="../../ifckernel/lexical/ifcobject.htm">IfcObject</a>.IsTypedBy[1].RelatingType));<br/><span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifcsharedbldgelements/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+</section>
+</p>
+<p><a href="../../../link/ifcbeam.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcSite</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 5 index2 2 index3 3 index4 10 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-5.htm#5.2.3.11");
+//-->
+</script>
+
+<h4 class="num">IfcSite</h4>
+<section>
+<h5 class="num">Definitions applying to TRV</h5>
+<p><a href="../../../annex/annex-d/trv/ifcsite.htm"><img style="border: 0px" src="../../../img/diagram.png" />&nbsp;Instance diagram</a></p><hr />
+<h5>Site</h5><details open="open">
+<summary>Concept usage</summary>
+<a id="object-user-identity" />
+<p class="use-head">Name and Description</p>
+<p>The <a href="../../templates/object-user-identity.htm">Object User Identity</a> concept template applies to this entity as shown in Table 25.<table>
+<tr><td>
+<table class="gridtable">
+<tr></tr>
+<tr></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 25 &mdash; IfcSite Object User Identity</td></tr></table>
+
+<p>Entreprenad eller annan mindre avgränsad del av ett projekt</p>
+
+
+<br/><br/>
+
+</details>
+<details><summary>mvdXML Specification</summary>
+<div class="xsd"><code class="xsd">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br/>
+&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; uuid=&quot;49e8ddfb-0fb7-43d3-a991-f855884fad3c&quot; name=&quot;Site&quot; applicableRootEntity=&quot;IfcSite&quot;&gt;<br/>
+&nbsp;&lt;Applicability&gt;<br/>
+&nbsp;&nbsp;&lt;Template ref=&quot;33857b38-e372-4c95-ad14-34138c5f386d&quot; /&gt;<br/>
+&nbsp;&lt;/Applicability&gt;<br/>
+&nbsp;&lt;Concepts&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;4b7864d7-a848-44a3-9e01-95041e8e6bd8&quot; name=&quot;Name and Description&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;c19ec186-9cfd-47fc-a4d4-9fb35008d04a&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&lt;/Concepts&gt;<br/>
+&lt;/ConceptRoot&gt;<br/>
+
+</code></div></details>
+<section>
+<details>
+<summary>Concept inheritance</summary>
+<p><table class="attributes">
+<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
+<tr><td colspan="3"><a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></td></tr><tr><td> </td><td><a href="../../ifcproductextension/lexical/ifcsite.htm#object-user-identity">Name and Description</a></td><td><a href="../../templates/object-user-identity.htm">Object User Identity</a></td><td>TRV</td></tr>
+
+</table>
+</details>
+</section>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a>&quot; type=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a>&quot; substitutionGroup=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcSite<br/>
+&nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcproductextension/lexical/ifcspatialstructureelement.htm">IfcSpatialStructureElement</a>)<b>;</b><br/>
+&nbsp;&nbsp;RefLatitude : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;&nbsp;RefLongitude : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;&nbsp;RefElevation : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;&nbsp;LandTitleNumber : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;&nbsp;SiteAddress : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+<span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifcproductextension/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+</section>
+</p>
+<p><a href="../../../link/ifcsite.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

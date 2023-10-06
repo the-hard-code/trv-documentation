@@ -1,0 +1,162 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcProject</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 5 index2 1 index3 3 index4 4 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-5.htm#5.1.3.5");
+//-->
+</script>
+
+<h4 class="num">IfcProject</h4>
+<section>
+<h5 class="num">Definitions applying to TRV</h5>
+<p><a href="../../../annex/annex-d/trv/ifcproject.htm"><img style="border: 0px" src="../../../img/diagram.png" />&nbsp;Instance diagram</a></p><hr />
+<h5>Project</h5><details open="open">
+<summary>Concept usage</summary>
+<a id="spatial-decomposition" />
+<p class="use-head">Site</p>
+<p>The <a href="../../templates/spatial-decomposition.htm">Spatial Decomposition</a> concept template applies to this entity as shown in Table 1.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>RelatedObjects</b></th></tr>
+<tr><td><a href="../../ifcproductextension/lexical/ifcsite.htm">IfcSite</a></td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 1 &mdash; IfcProject Spatial Decomposition</td></tr></table>
+
+
+<br/><br/>
+
+<a id="project-classification-information" />
+<p class="use-head">AMA</p>
+<p>The <a href="../../templates/project-classification-information.htm">Project Classification Information</a> concept template applies to this entity as shown in Table 2.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>ClassificationName</b></th></tr>
+<tr><td>AMA</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 2 &mdash; IfcProject Project Classification Information</td></tr></table>
+
+
+<br/><br/>
+
+<a id="project-classification-information" />
+<p class="use-head">BSAB96_E4FS-SB11</p>
+<p>The <a href="../../templates/project-classification-information.htm">Project Classification Information</a> concept template applies to this entity as shown in Table 3.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>ClassificationName</b></th></tr>
+<tr><td>BSAB96_E4FS-SB11</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 3 &mdash; IfcProject Project Classification Information</td></tr></table>
+
+
+<br/><br/>
+
+<a id="project-classification-information" />
+<p class="use-head">CoClass</p>
+<p>The <a href="../../templates/project-classification-information.htm">Project Classification Information</a> concept template applies to this entity as shown in Table 4.<table>
+<tr><td>
+<table class="gridtable">
+<tr><th><b>ClassificationName</b></th></tr>
+<tr><td>CoClass</td></tr>
+</table>
+</td></tr>
+<tr><td><p class="table">Table 4 &mdash; IfcProject Project Classification Information</td></tr></table>
+
+
+<br/><br/>
+
+</details>
+<details><summary>mvdXML Specification</summary>
+<div class="xsd"><code class="xsd">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br/>
+&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; uuid=&quot;d8dbe648-a96a-49a7-9b42-f5dc30df9b0d&quot; name=&quot;Project&quot; applicableRootEntity=&quot;IfcProject&quot;&gt;<br/>
+&nbsp;&lt;Applicability&gt;<br/>
+&nbsp;&nbsp;&lt;Template ref=&quot;8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4&quot; /&gt;<br/>
+&nbsp;&lt;/Applicability&gt;<br/>
+&nbsp;&lt;Concepts&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;32e4b3d4-c858-4116-b374-d048160322c3&quot; name=&quot;Site&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;667f8443-ecce-4a8d-a63f-931fab0453e0&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;RelatedObjects[Type]=&amp;apos;IfcSite&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;a44a8e83-f825-434d-baeb-fce4c59e6c89&quot; name=&quot;AMA&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;818ca5a3-4574-49b1-9951-ae7bad5c3341&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;ClassificationName[Value]=&amp;apos;AMA&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;0f27edfc-f389-490f-9e7e-76edf6fa1deb&quot; name=&quot;BSAB96_E4FS-SB11&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;818ca5a3-4574-49b1-9951-ae7bad5c3341&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;ClassificationName[Value]=&amp;apos;BSAB96_E4FS-SB11&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&nbsp;&lt;Concept uuid=&quot;c4218298-758f-44b2-8a73-a338abda6d1d&quot; name=&quot;CoClass&quot; override=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;818ca5a3-4574-49b1-9951-ae7bad5c3341&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;TemplateRules&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule Parameters=&quot;ClassificationName[Value]=&amp;apos;CoClass&amp;apos;&quot; /&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
+&nbsp;&nbsp;&lt;/Concept&gt;<br/>
+&nbsp;&lt;/Concepts&gt;<br/>
+&lt;/ConceptRoot&gt;<br/>
+
+</code></div></details>
+<section>
+<details>
+<summary>Concept inheritance</summary>
+<p><table class="attributes">
+<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
+<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcproject.htm">IfcProject</a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcproject.htm#spatial-decomposition">Site</a></td><td><a href="../../templates/spatial-decomposition.htm">Spatial Decomposition</a></td><td>TRV</td></tr>
+<tr><td> </td><td><a href="../../ifckernel/lexical/ifcproject.htm#project-classification-information">AMA</a></td><td><a href="../../templates/project-classification-information.htm">Project Classification Information</a></td><td>TRV</td></tr>
+
+</table>
+</details>
+</section>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifckernel/lexical/ifcproject.htm">IfcProject</a>&quot; type=&quot;ifc:<a href="../../ifckernel/lexical/ifcproject.htm">IfcProject</a>&quot; substitutionGroup=&quot;ifc:<a href="../../ifckernel/lexical/ifccontext.htm">IfcContext</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifckernel/lexical/ifcproject.htm">IfcProject</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifckernel/lexical/ifccontext.htm">IfcContext</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcProject<br/>
+&nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifccontext.htm">IfcContext</a>)<b>;</b><br/>
+&nbsp;<span class="keyword">WHERE</span><br/>
+&nbsp;&nbsp;HasName : EXISTS(SELF\<a href="../../ifckernel/lexical/ifcroot.htm">IfcRoot</a>.Name);<br/>&nbsp;&nbsp;CorrectContext : NOT(EXISTS(SELF\<a href="../../ifckernel/lexical/ifccontext.htm">IfcContext</a>.RepresentationContexts)) OR<br/>
+(SIZEOF(QUERY(Temp &lt;* SELF\<a href="../../ifckernel/lexical/ifccontext.htm">IfcContext</a>.RepresentationContexts |<br/>
+ &#39;IFCREPRESENTATIONRESOURCE.<span class="self-ref">IfcStrippedOptional</span>&#39; IN TYPEOF(Temp)<br/>
+  )) = 0);<br/>&nbsp;&nbsp;NoDecomposition : SIZEOF(SELF\<a href="../../ifckernel/lexical/ifcobjectdefinition.htm">IfcObjectDefinition</a>.Decomposes) = 0;<br/><span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifckernel/diagram_0000.htm" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+</section>
+</p>
+<p><a href="../../../link/ifcproject.htm" target="_top" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

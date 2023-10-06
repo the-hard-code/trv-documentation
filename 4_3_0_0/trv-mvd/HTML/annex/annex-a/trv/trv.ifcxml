@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ifcXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/ifc/IFC4x1/final" xsi:schemaLocation="http://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/XML/IFC4x1.xsd">
+	<header>
+		<time_stamp>2023-10-06T17:52:36</time_stamp>
+	</header>
+	<IfcProjectLibrary GlobalId="2OqsW47Dz0LgTmf4DAn1f4" Name="IFC Templates">
+		<Declares>
+			<IfcRelDeclares GlobalId="3RyLNYXkX479wspBr_nf6n" Name="SimpleProperties">
+				<RelatedDefinitions>
+					<IfcSimplePropertyTemplate id="ConcreteCover_07PBZZQdn2TOMV5JJgFkm9" GlobalId="07PBZZQdn2TOMV5JJgFkm9" Name="ConcreteCover" Description="The protective concrete cover at the reinforcing bars according to local building regulations." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
+					<IfcSimplePropertyTemplate id="ConcreteCoverAtLinks_2_yow0qSiHuO00025QrEV" GlobalId="2_yow0qSiHuO00025QrE$V" Name="ConcreteCoverAtLinks" Description="The protective concrete cover at the reinforcement links according to local building regulations." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
+					<IfcSimplePropertyTemplate id="ConcreteCoverAtMainBars_2uKs0qSiHuO00025QrEV" GlobalId="2u$Ks0qSiHuO00025QrE$V" Name="ConcreteCoverAtMainBars" Description="The protective concrete cover at the main reinforcing bars according to local building regulations." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
+					<IfcSimplePropertyTemplate id="ConstructionMethod_1ahrQp2qL0mhGzTBIQABdR" GlobalId="1ahrQp2qL0mhGzTBIQABdR" Name="ConstructionMethod" Description="Designator for whether the element is constructed/welded on site or prefabricated. Example of allowed values : &apos;On-site&apos; vs &apos;Prefabricated&apos;." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="ConstructionToleranceClass_2hu5w0qSiHuO00025QrEV" GlobalId="2hu5w0qSiHuO00025QrE$V" Name="ConstructionToleranceClass" Description="Classification designation of the on-site construction tolerances according to local standards." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="DimensionalAccuracyClass_2akL20qSiHuO00025QrEV" GlobalId="2akL20qSiHuO00025QrE$V" Name="DimensionalAccuracyClass" Description="Classification designation of the dimensional accuracy requirement according to local standards." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="ExposureClass_2RxWltAjDAPhxrUt6toXTR" GlobalId="2RxWltAjDAPhxrUt6toXTR" Name="ExposureClass" Description="Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="FireRating_0uXnw0qSGHuO00025QrEV" GlobalId="0uXnw0qSGHuO00025QrE$V" Name="FireRating" Description="Fire rating for the element. It is given according to the national fire safety classification." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="IsExternal_0eRpy0qSGHuO00025QrEV" GlobalId="0eRpy0qSGHuO00025QrE$V" Name="IsExternal" Description="Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
+					<IfcSimplePropertyTemplate id="LoadBearing_0pmcg0qSGHuO00025QrEV" GlobalId="0pmcg0qSGHuO00025QrE$V" Name="LoadBearing" Description="Indicates whether the object is intended to carry loads (TRUE) or not (FALSE)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
+					<IfcSimplePropertyTemplate id="Reference_04ga0qSGHuO00025QrEV" GlobalId="04g$a0qSGHuO00025QrE$V" Name="Reference" Description="Reference ID for this specified type in this project (e.g. type &apos;A-1&apos;), Also referred to as &quot;construction type&quot;. It should be provided as an alternative to the name of the &quot;object type&quot;, if the software does not support object types." TemplateType="p_singlevalue" PrimaryMeasureType="IfcIdentifier" />
+					<IfcSimplePropertyTemplate id="ReinforcementAreaRatio_03QJXaBBz9ugaDD64qh7Hr" GlobalId="03QJXaBBz9ugaDD64qh7Hr" Name="ReinforcementAreaRatio" Description="The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element." TemplateType="p_singlevalue" PrimaryMeasureType="IfcAreaDensityMeasure" />
+					<IfcSimplePropertyTemplate id="ReinforcementStrengthClass_2uZA8bB4j05BpoYRkzMMEO" GlobalId="2uZA8bB4j05BpoYRkzMMEO" Name="ReinforcementStrengthClass" Description="Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="ReinforcementVolumeRatio_2XmEU5oRn1XutRndGpqc" GlobalId="2XmEU5oRn1XutRnd$G$pqc" Name="ReinforcementVolumeRatio" Description="The required ratio of the effective mass of the reinforcement to the effective volume of the concrete of a reinforced concrete structural element." TemplateType="p_singlevalue" PrimaryMeasureType="IfcMassDensityMeasure" />
+					<IfcSimplePropertyTemplate id="Roll_0Zgei0qSGHuO00025QrEV" GlobalId="0Zgei0qSGHuO00025QrE$V" Name="Roll" Description="Rotation against the longitudinal axis - relative to the global Z direction for all beams that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.)
+
+The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.
+
+Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="IfcPlaneAngleMeasure" />
+					<IfcSimplePropertyTemplate id="Slope_0UvTS0qSGHuO00025QrEV" GlobalId="0UvTS0qSGHuO00025QrE$V" Name="Slope" Description="Slope angle - relative to horizontal (0.0 degrees).
+
+The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPlaneAngleMeasure" />
+					<IfcSimplePropertyTemplate id="Span_0PY8o0qSGHuO00025QrEV" GlobalId="0PY8o0qSGHuO00025QrE$V" Name="Span" Description="Clear span for this object.
+
+The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence. For geometry editing applications, like CAD: this value should be write-only." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
+					<IfcSimplePropertyTemplate id="Status_09SAq0qSGHuO00025QrEV" GlobalId="09SAq0qSGHuO00025QrE$V" Name="Status" Description="Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as &quot;New&quot; - element designed as new addition, &quot;Existing&quot; - element exists and remains, &quot;Demolish&quot; - element existed but is to be demolished,  &quot;Temporary&quot; - element will exists only temporary (like a temporary support structure)." TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcLabel">
+						<Enumerators xsi:type="IfcPropertyEnumeration" Name="PEnum_ElementStatus">
+							<EnumerationValues>
+								<IfcLabel-wrapper>NEW</IfcLabel-wrapper>
+								<IfcLabel-wrapper>EXISTING</IfcLabel-wrapper>
+								<IfcLabel-wrapper>DEMOLISH</IfcLabel-wrapper>
+								<IfcLabel-wrapper>TEMPORARY</IfcLabel-wrapper>
+								<IfcLabel-wrapper>OTHER</IfcLabel-wrapper>
+								<IfcLabel-wrapper>NOTKNOWN</IfcLabel-wrapper>
+								<IfcLabel-wrapper>UNSET</IfcLabel-wrapper>
+							</EnumerationValues>
+						</Enumerators>
+					</IfcSimplePropertyTemplate>
+					<IfcSimplePropertyTemplate id="StrengthClass_2MEGt4Gr1s8oshAXjpacJ" GlobalId="2MEGt4G$r1s8oshAXjpacJ" Name="StrengthClass" Description="Classification of the concrete strength in accordance with the concrete design code which is applied in the project." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="StructuralClass_24YP60qSiHuO00025QrEV" GlobalId="24YP60qSiHuO00025QrE$V" Name="StructuralClass" Description="The structural class defined for the concrete structure (e.g. &apos;1&apos;)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="ThermalTransmittance_0lbaq0qSGHuO00025QrEV" GlobalId="0lbaq0qSGHuO00025QrE$V" Name="ThermalTransmittance" Description="Thermal transmittance coefficient (U-Value) of the element. Here the total thermal transmittance coefficient through the beam within the direction of the thermal flow (including all materials).
+
+Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="IfcThermalTransmittanceMeasure" />
+				</RelatedDefinitions>
+			</IfcRelDeclares>
+			<IfcRelDeclares GlobalId="3M4U3yWxr3_gsGvVZ3qXJS" Name="PropertySets">
+				<RelatedDefinitions>
+					<IfcPropertySetTemplate GlobalId="3vyMG0qSCHuO00025QrE$V" Name="Pset_BeamCommon" Description="Properties common to the definition of all occurrence and type objects of beam." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcBeam">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Reference_04ga0qSGHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Status_09SAq0qSGHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Span_0PY8o0qSGHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Slope_0UvTS0qSGHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Roll_0Zgei0qSGHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="IsExternal_0eRpy0qSGHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ThermalTransmittance_0lbaq0qSGHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="LoadBearing_0pmcg0qSGHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="FireRating_0uXnw0qSGHuO00025QrEV" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
+					<IfcPropertySetTemplate GlobalId="1$B4S0qSiHuO00025QrE$V" Name="Pset_ConcreteElementGeneral" Description="General properties common to different types of concrete elements, including reinforced concrete elements. The property set can be used by a number of subtypes of IfcBuildingElement, indicated that such element is designed or constructed using a concrete construction method." TemplateType="pset_typedrivenoverride" ApplicableEntity="IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ConstructionMethod_1ahrQp2qL0mhGzTBIQABdR" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="StructuralClass_24YP60qSiHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="StrengthClass_2MEGt4Gr1s8oshAXjpacJ" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ExposureClass_2RxWltAjDAPhxrUt6toXTR" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ReinforcementVolumeRatio_2XmEU5oRn1XutRndGpqc" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ReinforcementAreaRatio_03QJXaBBz9ugaDD64qh7Hr" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="DimensionalAccuracyClass_2akL20qSiHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ConstructionToleranceClass_2hu5w0qSiHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ConcreteCover_07PBZZQdn2TOMV5JJgFkm9" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ConcreteCoverAtMainBars_2uKs0qSiHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ConcreteCoverAtLinks_2_yow0qSiHuO00025QrEV" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="ReinforcementStrengthClass_2uZA8bB4j05BpoYRkzMMEO" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
+				</RelatedDefinitions>
+			</IfcRelDeclares>
+			<IfcRelDeclares GlobalId="1$c0OOaRDF_OBDoEs$xzcD" Name="Quantities">
+				<RelatedDefinitions>
+					<IfcSimplePropertyTemplate id="Length_25UysMQb2a8qWjqTa2SG7" GlobalId="25Uys$MQb2a8qWjqTa2SG7" Name="Length" Description="Total nominal length of the railing, not taking into account any cut-out&apos;s or other processing features." TemplateType="q_length" />
+				</RelatedDefinitions>
+			</IfcRelDeclares>
+			<IfcRelDeclares GlobalId="1CpAEUB6v1Fhb57tduNMhL" Name="QuantitySets">
+				<RelatedDefinitions>
+					<IfcPropertySetTemplate GlobalId="1Fh58OFtTD3fz8LEdf4$TK" Name="Qto_RailingBaseQuantities" Description="Base quantities that are common to the definition of all occurrences of railings." TemplateType="qto_occurrencedriven" ApplicableEntity="IfcRailing">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Length_25UysMQb2a8qWjqTa2SG7" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
+				</RelatedDefinitions>
+			</IfcRelDeclares>
+		</Declares>
+	</IfcProjectLibrary>
+</ifcXML>
