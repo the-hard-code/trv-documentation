@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="d7a2effe-dc01-40dc-940e-1cced4358c9b" name="mvd">
+<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="f78c2cff-7c20-448c-80d3-ff72b7e8b9ad" name="mvd">
 	<Templates>
 		<ConceptTemplate uuid="a322fdd7-cd28-4ea7-8797-f6cf124ab3d6" name="Partial Templates" applicableSchema="IFC4">
 			<Definitions>
@@ -21631,15 +21631,16 @@
 			<SubTemplates>
 				<ConceptTemplate uuid="58940e71-54b5-4ac5-9d00-76a62b3cac1b" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBeam" />
 				<ConceptTemplate uuid="dc673f9c-a82c-468d-9774-15e92d90fc91" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBeam" />
-				<ConceptTemplate uuid="8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcProject" />
 				<ConceptTemplate uuid="990e973d-dedb-447b-8f15-c8725700f52b" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBridge" />
 				<ConceptTemplate uuid="55278292-dca9-4f0a-b399-7baa5d2a734b" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBridgePart" />
 				<ConceptTemplate uuid="c8c742aa-1a21-4d11-bc04-16e733ae7dd4" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBridgePart" />
 				<ConceptTemplate uuid="95439e32-6a0c-49ec-b871-3c8459e933f2" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBridgePart" />
 				<ConceptTemplate uuid="dc4bf7ba-f68d-4d85-88df-14364ebcb1c0" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcBridgePart" />
+				<ConceptTemplate uuid="8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcProject" />
 				<ConceptTemplate uuid="7850f9c2-b92c-432b-ad23-2b3c1636021d" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcRailing" />
 				<ConceptTemplate uuid="33857b38-e372-4c95-ad14-34138c5f386d" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcSite" />
 				<ConceptTemplate uuid="6228caed-f6df-46bf-9882-57b83390b7f6" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcSlab" />
+				<ConceptTemplate uuid="14c1017d-27b0-4668-944a-39f55e178405" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcWall" />
 			</SubTemplates>
 		</ConceptTemplate>
 	</Templates>
@@ -21956,19 +21957,19 @@
 						<Concept uuid="3f6ee3b3-2a12-4bea-bd5f-3fc883afc18a" name="UGA00" override="true">
 							<Template ref="4a224609-6578-4c75-afcf-8affa86e5ef2" />
 							<TemplateRules>
-								<TemplateRule Parameters="Identification[Value]=&apos;UGA00&apos; AND Name[Value]=&apos;Kantbalk&apos;" />
+								<TemplateRule Parameters="Identification[Value]=&apos;UGA00&apos; AND Name[Value]=&apos;Kantbalk&apos; AND ClassificationName[Value]=&apos;CoClass&apos;" />
 							</TemplateRules>
 						</Concept>
-						<Concept uuid="aacf5368-e0db-4def-bc9a-e527517bd399" name="31HC--" override="true">
+						<Concept uuid="aacf5368-e0db-4def-bc9a-e527517bd399" name="31HC [Classification Association]" override="true">
 							<Template ref="4a224609-6578-4c75-afcf-8affa86e5ef2" />
 							<TemplateRules>
-								<TemplateRule Parameters="Identification[Value]=&apos;31HC--&apos; AND Name[Value]=&apos;Kantbalk&apos;" />
+								<TemplateRule Parameters="Identification[Value]=&apos;31HC&apos; AND Name[Value]=&apos;Kantbalk&apos; AND ClassificationName[Value]=&apos;BSAB96_E4FS-SB11&apos;" />
 							</TemplateRules>
 						</Concept>
 						<Concept uuid="c143cd35-7547-4ec4-87ed-cb586570dc2c" name="EBE.111" override="true">
 							<Template ref="4a224609-6578-4c75-afcf-8affa86e5ef2" />
 							<TemplateRules>
-								<TemplateRule Parameters="Identification[Value]=&apos;EBE.111&apos; AND Name[Value]=&apos;Betonggjutning Kategori A vid nybyggnad av bro&apos;" />
+								<TemplateRule Parameters="Identification[Value]=&apos;EBE.111&apos; AND Name[Value]=&apos;Betonggjutning Kategori A vid nybyggnad av bro&apos; AND ClassificationName[Value]=&apos;AMA&apos;" />
 							</TemplateRules>
 						</Concept>
 					</Concepts>
@@ -22064,38 +22065,84 @@
 						</Concept>
 					</Concepts>
 				</ConceptRoot>
-				<ConceptRoot uuid="d8dbe648-a96a-49a7-9b42-f5dc30df9b0d" name="Project" applicableRootEntity="IfcProject">
-					<Applicability>
-						<Template ref="8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4" />
-					</Applicability>
-					<Concepts>
-						<Concept uuid="32e4b3d4-c858-4116-b374-d048160322c3" name="Site">
-							<Template ref="667f8443-ecce-4a8d-a63f-931fab0453e0" />
-							<TemplateRules>
-								<TemplateRule Parameters="RelatedObjects[Type]=&apos;IfcSite&apos;" />
-							</TemplateRules>
-						</Concept>
-						<Concept uuid="a44a8e83-f825-434d-baeb-fce4c59e6c89" name="AMA" override="true">
-							<Template ref="818ca5a3-4574-49b1-9951-ae7bad5c3341" />
-							<TemplateRules>
-								<TemplateRule Parameters="ClassificationName[Value]=&apos;AMA&apos;" />
-							</TemplateRules>
-						</Concept>
-						<Concept uuid="0f27edfc-f389-490f-9e7e-76edf6fa1deb" name="BSAB96_E4FS-SB11" override="true">
-							<Template ref="818ca5a3-4574-49b1-9951-ae7bad5c3341" />
-							<TemplateRules>
-								<TemplateRule Parameters="ClassificationName[Value]=&apos;BSAB96_E4FS-SB11&apos;" />
-							</TemplateRules>
-						</Concept>
-						<Concept uuid="c4218298-758f-44b2-8a73-a338abda6d1d" name="CoClass" override="true">
-							<Template ref="818ca5a3-4574-49b1-9951-ae7bad5c3341" />
-							<TemplateRules>
-								<TemplateRule Parameters="ClassificationName[Value]=&apos;CoClass&apos;" />
-							</TemplateRules>
-						</Concept>
-					</Concepts>
-				</ConceptRoot>
 				<ConceptRoot uuid="e6bf637d-1f47-44dd-a407-466a8d525d61" name="Bridge" applicableRootEntity="IfcBridge">
+					<Definitions>
+						<Definition>
+							<Body>
+								<String>
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+								</String>
+							</Body>
+						</Definition>
+					</Definitions>
 					<Applicability>
 						<Template ref="990e973d-dedb-447b-8f15-c8725700f52b" />
 					</Applicability>
@@ -22396,6 +22443,289 @@
 					</Concepts>
 				</ConceptRoot>
 				<ConceptRoot uuid="016944af-33f0-43ef-a52c-5b5c443d0dd4" name="Överbyggnad" applicableRootEntity="IfcBridgePart">
+					<Definitions>
+						<Definition>
+							<Body>
+								<String>
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+								</String>
+							</Body>
+						</Definition>
+					</Definitions>
 					<Applicability>
 						<Template ref="55278292-dca9-4f0a-b399-7baa5d2a734b" />
 					</Applicability>
@@ -22422,6 +22752,720 @@
 					</Concepts>
 				</ConceptRoot>
 				<ConceptRoot uuid="280bc453-35e6-49ec-a7df-5071e3339f5e" name="Underbyggnad" applicableRootEntity="IfcBridgePart">
+					<Definitions>
+						<Definition>
+							<Body>
+								<String>
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+								</String>
+							</Body>
+						</Definition>
+					</Definitions>
 					<Applicability>
 						<Template ref="c8c742aa-1a21-4d11-bc04-16e733ae7dd4" />
 					</Applicability>
@@ -22475,6 +23519,468 @@
 					</Concepts>
 				</ConceptRoot>
 				<ConceptRoot uuid="dd2bab12-e970-4bde-902a-e7a76376c092" name="Grundläggning" applicableRootEntity="IfcBridgePart">
+					<Definitions>
+						<Definition>
+							<Body>
+								<String>
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+								</String>
+							</Body>
+						</Definition>
+					</Definitions>
 					<Applicability>
 						<Template ref="dc4bf7ba-f68d-4d85-88df-14364ebcb1c0" />
 					</Applicability>
@@ -22499,7 +24005,175 @@
 						</Concept>
 					</Concepts>
 				</ConceptRoot>
+				<ConceptRoot uuid="d8dbe648-a96a-49a7-9b42-f5dc30df9b0d" name="Project" applicableRootEntity="IfcProject">
+					<Applicability>
+						<Template ref="8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4" />
+					</Applicability>
+					<Concepts>
+						<Concept uuid="32e4b3d4-c858-4116-b374-d048160322c3" name="Site">
+							<Template ref="667f8443-ecce-4a8d-a63f-931fab0453e0" />
+							<TemplateRules>
+								<TemplateRule Parameters="RelatedObjects[Type]=&apos;IfcSite&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="a44a8e83-f825-434d-baeb-fce4c59e6c89" name="AMA" override="true">
+							<Template ref="818ca5a3-4574-49b1-9951-ae7bad5c3341" />
+							<TemplateRules>
+								<TemplateRule Parameters="ClassificationName[Value]=&apos;AMA&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="0f27edfc-f389-490f-9e7e-76edf6fa1deb" name="BSAB96_E4FS-SB11" override="true">
+							<Template ref="818ca5a3-4574-49b1-9951-ae7bad5c3341" />
+							<TemplateRules>
+								<TemplateRule Parameters="ClassificationName[Value]=&apos;BSAB96_E4FS-SB11&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="c4218298-758f-44b2-8a73-a338abda6d1d" name="CoClass" override="true">
+							<Template ref="818ca5a3-4574-49b1-9951-ae7bad5c3341" />
+							<TemplateRules>
+								<TemplateRule Parameters="ClassificationName[Value]=&apos;CoClass&apos;" />
+							</TemplateRules>
+						</Concept>
+					</Concepts>
+				</ConceptRoot>
 				<ConceptRoot uuid="c2bd3fca-56ab-4c86-af3d-e47ef1314558" name="Räcke" applicableRootEntity="IfcRailing">
+					<Definitions>
+						<Definition>
+							<Body>
+								<String>
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+								</String>
+							</Body>
+						</Definition>
+					</Definitions>
 					<Applicability>
 						<Template ref="7850f9c2-b92c-432b-ad23-2b3c1636021d" />
 					</Applicability>
@@ -22766,6 +24440,181 @@
 							</TemplateRules>
 						</Concept>
 						<Concept uuid="a7c6bc30-b980-4114-b53c-d2ebb63e11ad" name="USDM-Volym" override="true">
+							<Template ref="6652398e-6579-4460-8cb4-26295acfacc7" />
+							<TemplateRules>
+								<TemplateRule Parameters="QsetName[Value]=&apos;SECC_DimensionNominella&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos;" />
+							</TemplateRules>
+						</Concept>
+					</Concepts>
+				</ConceptRoot>
+				<ConceptRoot uuid="2a5f5c75-d84d-44b7-9387-8de7698ed53b" name="Stödmur" applicableRootEntity="IfcWall">
+					<Definitions>
+						<Definition>
+							<Body>
+								<String>
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+									<Char />
+								</String>
+							</Body>
+						</Definition>
+					</Definitions>
+					<Applicability>
+						<Template ref="14c1017d-27b0-4668-944a-39f55e178405" />
+					</Applicability>
+					<Concepts>
+						<Concept uuid="19b1c852-cbb0-4cd8-87b5-a28f08363b3e" name="Identity">
+							<Template ref="c19ec186-9cfd-47fc-a4d4-9fb35008d04a" />
+							<TemplateRules>
+								<TemplateRule Parameters="ObjectName[Value]=&apos;Stödmur&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="b998c87c-a42f-4c80-8ed2-58bc451f7d74" name="Type">
+							<Template ref="25248261-98df-4d0a-9364-5653575ca421" />
+							<TemplateRules>
+								<TemplateRule Parameters="TypeUserdefinedType[Value]=&apos;RetainingWall&apos; AND TypePredefinedType[Value]=&apos;USERDEFINED&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="e5a68d95-8477-4151-a626-0390fb353158" name="UGA00" override="true">
+							<Template ref="4a224609-6578-4c75-afcf-8affa86e5ef2" />
+							<TemplateRules>
+								<TemplateRule Parameters="Identification[Value]=&apos;UFB00 UFD00&apos; AND Name[Value]=&apos; Bärande Stödmur Stödmur&apos; AND ClassificationName[Value]=&apos;CoClass&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="d18ba982-c639-4db2-93f3-cf168dc25204" name="12CG" override="true">
+							<Template ref="4a224609-6578-4c75-afcf-8affa86e5ef2" />
+							<TemplateRules>
+								<TemplateRule Parameters="Identification[Value]=&apos;12CG&apos; AND Name[Value]=&apos;Stödmur&apos; AND ClassificationName[Value]=&apos;BSAB96_E4FS-SB11&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="503e3913-7bcc-40ce-a232-7f481da949de" name="EBE.111" override="true">
+							<Template ref="4a224609-6578-4c75-afcf-8affa86e5ef2" />
+							<TemplateRules>
+								<TemplateRule Parameters="Identification[Value]=&apos;EBE.111&apos; AND Name[Value]=&apos;Betonggjutning Kategori A vid nybyggnad av bro&apos; AND ClassificationName[Value]=&apos;AMA&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="a9360e2d-0fef-48ec-ba09-31464b747be3" name="MLCT-Cementklass" override="true">
+							<Template ref="f74255a6-0c0e-4f31-84ad-24981db62461" />
+							<TemplateRules>
+								<TemplateRule Parameters="PsetName[Value]=&apos;SECC_Concrete&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos; AND PropertyName[Value]=&apos;MLCT-Cementklass&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="7a0e5bda-843e-4d80-b1e4-0a341242b566" name="MLVX-Vattencementtal" override="true">
+							<Template ref="f74255a6-0c0e-4f31-84ad-24981db62461" />
+							<TemplateRules>
+								<TemplateRule Parameters="PsetName[Value]=&apos;SECC_Concrete&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos; AND PropertyName[Value]=&apos;MLVX-Vattencementtal&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="fc3d1488-5f26-4861-8a03-c41465bc85af" name="TOLL-Livslangdsklass" override="true">
+							<Template ref="f74255a6-0c0e-4f31-84ad-24981db62461" />
+							<TemplateRules>
+								<TemplateRule Parameters="PsetName[Value]=&apos;SECC_Concrete&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos; AND PropertyName[Value]=&apos;TOLL-Livslangdsklass&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="d3ee0c42-be38-437b-b929-931c7112eddf" name="Konfidentialitetsniva" override="true">
+							<Template ref="f74255a6-0c0e-4f31-84ad-24981db62461" />
+							<TemplateRules>
+								<TemplateRule Parameters="PsetName[Value]=&apos;SETRV_Metadata&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos; AND PropertyName[Value]=&apos;Konfidentialitetsniva&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="8f4c632e-503c-41d8-be6f-1126b79cc10f" name="USDM-Bredd" override="true">
+							<Template ref="6652398e-6579-4460-8cb4-26295acfacc7" />
+							<TemplateRules>
+								<TemplateRule Parameters="QsetName[Value]=&apos;SECC_DimensionNominella&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos; AND QuantityName[Value]=&apos;USDM-Bredd&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="8b6b6068-4aa6-4192-9b5e-2408e67c21e9" name="USDM-Hojd" override="true">
+							<Template ref="6652398e-6579-4460-8cb4-26295acfacc7" />
+							<TemplateRules>
+								<TemplateRule Parameters="QsetName[Value]=&apos;SECC_DimensionNominella&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos; AND QuantityName[Value]=&apos;USDM-Hojd&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="c2b4030e-1044-41b3-a2d5-e3da1533364c" name="USDM-Langd" override="true">
+							<Template ref="6652398e-6579-4460-8cb4-26295acfacc7" />
+							<TemplateRules>
+								<TemplateRule Parameters="QsetName[Value]=&apos;SECC_DimensionNominella&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos; AND QuantityName[Value]=&apos;USDM-Langd&apos;" />
+							</TemplateRules>
+						</Concept>
+						<Concept uuid="af4e73b1-d1d6-4bb6-b526-ddd3a1fe6cfa" name="USDM-Volym" override="true">
 							<Template ref="6652398e-6579-4460-8cb4-26295acfacc7" />
 							<TemplateRules>
 								<TemplateRule Parameters="QsetName[Value]=&apos;SECC_DimensionNominella&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos; AND QuantityName[Value]=&apos;USDM-Volym&apos;" />
