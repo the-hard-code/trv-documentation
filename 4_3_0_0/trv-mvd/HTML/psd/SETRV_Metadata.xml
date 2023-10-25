@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="f1b22ac50ccd4ed98d6e8842a3c90333" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3" />
+  <Name>SETRV_Metadata</Name>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcBuiltElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBuiltElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="28bb65928af648ab8623c3b2a1aa7e41">
+      <Name>Konfidentialitetsniva</Name>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

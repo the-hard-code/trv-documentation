@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="ec73eff8bd2c4e87bcedc9df3a0b9a12" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3" />
+  <Name>SETRVx_BaTManKantbalk</Name>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcBuiltElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBuiltElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="9a6fa6bc256a4f8fb30a7ef531507908">
+      <Name>KantbalkLangd</Name>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="87adb40c1f1a44258f253c59868c64e4">
+      <Name>Lage</Name>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QtoSetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4X3" />
+  <Name>SECC_DimensionNominella</Name>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcBuiltElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBuiltElement</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>USDM-Bredd</Name>
+      <QtoType>0</QtoType>
+      <NameAliases />
+      <DefinitionAliases />
+    </QtoDef>
+    <QtoDef>
+      <Name>USDM-Hojd</Name>
+      <QtoType>0</QtoType>
+      <NameAliases />
+      <DefinitionAliases />
+    </QtoDef>
+    <QtoDef>
+      <Name>USDM-Langd</Name>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases />
+      <DefinitionAliases />
+    </QtoDef>
+    <QtoDef>
+      <Name>USDM-Volym</Name>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases />
+      <DefinitionAliases />
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases />
+</QtoSetDef>

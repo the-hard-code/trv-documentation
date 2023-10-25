@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION((''),'2;1');
-FILE_NAME('','2023-10-08T13:01:03',(''),(''),'THC.IFC.Reactor','IfcDoc.Documentation 0.0.0.0','');
+FILE_NAME('','2023-10-25T17:03:58',(''),(''),'THC.IFC.Reactor','IfcDoc.Documentation 0.0.0.0','');
 FILE_SCHEMA(('IFC4X3'));
 ENDSEC;
 
@@ -9,325 +9,383 @@ DATA;
 
 #1= IFCPROJECTLIBRARY('2OqsW47Dz0LgTmf4DAn1f4',$,'IFC Templates',$,$,$,$,$,$);
 
-#2= IFCRELDECLARES('3RyLNYXkX479wspBr_nf6n',$,'SimpleProperties',$,#1,(#6,#7,#8,#9,#10,#11,#12,#13,#14,#15,#16,#17,#18,#19,#20,#21,#22,#23,#24,#25,#26));
+#2= IFCRELDECLARES('3RyLNYXkX479wspBr_nf6n',$,'SimpleProperties',$,#1,(#6,#7,#8,#9,#10,#11,#12,#13,#14,#15,#16,#17,#18,#19,#20,#21,#22,#23,#24,#25,#26,#27,#28,#29,#30,#31,#32,#33,#34,#35,#36,#37,#38,#39,#40,#41,#42,#43,#44,#45));
 
-#3= IFCRELDECLARES('3M4U3yWxr3_gsGvVZ3qXJS',$,'PropertySets',$,#1,(#27,#28));
+#3= IFCRELDECLARES('3M4U3yWxr3_gsGvVZ3qXJS',$,'PropertySets',$,#1,(#46,#47,#48,#49,#50,#51,#52));
 
-#4= IFCRELDECLARES('1$c0OOaRDF_OBDoEs$xzcD',$,'Quantities',$,#1,(#29));
+#4= IFCRELDECLARES('1$c0OOaRDF_OBDoEs$xzcD',$,'Quantities',$,#1,(#53,#54,#55,#56,#57));
 
-#5= IFCRELDECLARES('1CpAEUB6v1Fhb57tduNMhL',$,'QuantitySets',$,#1,(#30));
+#5= IFCRELDECLARES('1CpAEUB6v1Fhb57tduNMhL',$,'QuantitySets',$,#1,(#58,#59));
 
-#6= IFCSIMPLEPROPERTYTEMPLATE('07PBZZQdn2TOMV5JJgFkm9',$,'ConcreteCover','The protective concrete cover at the reinforcing bars according to local building regulations.',.P_SINGLEVALUE.,'IfcPositiveLengthMeasure',$,$,$,$,$,$);
+#6= IFCSIMPLEPROPERTYTEMPLATE('06Gg9sPhv1gvPVhFp$Dcs$',$,'CE-Markning',$,.P_SINGLEVALUE.,'IfcBoolean',$,$,$,$,$,$);
 
-#7= IFCSIMPLEPROPERTYTEMPLATE('2_yow0qSiHuO00025QrE$V',$,'ConcreteCoverAtLinks','The protective concrete cover at the reinforcement links according to local building regulations.',.P_SINGLEVALUE.,'IfcPositiveLengthMeasure',$,$,$,$,$,$);
+#7= IFCSIMPLEPROPERTYTEMPLATE('07PBZZQdn2TOMV5JJgFkm9',$,'ConcreteCover','The protective concrete cover at the reinforcing bars according to local building regulations.',.P_SINGLEVALUE.,'IfcPositiveLengthMeasure',$,$,$,$,$,$);
 
-#8= IFCSIMPLEPROPERTYTEMPLATE('2u$Ks0qSiHuO00025QrE$V',$,'ConcreteCoverAtMainBars','The protective concrete cover at the main reinforcing bars according to local building regulations.',.P_SINGLEVALUE.,'IfcPositiveLengthMeasure',$,$,$,$,$,$);
+#8= IFCSIMPLEPROPERTYTEMPLATE('2_yow0qSiHuO00025QrE$V',$,'ConcreteCoverAtLinks','The protective concrete cover at the reinforcement links according to local building regulations.',.P_SINGLEVALUE.,'IfcPositiveLengthMeasure',$,$,$,$,$,$);
 
-#9= IFCSIMPLEPROPERTYTEMPLATE('1ahrQp2qL0mhGzTBIQABdR',$,'ConstructionMethod','Designator for whether the element is constructed/welded on site or prefabricated. Example of allowed values : ''On-site'' vs ''Prefabricated''.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
+#9= IFCSIMPLEPROPERTYTEMPLATE('2u$Ks0qSiHuO00025QrE$V',$,'ConcreteCoverAtMainBars','The protective concrete cover at the main reinforcing bars according to local building regulations.',.P_SINGLEVALUE.,'IfcPositiveLengthMeasure',$,$,$,$,$,$);
 
-#10= IFCSIMPLEPROPERTYTEMPLATE('2hu5w0qSiHuO00025QrE$V',$,'ConstructionToleranceClass','Classification designation of the on-site construction tolerances according to local standards.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
+#10= IFCSIMPLEPROPERTYTEMPLATE('1ahrQp2qL0mhGzTBIQABdR',$,'ConstructionMethod','Designator for whether the element is constructed/welded on site or prefabricated. Example of allowed values : ''On-site'' vs ''Prefabricated''.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#11= IFCSIMPLEPROPERTYTEMPLATE('2akL20qSiHuO00025QrE$V',$,'DimensionalAccuracyClass','Classification designation of the dimensional accuracy requirement according to local standards.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
+#11= IFCSIMPLEPROPERTYTEMPLATE('2hu5w0qSiHuO00025QrE$V',$,'ConstructionToleranceClass','Classification designation of the on-site construction tolerances according to local standards.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#12= IFCSIMPLEPROPERTYTEMPLATE('2RxWltAjDAPhxrUt6toXTR',$,'ExposureClass','Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
+#12= IFCSIMPLEPROPERTYTEMPLATE('2akL20qSiHuO00025QrE$V',$,'DimensionalAccuracyClass','Classification designation of the dimensional accuracy requirement according to local standards.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#13= IFCSIMPLEPROPERTYTEMPLATE('0uXnw0qSGHuO00025QrE$V',$,'FireRating','Fire rating for the element. It is given according to the national fire safety classification.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
+#13= IFCSIMPLEPROPERTYTEMPLATE('2RxWltAjDAPhxrUt6toXTR',$,'ExposureClass','Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#14= IFCSIMPLEPROPERTYTEMPLATE('0eRpy0qSGHuO00025QrE$V',$,'IsExternal','Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.',.P_SINGLEVALUE.,'IfcBoolean',$,$,$,$,$,$);
+#14= IFCSIMPLEPROPERTYTEMPLATE('0uXnw0qSGHuO00025QrE$V',$,'FireRating','Fire rating for the element. It is given according to the national fire safety classification.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#15= IFCSIMPLEPROPERTYTEMPLATE('0pmcg0qSGHuO00025QrE$V',$,'LoadBearing','Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).',.P_SINGLEVALUE.,'IfcBoolean',$,$,$,$,$,$);
+#15= IFCSIMPLEPROPERTYTEMPLATE('3okl9ftSL3p9JTjkl1ktdc',$,'Foreteelsetillkomst',$,.P_SINGLEVALUE.,'IfcDate',$,$,$,$,$,$);
 
-#16= IFCSIMPLEPROPERTYTEMPLATE('04g$a0qSGHuO00025QrE$V',$,'Reference','Reference ID for this specified type in this project (e.g. type ''A-1''), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.',.P_SINGLEVALUE.,'IfcIdentifier',$,$,$,$,$,$);
+#16= IFCSIMPLEPROPERTYTEMPLATE('3YnGrlbo59K8cBxid3jiu_',$,'Foreteelsetyp',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#17= IFCSIMPLEPROPERTYTEMPLATE('03QJXaBBz9ugaDD64qh7Hr',$,'ReinforcementAreaRatio','The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element.',.P_SINGLEVALUE.,'IfcAreaDensityMeasure',$,$,$,$,$,$);
+#17= IFCSIMPLEPROPERTYTEMPLATE('0wdrP1OxP34fqka860x2SW',$,'GemensamtMittracke',$,.P_SINGLEVALUE.,'IfcBoolean',$,$,$,$,$,$);
 
-#18= IFCSIMPLEPROPERTYTEMPLATE('2uZA8bB4j05BpoYRkzMMEO',$,'ReinforcementStrengthClass','Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
+#18= IFCSIMPLEPROPERTYTEMPLATE('2FAS_ndDj8zQhlH2Ih3dOa',$,'Hogkapacitetsracke',$,.P_SINGLEVALUE.,'IfcBoolean',$,$,$,$,$,$);
 
-#19= IFCSIMPLEPROPERTYTEMPLATE('2XmEU5oRn1XutRnd$G$pqc',$,'ReinforcementVolumeRatio','The required ratio of the effective mass of the reinforcement to the effective volume of the concrete of a reinforced concrete structural element.',.P_SINGLEVALUE.,'IfcMassDensityMeasure',$,$,$,$,$,$);
+#19= IFCSIMPLEPROPERTYTEMPLATE('0VebjjPsj84QluVOH0qvzz',$,'Infastning',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#20= IFCSIMPLEPROPERTYTEMPLATE('0Zgei0qSGHuO00025QrE$V',$,'Roll','Rotation against the longitudinal axis - relative to the global Z direction for all beams that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.)\X\0D\X\0A\X\0D\X\0AThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.\X\0D\X\0A\X\0D\X\0ANote: new property in IFC4',.P_SINGLEVALUE.,'IfcPlaneAngleMeasure',$,$,$,$,$,$);
+#20= IFCSIMPLEPROPERTYTEMPLATE('0eRpy0qSGHuO00025QrE$V',$,'IsExternal','Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.',.P_SINGLEVALUE.,'IfcBoolean',$,$,$,$,$,$);
 
-#21= IFCSIMPLEPROPERTYTEMPLATE('0UvTS0qSGHuO00025QrE$V',$,'Slope','Slope angle - relative to horizontal (0.0 degrees).\X\0D\X\0A\X\0D\X\0AThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.',.P_SINGLEVALUE.,'IfcPlaneAngleMeasure',$,$,$,$,$,$);
+#21= IFCSIMPLEPROPERTYTEMPLATE('2QRwQy9MfFZxCAVlKnK7a8',$,'KantbalkLangd',$,.P_SINGLEVALUE.,'IfcLengthMeasure',$,$,$,$,$,$);
 
-#22= IFCSIMPLEPROPERTYTEMPLATE('0PY8o0qSGHuO00025QrE$V',$,'Span','Clear span for this object.\X\0D\X\0A\X\0D\X\0AThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence. For geometry editing applications, like CAD: this value should be write-only.',.P_SINGLEVALUE.,'IfcPositiveLengthMeasure',$,$,$,$,$,$);
+#22= IFCSIMPLEPROPERTYTEMPLATE('0eksMIYlP8guOZmxAXgdv1',$,'Konfidentialitetsniva',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#23= IFCSIMPLEPROPERTYTEMPLATE('09SAq0qSGHuO00025QrE$V',$,'Status','Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).',.P_ENUMERATEDVALUE.,'IfcLabel',$,#91,$,$,$,$);
-#91= IFCPROPERTYENUMERATION('PEnum_ElementStatus',('NEW','EXISTING','DEMOLISH','TEMPORARY','OTHER','NOTKNOWN','UNSET'),$);
+#23= IFCSIMPLEPROPERTYTEMPLATE('27hRGC7nf49OybF5c6Z6Ja',$,'Lage',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#24= IFCSIMPLEPROPERTYTEMPLATE('2MEGt4G$r1s8oshAXjpacJ',$,'StrengthClass','Classification of the concrete strength in accordance with the concrete design code which is applied in the project.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
+#24= IFCSIMPLEPROPERTYTEMPLATE('0pmcg0qSGHuO00025QrE$V',$,'LoadBearing','Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).',.P_SINGLEVALUE.,'IfcBoolean',$,$,$,$,$,$);
 
-#25= IFCSIMPLEPROPERTYTEMPLATE('24YP60qSiHuO00025QrE$V',$,'StructuralClass','The structural class defined for the concrete structure (e.g. ''1'').',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
+#25= IFCSIMPLEPROPERTYTEMPLATE('1rM$kr2_LC98NDQorrHKIq',$,'MLCT-Cementklass',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#26= IFCSIMPLEPROPERTYTEMPLATE('0lbaq0qSGHuO00025QrE$V',$,'ThermalTransmittance','Thermal transmittance coefficient (U-Value) of the element. Here the total thermal transmittance coefficient through the beam within the direction of the thermal flow (including all materials).\X\0D\X\0A\X\0D\X\0ANote: new property in IFC4',.P_SINGLEVALUE.,'IfcThermalTransmittanceMeasure',$,$,$,$,$,$);
+#26= IFCSIMPLEPROPERTYTEMPLATE('3gP2iIr6v49hE$BwqddMSc',$,'MLVX-Vattencementtal',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#27= IFCPROPERTYSETTEMPLATE('3vyMG0qSCHuO00025QrE$V',$,'Pset_BeamCommon','Properties common to the definition of all occurrence and type objects of beam.',.PSET_TYPEDRIVENOVERRIDE.,'IfcBeam',(#16,#23,#22,#21,#20,#14,#26,#15,#13));
+#27= IFCSIMPLEPROPERTYTEMPLATE('0OqvkI3OL21R71KhebArbd',$,'RackeLage',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#28= IFCPROPERTYSETTEMPLATE('1$B4S0qSiHuO00025QrE$V',$,'Pset_ConcreteElementGeneral','General properties common to different types of concrete elements, including reinforced concrete elements. The property set can be used by a number of subtypes of IfcBuildingElement, indicated that such element is designed or constructed using a concrete construction method.',.PSET_TYPEDRIVENOVERRIDE.,'IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement',(#9,#25,#24,#12,#19,#17,#11,#10,#6,#8,#7,#18));
+#28= IFCSIMPLEPROPERTYTEMPLATE('1A6obEJgP48vYRcNPgvq4W',$,'RackeLangd',$,.P_SINGLEVALUE.,'IfcLengthMeasure',$,$,$,$,$,$);
 
-#29= IFCSIMPLEPROPERTYTEMPLATE('25Uys$MQb2a8qWjqTa2SG7',$,'Length','Total nominal length of the railing, not taking into account any cut-out''s or other processing features.',.Q_LENGTH.,$,$,$,$,$,$,$);
+#29= IFCSIMPLEPROPERTYTEMPLATE('1teytLaxb139HC7gj1eqyv',$,'RackeMaterial',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#30= IFCPROPERTYSETTEMPLATE('1Fh58OFtTD3fz8LEdf4$TK',$,'Qto_RailingBaseQuantities','Base quantities that are common to the definition of all occurrences of railings.',.QTO_OCCURRENCEDRIVEN.,'IfcRailing',(#29));
+#30= IFCSIMPLEPROPERTYTEMPLATE('04g$a0qSGHuO00025QrE$V',$,'Reference','Reference ID for this specified type in this project (e.g. type ''A-1''), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.',.P_SINGLEVALUE.,'IfcIdentifier',$,$,$,$,$,$);
 
-#31= IFCRELASSOCIATESLIBRARY('1wimeTGUzEMxQABVT8xPyu',$,$,$,(#6),#119);
-#119= IFCLIBRARYREFERENCE($,$,'Beton\S\|berdeckung','Abstand zwischen der Betonoberfl\S\dche und der Au\S\_enkante einer vom Beton umh\S\|llten Bewehrung.','de-DE',$);
+#31= IFCSIMPLEPROPERTYTEMPLATE('03QJXaBBz9ugaDD64qh7Hr',$,'ReinforcementAreaRatio','The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element.',.P_SINGLEVALUE.,'IfcAreaDensityMeasure',$,$,$,$,$,$);
 
-#32= IFCRELASSOCIATESLIBRARY('1eAz54Lpn2RPzCHPjkDyxb',$,$,$,(#6),#120);
-#120= IFCLIBRARYREFERENCE($,$,'Concrete Cover',$,'en',$);
+#32= IFCSIMPLEPROPERTYTEMPLATE('2uZA8bB4j05BpoYRkzMMEO',$,'ReinforcementStrengthClass','Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#33= IFCRELASSOCIATESLIBRARY('2Jg8ZQaZL4GxD1cyTFNSmR',$,$,$,(#7),#121);
-#121= IFCLIBRARYREFERENCE($,$,'Beton\S\|berdeckung Verbindungsst\S\dbe','Abstand zwischen der Betonoberfl\S\dche und der Au\S\_enkante der vom Beton umh\S\|llten Bewehrungsverbindungsst\S\dben.','de-DE',$);
+#33= IFCSIMPLEPROPERTYTEMPLATE('2XmEU5oRn1XutRnd$G$pqc',$,'ReinforcementVolumeRatio','The required ratio of the effective mass of the reinforcement to the effective volume of the concrete of a reinforced concrete structural element.',.P_SINGLEVALUE.,'IfcMassDensityMeasure',$,$,$,$,$,$);
 
-#34= IFCRELASSOCIATESLIBRARY('3tuUjIia9FXQYR1DXreqcE',$,$,$,(#7),#122);
-#122= IFCLIBRARYREFERENCE($,$,'Concrete Cover At Links',$,'en',$);
+#34= IFCSIMPLEPROPERTYTEMPLATE('0Zgei0qSGHuO00025QrE$V',$,'Roll','Rotation against the longitudinal axis - relative to the global Z direction for all beams that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.)\X\0D\X\0A\X\0D\X\0AThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.\X\0D\X\0A\X\0D\X\0ANote: new property in IFC4',.P_SINGLEVALUE.,'IfcPlaneAngleMeasure',$,$,$,$,$,$);
 
-#35= IFCRELASSOCIATESLIBRARY('0f$nn3w4j99esD_4v0hD5h',$,$,$,(#7),#123);
-#123= IFCLIBRARYREFERENCE($,$,'\X2\88DC5F377B4B306E30B330F330AF30EA30FC30C888AB308A\X0\','\X2\56FD306E5EFA7BC957FA6E96306B5F933044300188DC5F377B4B309230B330F330AF30EA30FC30C8306E88AB308A30674FDD8B773059308B3002\X0\','ja-JP',$);
+#35= IFCSIMPLEPROPERTYTEMPLATE('2x4h37_bjB6wFBDIvfawug',$,'Sakerhetsstandard',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#36= IFCRELASSOCIATESLIBRARY('1WYAVSpRT7sgtsjm5TIDDW',$,$,$,(#7),#124);
-#124= IFCLIBRARYREFERENCE($,$,'\X2\BCF4AC15ADFC\X0\ \X2\CF58D06CB9ACD2B8\X0\ \X2\C785ACE0\X0\','\X2\AD6DAC00C758\X0\ \X2\AC74CD95\X0\ \X2\AE30C900C5D0\X0\ \X2\B530B77C\X0\ \X2\BCF4AC15ADFC\X0\ \X2\CF58D06CB9ACD2B8C758\X0\ \X2\C785ACE0B85C\X0\ \X2\BCF4D638\X0\','ko-KR',$);
+#36= IFCSIMPLEPROPERTYTEMPLATE('0UvTS0qSGHuO00025QrE$V',$,'Slope','Slope angle - relative to horizontal (0.0 degrees).\X\0D\X\0A\X\0D\X\0AThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.',.P_SINGLEVALUE.,'IfcPlaneAngleMeasure',$,$,$,$,$,$);
 
-#37= IFCRELASSOCIATESLIBRARY('1r7XWnQIr8c9kxAwmE$UJ3',$,$,$,(#8),#125);
-#125= IFCLIBRARYREFERENCE($,$,'Beton\S\|berdeckung Hauptst\S\dbe','Abstand zwischen der Betonoberfl\S\dche und der Au\S\_enkante den vom Beton umh\S\|llten Bewehrungshauptst\S\dben.','de-DE',$);
+#37= IFCSIMPLEPROPERTYTEMPLATE('0PY8o0qSGHuO00025QrE$V',$,'Span','Clear span for this object.\X\0D\X\0A\X\0D\X\0AThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence. For geometry editing applications, like CAD: this value should be write-only.',.P_SINGLEVALUE.,'IfcPositiveLengthMeasure',$,$,$,$,$,$);
 
-#38= IFCRELASSOCIATESLIBRARY('1AcvL29fT8Uh$CW0LQfC0z',$,$,$,(#8),#126);
-#126= IFCLIBRARYREFERENCE($,$,'Concrete Cover At Main Bars',$,'en',$);
+#38= IFCSIMPLEPROPERTYTEMPLATE('09SAq0qSGHuO00025QrE$V',$,'Status','Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).',.P_ENUMERATEDVALUE.,'IfcLabel',$,#120,$,$,$,$);
+#120= IFCPROPERTYENUMERATION('PEnum_ElementStatus',('NEW','EXISTING','DEMOLISH','TEMPORARY','OTHER','NOTKNOWN','UNSET'),$);
 
-#39= IFCRELASSOCIATESLIBRARY('0v6gYWBiL66unC_Vm5AIl4',$,$,$,(#8),#127);
-#127= IFCLIBRARYREFERENCE($,$,'\X2\4E3B7B4B306E30B330F330AF30EA30FC30C888AB308A\X0\','\X2\56FD306E5EFA7BC957FA6E96306B5F93304430014E3B92447B4B309230B330F330AF30EA30FC30C8306E88AB308A30674FDD8B773059308B3002\X0\','ja-JP',$);
+#39= IFCSIMPLEPROPERTYTEMPLATE('2MEGt4G$r1s8oshAXjpacJ',$,'StrengthClass','Classification of the concrete strength in accordance with the concrete design code which is applied in the project.',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#40= IFCRELASSOCIATESLIBRARY('2O_SJ4Vdz00gfHp85PuMUM',$,$,$,(#8),#128);
-#128= IFCLIBRARYREFERENCE($,$,'\X2\C8FCADFC\X0\ \X2\CF58D06CB9ACD2B8\X0\ \X2\C785ACE0\X0\','\X2\AD6DAC00C758\X0\ \X2\AC74CD95\X0\ \X2\AE30C900C5D0\X0\ \X2\B530B77C\X0\ \X2\C8FCB85C\X0\ \X2\CCA0ADFCC744\X0\ \X2\CF58D06CB9ACD2B8\X0\ \X2\C785ACE0B85C\X0\ \X2\BCF4D638\X0\','ko-KR',$);
+#40= IFCSIMPLEPROPERTYTEMPLATE('24YP60qSiHuO00025QrE$V',$,'StructuralClass','The structural class defined for the concrete structure (e.g. ''1'').',.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#41= IFCRELASSOCIATESLIBRARY('2BXuDNOl1CIe4ZSW0yDkbi',$,$,$,(#9),#129);
-#129= IFCLIBRARYREFERENCE($,$,'Ausf\S\|hrung','Angabe, ob dieses Betonbauteil als Ortbeton ("In-Situ") oder als Fertigteil ("Precast") ausgef\S\|hrt werden soll.','de-DE',$);
+#41= IFCSIMPLEPROPERTYTEMPLATE('14KEMYpEv2ThB919YcOMmd',$,'TekniskBeskrivning',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#42= IFCRELASSOCIATESLIBRARY('24$hSTr$DAnhdXGjU9II$c',$,$,$,(#9),#130);
-#130= IFCLIBRARYREFERENCE($,$,'Construction Method',$,'en',$);
+#42= IFCSIMPLEPROPERTYTEMPLATE('0lbaq0qSGHuO00025QrE$V',$,'ThermalTransmittance','Thermal transmittance coefficient (U-Value) of the element. Here the total thermal transmittance coefficient through the beam within the direction of the thermal flow (including all materials).\X\0D\X\0A\X\0D\X\0ANote: new property in IFC4',.P_SINGLEVALUE.,'IfcThermalTransmittanceMeasure',$,$,$,$,$,$);
 
-#43= IFCRELASSOCIATESLIBRARY('1MxrSNr3D7awWiUN3Zb1Dy',$,$,$,(#10),#131);
-#131= IFCLIBRARYREFERENCE($,$,'Construction Tolerance Class',$,'en',$);
+#43= IFCSIMPLEPROPERTYTEMPLATE('1DFfmZZyH9zBVPLW0tLWdg',$,'TOLL-Livslangdsklass',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#44= IFCRELASSOCIATESLIBRARY('2Mk1G4tPH4Aw8P$h1QZBTf',$,$,$,(#10),#132);
-#132= IFCLIBRARYREFERENCE($,$,'\X2\88FD90208A315BB930AF30E930B9\X0\','\X2\56FD306E57FA6E96304C6C423081308B73FE58343067306E88FD90208A315BB9306E5206985E63075B9A3002\X0\','ja-JP',$);
+#44= IFCSIMPLEPROPERTYTEMPLATE('0WGjJxBQH79hIuTjdcVBHS',$,'Vagrackesreflex',$,.P_SINGLEVALUE.,'IfcBoolean',$,$,$,$,$,$);
 
-#45= IFCRELASSOCIATESLIBRARY('2Ap$wnvCDEoOBTdNMHRKaB',$,$,$,(#10),#133);
-#133= IFCLIBRARYREFERENCE($,$,'\X2\C81CC870\X0\ \X2\D5C8C6A9\X0\ \X2\D074B798C2A4\X0\','\X2\AD6DAC00\X0\ \X2\D45CC900C774\X0\ \X2\C694AD6CD558B294\X0\ \X2\D604C7A5C5D0C11C\X0\ \X2\C81CC870\X0\ \X2\D5C8C6A9\X0\ \X2\BC94C8FC\X0\ \X2\C9C0C815\X0\','ko-KR',$);
+#45= IFCSIMPLEPROPERTYTEMPLATE('1OtrFMVM57VOTeJJdyqaAm',$,'Vagrackestyp',$,.P_SINGLEVALUE.,'IfcLabel',$,$,$,$,$,$);
 
-#46= IFCRELASSOCIATESLIBRARY('1ZTrSnOaD2wfuGHDyLlv1b',$,$,$,(#11),#134);
-#134= IFCLIBRARYREFERENCE($,$,'Dimensional Accuracy Class',$,'en',$);
+#46= IFCPROPERTYSETTEMPLATE('3vyMG0qSCHuO00025QrE$V',$,'Pset_BeamCommon','Properties common to the definition of all occurrence and type objects of beam.',.PSET_TYPEDRIVENOVERRIDE.,'IfcBeam',(#30,#38,#37,#36,#34,#20,#42,#24,#14));
 
-#47= IFCRELASSOCIATESLIBRARY('00N1tgcwnBSwFh3UqFK2og',$,$,$,(#11),#135);
-#135= IFCLIBRARYREFERENCE($,$,'\X2\5BF86CD57CBE5EA630AF30E930B9\X0\','\X2\56FD306E57FA6E96304C6C423081308B5BF86CD57CBE5EA6306E5206985E63075B9A3002\X0\','ja-JP',$);
+#47= IFCPROPERTYSETTEMPLATE('1$B4S0qSiHuO00025QrE$V',$,'Pset_ConcreteElementGeneral','General properties common to different types of concrete elements, including reinforced concrete elements. The property set can be used by a number of subtypes of IfcBuildingElement, indicated that such element is designed or constructed using a concrete construction method.',.PSET_TYPEDRIVENOVERRIDE.,'IfcBeam,IfcBuildingElementProxy,IfcChimney,IfcColumn,IfcFooting,IfcMember,IfcPile,IfcPlate,IfcRailing,IfcRamp,IfcRampFlight,IfcRoof,IfcSlab,IfcStair,IfcStairFlight,IfcWall,IfcCivilElement',(#10,#40,#39,#13,#33,#31,#12,#11,#7,#9,#8,#32));
 
-#48= IFCRELASSOCIATESLIBRARY('0SA4k$20r6y8yMgCnxS12F',$,$,$,(#11),#136);
-#136= IFCLIBRARYREFERENCE($,$,'\X2\CE58C218\X0\ \X2\C815BC00B3C4\X0\ \X2\D074B798C2A4\X0\','\X2\AD6DAC00\X0\ \X2\D45CC900C774\X0\ \X2\C694AD6CD558B294\X0\ \X2\CE58C218\X0\ \X2\C815BC00B3C4C758\X0\ \X2\BD84B958\X0\ \X2\C9C0C815\X0\','ko-KR',$);
+#48= IFCPROPERTYSETTEMPLATE('3XXUpuk4b4jAypxT2MEx14',$,'SECC_Concrete',$,$,'IfcBuiltElement',(#25,#26,#43));
 
-#49= IFCRELASSOCIATESLIBRARY('1vHW$DlgbBNxJDz1mZSjh2',$,$,$,(#12),#137);
-#137= IFCLIBRARYREFERENCE($,$,'Expositionsklasse','Klassifikation der Widerstandsf\S\dhigkeit gegen\S\|ber chemischen und physikalischen Einwirkungen gem\S\d\S\_ der aktuellen, im Projekt angewandten, Norm.','de-DE',$);
+#49= IFCPROPERTYSETTEMPLATE('3niYh53CrEsOrkY4AZoGCp',$,'SETRV_Metadata',$,$,'IfcBuiltElement',(#22));
 
-#50= IFCRELASSOCIATESLIBRARY('1U$$CNWSj74h7K_YsmkFGK',$,$,$,(#12),#138);
-#138= IFCLIBRARYREFERENCE($,$,'Exposure Class',$,'en',$);
+#50= IFCPROPERTYSETTEMPLATE('3iS_$ulInEXxpjoTyw2veI',$,'SETRVx_BaTManKantbalk',$,$,'IfcBuiltElement',(#21,#23));
 
-#51= IFCRELASSOCIATESLIBRARY('1epJ9HhgvCnRy0TgrE402d',$,$,$,(#13),#139);
-#139= IFCLIBRARYREFERENCE($,$,'Feuerwiderstandsklasse','Feuerwiderstandasklasse gem\S\d\S\_ der nationalen oder regionalen Brandschutzverordnung.','de-DE',$);
+#51= IFCPROPERTYSETTEMPLATE('28pIBCt21FtfP0UHDdcJ7p',$,'SETRVx_BaTManRacke',$,$,$,(#19,#27,#28,#29));
 
-#52= IFCRELASSOCIATESLIBRARY('3svIHePiD6cfR9FCe34duI',$,$,$,(#13),#140);
-#140= IFCLIBRARYREFERENCE($,$,'Fire Rating',$,'en',$);
+#52= IFCPROPERTYSETTEMPLATE('31l9oKZ2LCkhmbCXgHJvK6',$,'SETRVx_NVDBvagracke',$,$,$,(#6,#15,#16,#17,#18,#35,#41,#44,#45));
 
-#53= IFCRELASSOCIATESLIBRARY('0RTqUtpfX8UB7hBDIFHw3g',$,$,$,(#13),#141);
-#141= IFCLIBRARYREFERENCE($,$,'ResistanceAuFeu','Classement au feu de l''\S\il\S\iment donn\S\i selon la classification nationale de s\S\icurit\S\i incendie.','fr-FR',$);
+#53= IFCSIMPLEPROPERTYTEMPLATE('25Uys$MQb2a8qWjqTa2SG7',$,'Length','Total nominal length of the railing, not taking into account any cut-out''s or other processing features.',.Q_LENGTH.,$,$,$,$,$,$,$);
 
-#54= IFCRELASSOCIATESLIBRARY('0fW8Szu05FWxCkXk$3EyqF',$,$,$,(#13),#142);
-#142= IFCLIBRARYREFERENCE($,$,'\X2\8010706B7B497D1A\X0\','\X2\4E3B8981306A8010706B7B497D1A300295A290233059308B5EFA7BC957FA6E966CD530016D8896326CD5306A3069306E56FD5BB657FA6E96309253C271673002\X0\','ja-JP',$);
+#54= IFCSIMPLEPROPERTYTEMPLATE('2rSYgI4en4mw63yZqiAgIo',$,'USDM-Bredd',$,.0.,$,$,$,$,$,$,$);
 
-#55= IFCRELASSOCIATESLIBRARY('2HWqia1719_wDNtaYq3239',$,$,$,(#13),#143);
-#143= IFCLIBRARYREFERENCE($,$,'\X2\9632706B7B497EA7\X0\','\X2\8BE567844EF676849632706B7B497EA73002\X0\\X\0D\X\0A\X2\8BE55C5E602776844F9D636E4E3A56FD5BB69632706B5B89516852067EA73002\X0\','zh-CN',$);
+#55= IFCSIMPLEPROPERTYTEMPLATE('3v6RVFJAz2SO_GPEb69sjl',$,'USDM-Hojd',$,.0.,$,$,$,$,$,$,$);
 
-#56= IFCRELASSOCIATESLIBRARY('2vr3RcWLDEBRuUsUMO05Tt',$,$,$,(#14),#144);
-#144= IFCLIBRARYREFERENCE($,$,'Au\S\_enbauteil','Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser).','de-DE',$);
+#56= IFCSIMPLEPROPERTYTEMPLATE('1zzKDgWXT51wnLTZAOfcm_',$,'USDM-Langd',$,.Q_LENGTH.,$,$,$,$,$,$,$);
 
-#57= IFCRELASSOCIATESLIBRARY('06iST2cYjFfvTYXfTvwdV6',$,$,$,(#14),#145);
-#145= IFCLIBRARYREFERENCE($,$,'Is External',$,'en',$);
+#57= IFCSIMPLEPROPERTYTEMPLATE('1QMOFMEvr06g8ZYlhvzLaf',$,'USDM-Volym',$,.Q_VOLUME.,$,$,$,$,$,$,$);
 
-#58= IFCRELASSOCIATESLIBRARY('2aj79a6_j3qRRF3u1MyKlo',$,$,$,(#14),#146);
-#146= IFCLIBRARYREFERENCE($,$,'EstExterieur','Indique si l''\S\il\S\iment est con\S\gu pour \S\jtre utilis\S\i \S\` l''ext\S\irieur (VRAI) ou non (FAUX). Si VRAI, c''est un \S\il\S\iment ext\S\irieur qui donne sur l''ext\S\irieur du b\S\btiment.','fr-FR',$);
+#58= IFCPROPERTYSETTEMPLATE('1Fh58OFtTD3fz8LEdf4$TK',$,'Qto_RailingBaseQuantities','Base quantities that are common to the definition of all occurrences of railings.',.QTO_OCCURRENCEDRIVEN.,'IfcRailing',(#53));
 
-#59= IFCRELASSOCIATESLIBRARY('20z6pXiT99mhXl4oA3n29u',$,$,$,(#14),#147);
-#147= IFCLIBRARYREFERENCE($,$,'\X2\591690E8533A5206\X0\','\X2\591690E8306E90E86750304B30693046304B3092793A305930D630FC30EA30A230F35024300230823057\X0\TRUE\X2\306E583454083001591690E8306E90E8675030675EFA7269306E59165074306B9762305730663044308B3002\X0\','ja-JP',$);
+#59= IFCPROPERTYSETTEMPLATE('3uf_3EKVX5XOtKMi11TLss',$,'SECC_DimensionNominella',$,.QTO_OCCURRENCEDRIVEN.,'IfcBuiltElement',(#54,#55,#56,#57));
 
-#60= IFCRELASSOCIATESLIBRARY('13MUYiELf3PAU527TFZaI_',$,$,$,(#14),#148);
-#148= IFCLIBRARYREFERENCE($,$,'\X2\662F5426591690E867844EF6\X0\','\X2\8868793A8BE556FE5143662F54268BBE8BA14E3A591690E867844EF6300282E5662FFF0C52198BE556FE51434E3A591690E856FE5143FF0C671D54115EFA7B5172697684591690E83002\X0\','zh-CN',$);
+#60= IFCRELASSOCIATESLIBRARY('1kTf9E6eP7IBx1ZlgACtjT',$,$,$,(#7),#148);
+#148= IFCLIBRARYREFERENCE($,$,'Beton\S\|berdeckung','Abstand zwischen der Betonoberfl\S\dche und der Au\S\_enkante einer vom Beton umh\S\|llten Bewehrung.','de-DE',$);
 
-#61= IFCRELASSOCIATESLIBRARY('2uhcryfefEtP9f1gz2k9bo',$,$,$,(#15),#149);
-#149= IFCLIBRARYREFERENCE($,$,'Tragendes Bauteil','Angabe, ob dieses Bauteil tragend ist (JA) oder nichttragend (NEIN)','de-DE',$);
+#61= IFCRELASSOCIATESLIBRARY('1hKnYVG4T3oQKuQY8A93Rw',$,$,$,(#7),#149);
+#149= IFCLIBRARYREFERENCE($,$,'Concrete Cover',$,'en',$);
 
-#62= IFCRELASSOCIATESLIBRARY('0RJAP5IkTEbv_rqjyVzMsq',$,$,$,(#15),#150);
-#150= IFCLIBRARYREFERENCE($,$,'Load Bearing',$,'en',$);
+#62= IFCRELASSOCIATESLIBRARY('1UmNnfGkb5hPwHOfZO2FIF',$,$,$,(#8),#150);
+#150= IFCLIBRARYREFERENCE($,$,'Beton\S\|berdeckung Verbindungsst\S\dbe','Abstand zwischen der Betonoberfl\S\dche und der Au\S\_enkante der vom Beton umh\S\|llten Bewehrungsverbindungsst\S\dben.','de-DE',$);
 
-#63= IFCRELASSOCIATESLIBRARY('2e0G2qm6n71w64xGvExQzl',$,$,$,(#15),#151);
-#151= IFCLIBRARYREFERENCE($,$,'Porteur','Indique si l''objet est cens\S\i porter des charges (VRAI) ou non (FAUX).','fr-FR',$);
+#63= IFCRELASSOCIATESLIBRARY('2qX8n6vg1ENwTdjlps_2Cg',$,$,$,(#8),#151);
+#151= IFCLIBRARYREFERENCE($,$,'Concrete Cover At Links',$,'en',$);
 
-#64= IFCRELASSOCIATESLIBRARY('39wh6lP7D7muUzyg1V8A1p',$,$,$,(#15),#152);
-#152= IFCLIBRARYREFERENCE($,$,'\X2\8010529B90E86750\X0\','\X2\837791CD306B95A24FC2305730663044308B90E86750304B30693046304B3092793A305930D630FC30EA30A230F350243002\X0\','ja-JP',$);
+#64= IFCRELASSOCIATESLIBRARY('1EHEPMNw97WBd8ZToDGsSd',$,$,$,(#8),#152);
+#152= IFCLIBRARYREFERENCE($,$,'\X2\88DC5F377B4B306E30B330F330AF30EA30FC30C888AB308A\X0\','\X2\56FD306E5EFA7BC957FA6E96306B5F933044300188DC5F377B4B309230B330F330AF30EA30FC30C8306E88AB308A30674FDD8B773059308B3002\X0\','ja-JP',$);
 
-#65= IFCRELASSOCIATESLIBRARY('1lWhl57799YeNGkPicYSX6',$,$,$,(#15),#153);
-#153= IFCLIBRARYREFERENCE($,$,'\X2\662F5426627F91CD\X0\','\X2\8868793A8BE55BF98C61662F542697008981627F91CD3002\X0\','zh-CN',$);
+#65= IFCRELASSOCIATESLIBRARY('3JNynecAX2nhjC6M6jPmW5',$,$,$,(#8),#153);
+#153= IFCLIBRARYREFERENCE($,$,'\X2\BCF4AC15ADFC\X0\ \X2\CF58D06CB9ACD2B8\X0\ \X2\C785ACE0\X0\','\X2\AD6DAC00C758\X0\ \X2\AC74CD95\X0\ \X2\AE30C900C5D0\X0\ \X2\B530B77C\X0\ \X2\BCF4AC15ADFC\X0\ \X2\CF58D06CB9ACD2B8C758\X0\ \X2\C785ACE0B85C\X0\ \X2\BCF4D638\X0\','ko-KR',$);
 
-#66= IFCRELASSOCIATESLIBRARY('1mvYeDp0z7ZxeCDGdVzIpB',$,$,$,(#16),#154);
-#154= IFCLIBRARYREFERENCE($,$,'Bauteiltyp','Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des "Typobjekts", insbesondere wenn die Software keine Typen unterst\S\|tzt.','de-DE',$);
+#66= IFCRELASSOCIATESLIBRARY('24EPA$y4X47hhZrwH0K4q7',$,$,$,(#9),#154);
+#154= IFCLIBRARYREFERENCE($,$,'Beton\S\|berdeckung Hauptst\S\dbe','Abstand zwischen der Betonoberfl\S\dche und der Au\S\_enkante den vom Beton umh\S\|llten Bewehrungshauptst\S\dben.','de-DE',$);
 
-#67= IFCRELASSOCIATESLIBRARY('2P4QD95zbEbO2oqVV0FLZD',$,$,$,(#16),#155);
-#155= IFCLIBRARYREFERENCE($,$,'Reference',$,'en',$);
+#67= IFCRELASSOCIATESLIBRARY('1iMQTyT7b1yxXxgs$sgWr9',$,$,$,(#9),#155);
+#155= IFCLIBRARYREFERENCE($,$,'Concrete Cover At Main Bars',$,'en',$);
 
-#68= IFCRELASSOCIATESLIBRARY('0u8Ovum8jFLPtub9zT6NOI',$,$,$,(#16),#156);
-#156= IFCLIBRARYREFERENCE($,$,'Reference','R\S\if\S\irence \S\` l''identifiant d''un type sp\S\icifi\S\i dans le contexte du projet (exemple : "type A1") pour d\S\isigner un "type de construction". Une alternative au nom d''un objet type lorsque les objets types ne sont pas g\S\ir\S\is par le logiciel.','fr-FR',$);
+#68= IFCRELASSOCIATESLIBRARY('2W1iT6GgnBCuObmbksaK3E',$,$,$,(#9),#156);
+#156= IFCLIBRARYREFERENCE($,$,'\X2\4E3B7B4B306E30B330F330AF30EA30FC30C888AB308A\X0\','\X2\56FD306E5EFA7BC957FA6E96306B5F93304430014E3B92447B4B309230B330F330AF30EA30FC30C8306E88AB308A30674FDD8B773059308B3002\X0\','ja-JP',$);
 
-#69= IFCRELASSOCIATESLIBRARY('0fBVZjnyfBFQd3sIlw7iKz',$,$,$,(#16),#157);
-#157= IFCLIBRARYREFERENCE($,$,'\X2\53C271678A1853F7\X0\','\X2\3053306E30D730ED30B830A730AF30C8306B304A3051308B53C271678A1853F7\X0\(\X2\4F8BFF1A\X0\A-1)\X2\30025206985E30B330FC30C93067306F306A304F518590E830674F7F75283055308C308B30D730ED30B830A730AF30C830BF30A430D73068305730664F7F75283055308C308B3082306E3002\X0\','ja-JP',$);
+#69= IFCRELASSOCIATESLIBRARY('1icP6XrQbE_vrmbkAsr34V',$,$,$,(#9),#157);
+#157= IFCLIBRARYREFERENCE($,$,'\X2\C8FCADFC\X0\ \X2\CF58D06CB9ACD2B8\X0\ \X2\C785ACE0\X0\','\X2\AD6DAC00C758\X0\ \X2\AC74CD95\X0\ \X2\AE30C900C5D0\X0\ \X2\B530B77C\X0\ \X2\C8FCB85C\X0\ \X2\CCA0ADFCC744\X0\ \X2\CF58D06CB9ACD2B8\X0\ \X2\C785ACE0B85C\X0\ \X2\BCF4D638\X0\','ko-KR',$);
 
-#70= IFCRELASSOCIATESLIBRARY('3Q7HObHojEgvtU0bcU8D7F',$,$,$,(#16),#158);
-#158= IFCLIBRARYREFERENCE($,$,'\X2\53C2800353F7\X0\','\X2\82E5672A91C775285DF277E5768452067C7B7CFB7EDFFF0C52198BE55C5E60274E3A8BE5987976EE4E2D8BE57C7B578B67844EF6768453C280037F1653F7FF084F8B5982FF0C7C7B578B\X0\A-1\X2\FF093002\X0\','zh-CN',$);
+#70= IFCRELASSOCIATESLIBRARY('1pP5nXzrL6GA6XSdBCOra1',$,$,$,(#10),#158);
+#158= IFCLIBRARYREFERENCE($,$,'Ausf\S\|hrung','Angabe, ob dieses Betonbauteil als Ortbeton ("In-Situ") oder als Fertigteil ("Precast") ausgef\S\|hrt werden soll.','de-DE',$);
 
-#71= IFCRELASSOCIATESLIBRARY('3rCfNh7VTCgfTz0KT6SWuM',$,$,$,(#17),#159);
-#159= IFCLIBRARYREFERENCE($,$,'Bewehrungsgrad Fl\S\dche','Das geforderte Verh\S\dltnis der effektiven fl\S\dchenbezogenen Masse der Bewehrung im Verh\S\dltnis zur effektiven Fl\S\dche des Betons f\S\|r dieses Element.','de-DE',$);
+#71= IFCRELASSOCIATESLIBRARY('22mpiWNkn0mBTJYoMZ_f$_',$,$,$,(#10),#159);
+#159= IFCLIBRARYREFERENCE($,$,'Construction Method',$,'en',$);
 
-#72= IFCRELASSOCIATESLIBRARY('1Dg4J92HjDQPaVw7S7SVlD',$,$,$,(#17),#160);
-#160= IFCLIBRARYREFERENCE($,$,'Reinforcement Area Ratio',$,'en',$);
+#72= IFCRELASSOCIATESLIBRARY('18Btp5JAb389gSFJLzGuBO',$,$,$,(#11),#160);
+#160= IFCLIBRARYREFERENCE($,$,'Construction Tolerance Class',$,'en',$);
 
-#73= IFCRELASSOCIATESLIBRARY('3MSBzEq8b4aAVr7jEY6jBq',$,$,$,(#18),#161);
-#161= IFCLIBRARYREFERENCE($,$,'Reinforcement Strength Class',$,'en',$);
+#73= IFCRELASSOCIATESLIBRARY('2Gt1686m9Dwg2_dbk5I57K',$,$,$,(#11),#161);
+#161= IFCLIBRARYREFERENCE($,$,'\X2\88FD90208A315BB930AF30E930B9\X0\','\X2\56FD306E57FA6E96304C6C423081308B73FE58343067306E88FD90208A315BB9306E5206985E63075B9A3002\X0\','ja-JP',$);
 
-#74= IFCRELASSOCIATESLIBRARY('1NpZpBJJPAE82F26QyRzch',$,$,$,(#19),#162);
-#162= IFCLIBRARYREFERENCE($,$,'Bewehrungsgrad Volumen','Das geforderte Verh\S\dltnis der effektiven Masse der Bewehrung im Verh\S\dltnis zur effektiven Masse des Betons f\S\|r dieses Element.','de-DE',$);
+#74= IFCRELASSOCIATESLIBRARY('1kQ_$AVaLFcuqB_e2P12nh',$,$,$,(#11),#162);
+#162= IFCLIBRARYREFERENCE($,$,'\X2\C81CC870\X0\ \X2\D5C8C6A9\X0\ \X2\D074B798C2A4\X0\','\X2\AD6DAC00\X0\ \X2\D45CC900C774\X0\ \X2\C694AD6CD558B294\X0\ \X2\D604C7A5C5D0C11C\X0\ \X2\C81CC870\X0\ \X2\D5C8C6A9\X0\ \X2\BC94C8FC\X0\ \X2\C9C0C815\X0\','ko-KR',$);
 
-#75= IFCRELASSOCIATESLIBRARY('3fnmPfBef1D9tD6y9$ClFL',$,$,$,(#19),#163);
-#163= IFCLIBRARYREFERENCE($,$,'Reinforcement Volume Ratio',$,'en',$);
+#75= IFCRELASSOCIATESLIBRARY('0atjhHYqHCchYWuQlwrT$R',$,$,$,(#12),#163);
+#163= IFCLIBRARYREFERENCE($,$,'Dimensional Accuracy Class',$,'en',$);
 
-#76= IFCRELASSOCIATESLIBRARY('2yXLxmpbL3ufQGKVQDalAX',$,$,$,(#20),#164);
-#164= IFCLIBRARYREFERENCE($,$,'Kippwinkel','Kippwinkel des Balkens relative zur Vertikalen (O Grad).\X\0D\X\0A\X\0D\X\0ADieser Parameter wird zus\S\dtzlich zur geometrischen Repr\S\dsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repr\S\dsention Priorit\S\dt. Dieser Parameter ist f\S\|r CAD Software write-only.','de-DE',$);
+#76= IFCRELASSOCIATESLIBRARY('3w7lGwvfH3tvJCadO0t0aZ',$,$,$,(#12),#164);
+#164= IFCLIBRARYREFERENCE($,$,'\X2\5BF86CD57CBE5EA630AF30E930B9\X0\','\X2\56FD306E57FA6E96304C6C423081308B5BF86CD57CBE5EA6306E5206985E63075B9A3002\X0\','ja-JP',$);
 
-#77= IFCRELASSOCIATESLIBRARY('39B6kL0eD3vxrQP96gCaaT',$,$,$,(#20),#165);
-#165= IFCLIBRARYREFERENCE($,$,'Roll',$,'en',$);
+#77= IFCRELASSOCIATESLIBRARY('1R_E_Oz4n1svjZB6ewp$35',$,$,$,(#12),#165);
+#165= IFCLIBRARYREFERENCE($,$,'\X2\CE58C218\X0\ \X2\C815BC00B3C4\X0\ \X2\D074B798C2A4\X0\','\X2\AD6DAC00\X0\ \X2\D45CC900C774\X0\ \X2\C694AD6CD558B294\X0\ \X2\CE58C218\X0\ \X2\C815BC00B3C4C758\X0\ \X2\BD84B958\X0\ \X2\C9C0C815\X0\','ko-KR',$);
 
-#78= IFCRELASSOCIATESLIBRARY('1CueRJhyz2New5EbibJyUF',$,$,$,(#20),#166);
-#166= IFCLIBRARYREFERENCE($,$,'RotationAutourAxeLongitudinal','Rotation autour de l''axe longitudinal - relativement \S\` l''axe Z pour toutes les poutres qui ne sont pas verticales relativement au rep\S\hre absolu (la direction du profil est celle de l''axe Z si la valeur de la propri\S\it\S\i est 0). Cette propri\S\it\S\i est donn\S\ie en compl\S\iment de la repr\S\isentation de la forme de l''\S\il\S\iment et des param\S\htres g\S\iom\S\itriques qui la d\S\iterminent. En cas d''incoh\S\irence entre ces param\S\htres g\S\iom\S\itriques et cette propri\S\it\S\i, ce sont les param\S\htres g\S\iom\S\itriques qui priment. Les applications qui d\S\iterminent la g\S\iom\S\itrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propri\S\it\S\i. Note : nouvelle propri\S\it\S\i de la version IFC2x4.','fr-FR',$);
+#78= IFCRELASSOCIATESLIBRARY('0Uc0NS42j86Pkulv7VvJi5',$,$,$,(#13),#166);
+#166= IFCLIBRARYREFERENCE($,$,'Expositionsklasse','Klassifikation der Widerstandsf\S\dhigkeit gegen\S\|ber chemischen und physikalischen Einwirkungen gem\S\d\S\_ der aktuellen, im Projekt angewandten, Norm.','de-DE',$);
 
-#79= IFCRELASSOCIATESLIBRARY('0Sf2hy_pz33uVnNL1JbFgH',$,$,$,(#20),#167);
-#167= IFCLIBRARYREFERENCE($,$,'\X2\56DE8EE2\X0\','\X2\6881306E67508EF8306B5BFE3059308B56DE8EE23002\X0\\X\0D\X\0A-\X2\3053306E67508EF8306F30B030ED30FC30D030EB5EA76A197CFB3067975E578276F4306A51683066306E6881306B5BFE3057306630B030ED30FC30D030EB\X0\Z\X2\65B95411307876F85BFE3059308B3002FF088868793A65B95411306F300130B030ED30FC30D030EB\X0\Z\X2\306E56DE8EE265B954113092\X0\0\X2\30683059308B3002FF09\X0\\X\0D\X\0A\X\0D\X\0A\X2\305D306E5F6272B6FF086881306E56DE8EE2FF0960C55831306F30018868793A306E305F3081306E5F6272B6306B518590E830674F7F75283055308C308B5E7E4F555B66768430D130E930E130FC30BF309252A03048306663D04F9B3055308C308B30025F6272B660C558313068518590E8306E5E7E4F555B66768430D130E930E130FC30BF306B77DB76FE304C751F3058305F58345408306F30015E7E4F555B66768430D130E930E130FC30BF304C512A51483055308C308B30025E7E4F555B66768430D130E930E1FF0D30BF7DE896C630A230D730EA30B130FC30B730E730F33067306F3001\X0\CAD\X2\3068540C69D8306B30013053306E5024306F66F8304D8FBC307F5C02752830683059308B3002\X0\\X\0D\X\0A\X\0D\X\0A\X2\6CE8FF1A\X0\IFC2x4\X2\306E65B03057304430D730ED30D130C630A3\X0\','ja-JP',$);
+#79= IFCRELASSOCIATESLIBRARY('3rimsaVynEHxcN58Z$9cl$',$,$,$,(#13),#167);
+#167= IFCLIBRARYREFERENCE($,$,'Exposure Class',$,'en',$);
 
-#80= IFCRELASSOCIATESLIBRARY('2FZwlQYSn0yQc0sgO9Ubvi',$,$,$,(#20),#168);
-#168= IFCLIBRARYREFERENCE($,$,'\X2\8F6C89D2\X0\','\X2\76F85BF94E8E7EB58F74768465CB8F6C89D230025BF951685C40575068077CFB4E2D7684975E578276F46881FF0C8BE55C5E60274E3A76F85BF94E8E\X0\Z\X2\8F74768489D25EA63002FF0882E58F6E5ED365B954115728\X0\Z\X2\8F744E0AFF0C52198F6C89D24E3A\X0\0\X2\3002FF09\X0\\X\0D\X\0A\X2\8BE55C5E6027624063D04F9B76845F6272B64FE1606F662F5BF9518590E85F6272B663CF8FF0548C51E04F5553C2657076848865514530025982679C51E04F5553C265704E0E8BE55C5E6027624063D04F9B76845F6272B65C5E60274E0D7B26FF0C5E944EE551E04F5553C265704E3A51C630025BF9\X0\CAD\X2\7B4951E04F557F168F917A0B5E8FFF0C8BE55C5E60275E944E3A53EA51997C7B578B3002\X0\\X\0D\X\0A\X2\6CE8FF1A\X0\IFC2x4\X2\65B06DFB5C5E6027\X0\','zh-CN',$);
+#80= IFCRELASSOCIATESLIBRARY('0nhZGN1gv8Qe6_auZw3QR6',$,$,$,(#14),#168);
+#168= IFCLIBRARYREFERENCE($,$,'Feuerwiderstandsklasse','Feuerwiderstandasklasse gem\S\d\S\_ der nationalen oder regionalen Brandschutzverordnung.','de-DE',$);
 
-#81= IFCRELASSOCIATESLIBRARY('06KoH2D7L0oOWey0q8NpNg',$,$,$,(#21),#169);
-#169= IFCLIBRARYREFERENCE($,$,'Neigungswinkel','Neigungswinkel des Balkens relative zur Horizontalen (0 Grad).\X\0D\X\0A\X\0D\X\0ADieser Parameter wird zus\S\dtzlich zur geometrischen Repr\S\dsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repr\S\dsention Priorit\S\dt. Dieser Parameter ist f\S\|r CAD Software write-only.','de-DE',$);
+#81= IFCRELASSOCIATESLIBRARY('0GD9HcviH99eewAQewgbzo',$,$,$,(#14),#169);
+#169= IFCLIBRARYREFERENCE($,$,'Fire Rating',$,'en',$);
 
-#82= IFCRELASSOCIATESLIBRARY('1ol3__3$16lOEH3tFqndm6',$,$,$,(#21),#170);
-#170= IFCLIBRARYREFERENCE($,$,'Slope',$,'en',$);
+#82= IFCRELASSOCIATESLIBRARY('3BH2FC1_L8OwdC5E_F4Az0',$,$,$,(#14),#170);
+#170= IFCLIBRARYREFERENCE($,$,'ResistanceAuFeu','Classement au feu de l''\S\il\S\iment donn\S\i selon la classification nationale de s\S\icurit\S\i incendie.','fr-FR',$);
 
-#83= IFCRELASSOCIATESLIBRARY('1KkNd0m_j4xOWmN_xyj3NP',$,$,$,(#21),#171);
-#171= IFCLIBRARYREFERENCE($,$,'Inclinaison','Angle d''inclinaison avec l''horizontale (0 degr\S\is). Cette propri\S\it\S\i  est donn\S\ie en compl\S\iment de la repr\S\isentation de la forme et des param\S\htres g\S\iom\S\itriques qui la d\S\iterminent. En cas d''incoh\S\irence entre ces param\S\htres g\S\iom\S\itriques et cette propri\S\it\S\i, ce sont les param\S\htres g\S\iom\S\itriques qui priment. Les applications qui d\S\iterminent la g\S\iom\S\itrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propri\S\it\S\i','fr-FR',$);
+#83= IFCRELASSOCIATESLIBRARY('0lHyWknGr3APqFtcr_6Mw6',$,$,$,(#14),#171);
+#171= IFCLIBRARYREFERENCE($,$,'\X2\8010706B7B497D1A\X0\','\X2\4E3B8981306A8010706B7B497D1A300295A290233059308B5EFA7BC957FA6E966CD530016D8896326CD5306A3069306E56FD5BB657FA6E96309253C271673002\X0\','ja-JP',$);
 
-#84= IFCRELASSOCIATESLIBRARY('0IWKRDyarDq8IGpHP5nhZo',$,$,$,(#21),#172);
-#172= IFCLIBRARYREFERENCE($,$,'\X2\50BE659C\X0\','\X2\50BE659C89D25EA630026C345E733092\X0\0\X2\5EA630683059308B3002\X0\\X\0D\X\0A\X\0D\X\0A\X2\305D306E5F6272B6FF0850BE659C6881FF0960C55831306F30018868793A306E305F3081306E5F6272B6306B518590E830674F7F75283055308C308B5E7E4F555B66768430D130E930E130FC30BF309252A03048306663D04F9B3055308C308B30025F6272B660C558313068518590E8306E5E7E4F555B66768430D130E930E130FC30BF306B77DB76FE304C751F3058305F58345408306F30015E7E4F555B66768430D130E930E130FC30BF304C512A51483055308C308B30025E7E4F555B66768430D130E930E1FF0D30BF7DE896C630A230D730EA30B130FC30B730E730F33067306F3001\X0\CAD\X2\3068540C69D8306B30013053306E5024306F66F8304D8FBC307F5C02752830683059308B3002\X0\','ja-JP',$);
+#84= IFCRELASSOCIATESLIBRARY('0mB0fGzGrFpA69A97Ns1i0',$,$,$,(#14),#172);
+#172= IFCLIBRARYREFERENCE($,$,'\X2\9632706B7B497EA7\X0\','\X2\8BE567844EF676849632706B7B497EA73002\X0\\X\0D\X\0A\X2\8BE55C5E602776844F9D636E4E3A56FD5BB69632706B5B89516852067EA73002\X0\','zh-CN',$);
 
-#85= IFCRELASSOCIATESLIBRARY('0Q00zuDKP4IOSmwou3EQvc',$,$,$,(#21),#173);
-#173= IFCLIBRARYREFERENCE($,$,'\X2\57615EA6\X0\','\X2\76F85BF94E8E6C345E73FF08\X0\0.0\X2\5EA6FF0965B95411768457615EA689D23002\X0\\X\0D\X\0A\X2\8BE55C5E6027624063D04F9B76845F6272B64FE1606F662F5BF9518590E85F6272B663CF8FF0548C51E04F5553C2657076848865514530025982679C51E04F5553C265704E0E8BE55C5E6027624063D04F9B76845F6272B65C5E60274E0D7B26FF0C5E944EE551E04F5553C265704E3A51C630025BF9\X0\CAD\X2\7B4951E04F557F168F917A0B5E8FFF0C8BE55C5E60275E944E3A53EA51997C7B578B3002\X0\','zh-CN',$);
+#85= IFCRELASSOCIATESLIBRARY('1y3LGeOWj6RRbZ4tPVrRwq',$,$,$,(#20),#173);
+#173= IFCLIBRARYREFERENCE($,$,'Au\S\_enbauteil','Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser).','de-DE',$);
 
-#86= IFCRELASSOCIATESLIBRARY('3v1IdkdgP9kAc6hTS5I9Nb',$,$,$,(#22),#174);
-#174= IFCLIBRARYREFERENCE($,$,'Spannweite','Lichte Spannweite des Balkens f\S\|r die statische Anforderung,\X\0D\X\0A\X\0D\X\0ADieser Parameter wird zus\S\dtzlich zur geometrischen Repr\S\dsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repr\S\dsention Priorit\S\dt. Dieser Parameter ist f\S\|r CAD Software write-only.','de-DE',$);
+#86= IFCRELASSOCIATESLIBRARY('0mVeAw1avAbwnepQZUeyc7',$,$,$,(#20),#174);
+#174= IFCLIBRARYREFERENCE($,$,'Is External',$,'en',$);
 
-#87= IFCRELASSOCIATESLIBRARY('2RuU3yfuH3CRmzto6ba_RZ',$,$,$,(#22),#175);
-#175= IFCLIBRARYREFERENCE($,$,'Span',$,'en',$);
+#87= IFCRELASSOCIATESLIBRARY('2g4_C8Z4rEohgRryJydm2X',$,$,$,(#20),#175);
+#175= IFCLIBRARYREFERENCE($,$,'EstExterieur','Indique si l''\S\il\S\iment est con\S\gu pour \S\jtre utilis\S\i \S\` l''ext\S\irieur (VRAI) ou non (FAUX). Si VRAI, c''est un \S\il\S\iment ext\S\irieur qui donne sur l''ext\S\irieur du b\S\btiment.','fr-FR',$);
 
-#88= IFCRELASSOCIATESLIBRARY('2BhwocDLL4KhPEykwlNoK8',$,$,$,(#22),#176);
-#176= IFCLIBRARYREFERENCE($,$,'PorteeLibre','Port\S\ie libre de la poutre. Cette propri\S\it\S\i  est donn\S\ie en compl\S\iment de la repr\S\isentation de la forme et des param\S\htres g\S\iom\S\itriques qui la d\S\iterminent. En cas d''incoh\S\irence entre ces param\S\htres g\S\iom\S\itriques et cette propri\S\it\S\i, ce sont les param\S\htres g\S\iom\S\itriques qui priment. Les applications qui d\S\iterminent la g\S\iom\S\itrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propri\S\it\S\i.','fr-FR',$);
+#88= IFCRELASSOCIATESLIBRARY('2GvKDg$Ff2BQc$gbJYWSpq',$,$,$,(#20),#176);
+#176= IFCLIBRARYREFERENCE($,$,'\X2\591690E8533A5206\X0\','\X2\591690E8306E90E86750304B30693046304B3092793A305930D630FC30EA30A230F35024300230823057\X0\TRUE\X2\306E583454083001591690E8306E90E8675030675EFA7269306E59165074306B9762305730663044308B3002\X0\','ja-JP',$);
 
-#89= IFCRELASSOCIATESLIBRARY('1HbNngYrz4k8sKvu75tL$A',$,$,$,(#22),#177);
-#177= IFCLIBRARYREFERENCE($,$,'\X2\51689577\X0\','\X2\3053306E30AA30D630B830A730AF30C8306E516895773002\X0\\X\0D\X\0A\X\0D\X\0A\X2\305D306E5F6272B6FF0830AA30D630B830A730AF30C8306E51689577FF0960C55831306F30018868793A306E305F3081306E5F6272B6306B518590E830674F7F75283055308C308B5E7E4F555B66768430D130E930E130FC30BF309252A03048306663D04F9B3055308C308B30025F6272B660C558313068518590E8306E5E7E4F555B66768430D130E930E130FC30BF306B77DB76FE304C751F3058305F58345408306F30015E7E4F555B66768430D130E930E130FC30BF304C512A51483055308C308B30025E7E4F555B66768430D130E930E1FF0D30BF7DE896C630A230D730EA30B130FC30B730E730F33067306F3001\X0\CAD\X2\3068540C69D8306B30013053306E5024306F66F8304D8FBC307F5C02752830683059308B3002\X0\','ja-JP',$);
+#89= IFCRELASSOCIATESLIBRARY('35GjGFkgr7CPXDPXhHa1jX',$,$,$,(#20),#177);
+#177= IFCLIBRARYREFERENCE($,$,'\X2\662F5426591690E867844EF6\X0\','\X2\8868793A8BE556FE5143662F54268BBE8BA14E3A591690E867844EF6300282E5662FFF0C52198BE556FE51434E3A591690E856FE5143FF0C671D54115EFA7B5172697684591690E83002\X0\','zh-CN',$);
 
-#90= IFCRELASSOCIATESLIBRARY('1h0Wrcyk5CdwTm34EYyN_r',$,$,$,(#22),#178);
-#178= IFCLIBRARYREFERENCE($,$,'\X2\8DE85EA6\X0\','\X2\8BE55BF98C61768451C08DE85EA63002\X0\\X\0D\X\0A\X2\8BE55C5E6027624063D04F9B76845F6272B64FE1606F662F5BF9518590E85F6272B663CF8FF0548C51E04F5553C2657076848865514530025982679C51E04F5553C265704E0E8BE55C5E6027624063D04F9B76845F6272B65C5E60274E0D7B26FF0C5E944EE551E04F5553C265704E3A51C630025BF9\X0\CAD\X2\7B4951E04F557F168F917A0B5E8FFF0C8BE55C5E60275E944E3A53EA51997C7B578B3002\X0\','zh-CN',$);
+#90= IFCRELASSOCIATESLIBRARY('05IYbISwrB1fg0g_Jo87zF',$,$,$,(#24),#178);
+#178= IFCLIBRARYREFERENCE($,$,'Tragendes Bauteil','Angabe, ob dieses Bauteil tragend ist (JA) oder nichttragend (NEIN)','de-DE',$);
 
-#92= IFCRELASSOCIATESLIBRARY('3nmKaPVnrFzf$8MbNQatA9',$,$,$,(#23),#179);
-#179= IFCLIBRARYREFERENCE($,$,'Status','Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. "Neu" (new) neues Bauteil als Erg\S\dnzung, "Bestand" (existing) bestehendes Bauteil, dass erhalten bleibt, "Abbruch" (demolish) Bauteil, das abgebrochen wird, "Tempor\S\dr" (temporary) Bauteil und andere Bauelemente, die vor\S\|bergehend eingebaut werden (wie Abst\S\|tzungen, etc.)','de-DE',$);
+#91= IFCRELASSOCIATESLIBRARY('2mYexShFX8IBERYoIzRd7j',$,$,$,(#24),#179);
+#179= IFCLIBRARYREFERENCE($,$,'Load Bearing',$,'en',$);
 
-#93= IFCRELASSOCIATESLIBRARY('0_O_qRyTHCp8MFOVj2xipp',$,$,$,(#23),#180);
-#180= IFCLIBRARYREFERENCE($,$,'Status',$,'en',$);
+#92= IFCRELASSOCIATESLIBRARY('2LRpihANf4tO0TxylUnTAq',$,$,$,(#24),#180);
+#180= IFCLIBRARYREFERENCE($,$,'Porteur','Indique si l''objet est cens\S\i porter des charges (VRAI) ou non (FAUX).','fr-FR',$);
 
-#94= IFCRELASSOCIATESLIBRARY('3qbHqzP2j7bhoKZGAJXytr',$,$,$,(#23),#181);
-#181= IFCLIBRARYREFERENCE($,$,'Statut','Statut de l''\S\il\S\iment, principalement utilis\S\i dans les projets de r\S\inovation et de r\S\ihabilitation. Le statut a pour valeur NOUVEAU pour un nouvel \S\il\S\iment, EXISTANT pour un \S\il\S\iment existant qui est conserv\S\i, DEMOLI pour un \S\il\S\iment existant \S\` d\S\imolir et TEMPORAIRE pour un \S\il\S\iment temporaire (comme une structure support provisoire).','fr-FR',$);
+#93= IFCRELASSOCIATESLIBRARY('32a7T9QPj24gX50$KSt6Sd',$,$,$,(#24),#181);
+#181= IFCLIBRARYREFERENCE($,$,'\X2\8010529B90E86750\X0\','\X2\837791CD306B95A24FC2305730663044308B90E86750304B30693046304B3092793A305930D630FC30EA30A230F350243002\X0\','ja-JP',$);
 
-#95= IFCRELASSOCIATESLIBRARY('0lY_bvfDj2L9bxF6fHUb57',$,$,$,(#23),#182);
-#182= IFCLIBRARYREFERENCE($,$,'\X2\72B6614B\X0\','\X2\89817D20FF084E3B306B30EA30CE30D930FC30B730E730F3307E305F306F65394FEE30D730ED30B830A730AF30C8306B304A30443066FF09306E72B6614B3002\X0\ \X2\72B6614B306F3001300C65B0898F\X0\(New)\X2\300DFF0D65B03057304F8FFD52A03055308C308B89817D203002300C65E25B58300DFF0D89817D20306F5B58572830573001304B30646B8B308A3082306E3002300C783458CA300DFF0D89817D20306F5B5857283057305F304C30015EC368C43055308C308B3082306E3002300C4E0066427684300DFF0D4E0066427684306B5B5857283059308B89817D20FF084E0066427684306B30B530DD30FC30C8305730663044308B69CB9020306E30883046306A3082306EFF093002\X0\','ja-JP',$);
+#94= IFCRELASSOCIATESLIBRARY('0CHm5qvqDFZxkABbokCgTE',$,$,$,(#24),#182);
+#182= IFCLIBRARYREFERENCE($,$,'\X2\662F5426627F91CD\X0\','\X2\8868793A8BE55BF98C61662F542697008981627F91CD3002\X0\','zh-CN',$);
 
-#96= IFCRELASSOCIATESLIBRARY('0kIpepoSnAsxWKcMRG5wP4',$,$,$,(#24),#183);
-#183= IFCLIBRARYREFERENCE($,$,'Betonfestigkeitsklasse','Klassifikation der Betonfestigkeit gem\S\d\S\_ der aktuellen, im Projekt angewandten, Norm.','de-DE',$);
+#95= IFCRELASSOCIATESLIBRARY('2jwMn0YoH1xQeGqCWlxh$s',$,$,$,(#30),#183);
+#183= IFCLIBRARYREFERENCE($,$,'Bauteiltyp','Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des "Typobjekts", insbesondere wenn die Software keine Typen unterst\S\|tzt.','de-DE',$);
 
-#97= IFCRELASSOCIATESLIBRARY('0Sq41HD1j8sBvpG1U8ALkp',$,$,$,(#24),#184);
-#184= IFCLIBRARYREFERENCE($,$,'Strength Class',$,'en',$);
+#96= IFCRELASSOCIATESLIBRARY('30fBzmLwL5gOdjQTUgmkyy',$,$,$,(#30),#184);
+#184= IFCLIBRARYREFERENCE($,$,'Reference',$,'en',$);
 
-#98= IFCRELASSOCIATESLIBRARY('0oa9dAlLPEJxO$hbP$kU1O',$,$,$,(#25),#185);
-#185= IFCLIBRARYREFERENCE($,$,'Structural Class',$,'en',$);
+#97= IFCRELASSOCIATESLIBRARY('2KNmIbB5v3MP4nbJ5urk8Q',$,$,$,(#30),#185);
+#185= IFCLIBRARYREFERENCE($,$,'Reference','R\S\if\S\irence \S\` l''identifiant d''un type sp\S\icifi\S\i dans le contexte du projet (exemple : "type A1") pour d\S\isigner un "type de construction". Une alternative au nom d''un objet type lorsque les objets types ne sont pas g\S\ir\S\is par le logiciel.','fr-FR',$);
 
-#99= IFCRELASSOCIATESLIBRARY('1fZrx0WMf0UhHKdZuOmbk5',$,$,$,(#25),#186);
-#186= IFCLIBRARYREFERENCE($,$,'\X2\69CB902030AF30E930B9\X0\','\X2\69CB902030AF30E930B9306F30B330F330AF30EA30FC30C869CB902030925B9A7FA93057305F3002FF084F8B30483070300CFF11300DFF09\X0\','ja-JP',$);
+#98= IFCRELASSOCIATESLIBRARY('0zpYJAi5T3VhsawYuIk329',$,$,$,(#30),#186);
+#186= IFCLIBRARYREFERENCE($,$,'\X2\53C271678A1853F7\X0\','\X2\3053306E30D730ED30B830A730AF30C8306B304A3051308B53C271678A1853F7\X0\(\X2\4F8BFF1A\X0\A-1)\X2\30025206985E30B330FC30C93067306F306A304F518590E830674F7F75283055308C308B30D730ED30B830A730AF30C830BF30A430D73068305730664F7F75283055308C308B3082306E3002\X0\','ja-JP',$);
 
-#100= IFCRELASSOCIATESLIBRARY('28yVz7$p5F0x63UHauUr2i',$,$,$,(#25),#187);
-#187= IFCLIBRARYREFERENCE($,$,'\X2\AD6CC870\X0\ \X2\D074B798C2A4\X0\','\X2\AD6CC870\X0\ \X2\D074B798C2A4B294\X0\ \X2\CF58D06CB9ACD2B8\X0\ \X2\AD6CC870B97C\X0\ \X2\C815C758D588B2E4\X0\ (\X2\C608B97C\X0\ \X2\B4E4C5B4\X0\ "1")','ko-KR',$);
+#99= IFCRELASSOCIATESLIBRARY('1D0cuHjPz0pBrbEc9nJnC2',$,$,$,(#30),#187);
+#187= IFCLIBRARYREFERENCE($,$,'\X2\53C2800353F7\X0\','\X2\82E5672A91C775285DF277E5768452067C7B7CFB7EDFFF0C52198BE55C5E60274E3A8BE5987976EE4E2D8BE57C7B578B67844EF6768453C280037F1653F7FF084F8B5982FF0C7C7B578B\X0\A-1\X2\FF093002\X0\','zh-CN',$);
 
-#101= IFCRELASSOCIATESLIBRARY('2WMBxsiZr7qOQq6T6YfY2l',$,$,$,(#26),#188);
-#188= IFCLIBRARYREFERENCE($,$,'U-Wert','W\S\drmedurchgangskoeffizient (U-Wert) der Materialschichten.\X\0D\X\0AHier der Gesamtw\S\drmedurchgangskoeffizient des Balkens (in Richtung des W\S\drmeflusses), angegeben ohne den inneren und \S\du\S\_eren W\S\drme\S\|bergangswiderstand.','de-DE',$);
+#100= IFCRELASSOCIATESLIBRARY('3kGYbFWTj16gbpaptdrA9V',$,$,$,(#31),#188);
+#188= IFCLIBRARYREFERENCE($,$,'Bewehrungsgrad Fl\S\dche','Das geforderte Verh\S\dltnis der effektiven fl\S\dchenbezogenen Masse der Bewehrung im Verh\S\dltnis zur effektiven Fl\S\dche des Betons f\S\|r dieses Element.','de-DE',$);
 
-#102= IFCRELASSOCIATESLIBRARY('2cin9Wc1f2AfHmKU6bX6lo',$,$,$,(#26),#189);
-#189= IFCLIBRARYREFERENCE($,$,'Thermal Transmittance',$,'en',$);
+#101= IFCRELASSOCIATESLIBRARY('2oZo$Yctj2v8vUzXt0De$P',$,$,$,(#31),#189);
+#189= IFCLIBRARYREFERENCE($,$,'Reinforcement Area Ratio',$,'en',$);
 
-#103= IFCRELASSOCIATESLIBRARY('0pGr1_O_jDYACEARPgK88v',$,$,$,(#26),#190);
-#190= IFCLIBRARYREFERENCE($,$,'TransmissionThermique','Coefficient de transmission thermique surfacique (U). C''est le coefficient global de transmission thermique \S\` travers la poutre dans la direction du flux thermique (tous mat\S\iriaux inclus). Nouvelle propri\S\it\S\i de la version 2x4.','fr-FR',$);
+#102= IFCRELASSOCIATESLIBRARY('3A9HK1teD0Eer1hANH3_iJ',$,$,$,(#32),#190);
+#190= IFCLIBRARYREFERENCE($,$,'Reinforcement Strength Class',$,'en',$);
 
-#104= IFCRELASSOCIATESLIBRARY('0fzhQxYOz50f9ygTJagslV',$,$,$,(#26),#191);
-#191= IFCLIBRARYREFERENCE($,$,'\X2\71B18CAB6D417387\X0\','\X2\71B18CAB6D417387\X0\U\X2\50243002\X0\\X\0D\X\0A\X2\305330533067306FFF08305930793066306E675065993092542B3080FF0968813092901A3057305F71B179FB52D5306E65B95411306B304A3051308B51684F53306E71B190846D4173873092793A30593002\X0\\X\0D\X\0A\X2\6CE8FF1A\X0\IFC2x4\X2\306E65B03057304430D730ED30D130C630A3\X0\','ja-JP',$);
+#103= IFCRELASSOCIATESLIBRARY('3Vjr8uOEH66OI7jKwv0lqs',$,$,$,(#33),#191);
+#191= IFCLIBRARYREFERENCE($,$,'Bewehrungsgrad Volumen','Das geforderte Verh\S\dltnis der effektiven Masse der Bewehrung im Verh\S\dltnis zur effektiven Masse des Betons f\S\|r dieses Element.','de-DE',$);
 
-#105= IFCRELASSOCIATESLIBRARY('3xk625XCLFcu_hGfkqeVB6',$,$,$,(#26),#192);
-#192= IFCLIBRARYREFERENCE($,$,'\X2\5BFC70ED7CFB6570\X0\','\X2\6750659976845BFC70ED7CFB6570FF08\X0\U\X2\503CFF093002\X0\\X\0D\X\0A\X\0D\X\0A\X2\8868793A8BE5688157284F2070ED65B954114E0A768465744F535BFC70ED7CFB6570FF08530562EC6240670967506599FF093002\X0\\X\0D\X\0A\X\0D\X\0A\X2\6CE8FF1A\X0\IFC2x4\X2\65B06DFB5C5E6027\X0\','zh-CN',$);
+#104= IFCRELASSOCIATESLIBRARY('0Cp9xPeg54iPAw47PuL4bK',$,$,$,(#33),#192);
+#192= IFCLIBRARYREFERENCE($,$,'Reinforcement Volume Ratio',$,'en',$);
 
-#106= IFCRELASSOCIATESLIBRARY('0BWOioNU51ORNUIzA1hbX7',$,$,$,(#27),#193);
-#193= IFCLIBRARYREFERENCE($,$,'Beam Common',$,'en',$);
+#105= IFCRELASSOCIATESLIBRARY('2a_hMoUMb0oeAQwFtwtsjq',$,$,$,(#34),#193);
+#193= IFCLIBRARYREFERENCE($,$,'Kippwinkel','Kippwinkel des Balkens relative zur Vertikalen (O Grad).\X\0D\X\0A\X\0D\X\0ADieser Parameter wird zus\S\dtzlich zur geometrischen Repr\S\dsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repr\S\dsention Priorit\S\dt. Dieser Parameter ist f\S\|r CAD Software write-only.','de-DE',$);
 
-#107= IFCRELASSOCIATESLIBRARY('3LUyZiSyHCqe2Pq_thxI03',$,$,$,(#27),#194);
-#194= IFCLIBRARYREFERENCE($,$,$,'D\S\ifinition de l''IAI : propri\S\it\S\is communes \S\` la d\S\ifinition de toutes les instances de la classe IfcBeam','fr-FR',$);
+#106= IFCRELASSOCIATESLIBRARY('1FffF_w3fBlfwvJxOev1W9',$,$,$,(#34),#194);
+#194= IFCLIBRARYREFERENCE($,$,'Roll',$,'en',$);
 
-#108= IFCRELASSOCIATESLIBRARY('3eHYLSz8175fzTbOBpUYWS',$,$,$,(#27),#195);
-#195= IFCLIBRARYREFERENCE($,$,$,'IfcBeam(\X2\6881\X0\)\X2\30AA30D630B830A730AF30C8306B95A23059308B5171901A30D730ED30D130C630A330BB30C330C85B9A7FA93002\X0\','ja-JP',$);
+#107= IFCRELASSOCIATESLIBRARY('1iFmhVMsP4rBRx1gES0JUS',$,$,$,(#34),#195);
+#195= IFCLIBRARYREFERENCE($,$,'RotationAutourAxeLongitudinal','Rotation autour de l''axe longitudinal - relativement \S\` l''axe Z pour toutes les poutres qui ne sont pas verticales relativement au rep\S\hre absolu (la direction du profil est celle de l''axe Z si la valeur de la propri\S\it\S\i est 0). Cette propri\S\it\S\i est donn\S\ie en compl\S\iment de la repr\S\isentation de la forme de l''\S\il\S\iment et des param\S\htres g\S\iom\S\itriques qui la d\S\iterminent. En cas d''incoh\S\irence entre ces param\S\htres g\S\iom\S\itriques et cette propri\S\it\S\i, ce sont les param\S\htres g\S\iom\S\itriques qui priment. Les applications qui d\S\iterminent la g\S\iom\S\itrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propri\S\it\S\i. Note : nouvelle propri\S\it\S\i de la version IFC2x4.','fr-FR',$);
 
-#109= IFCRELASSOCIATESLIBRARY('09O8Vwkyz4vRz2B8$NqyGI',$,$,$,(#27),#196);
-#196= IFCLIBRARYREFERENCE($,$,$,'\X2\62406709\X0\IfcBeam\X2\5B9E4F8B76845B9A4E494E2D901A752876845C5E60273002\X0\','zh-CN',$);
+#108= IFCRELASSOCIATESLIBRARY('0h7zKrR3PBjRT9nLO2yb8m',$,$,$,(#34),#196);
+#196= IFCLIBRARYREFERENCE($,$,'\X2\56DE8EE2\X0\','\X2\6881306E67508EF8306B5BFE3059308B56DE8EE23002\X0\\X\0D\X\0A-\X2\3053306E67508EF8306F30B030ED30FC30D030EB5EA76A197CFB3067975E578276F4306A51683066306E6881306B5BFE3057306630B030ED30FC30D030EB\X0\Z\X2\65B95411307876F85BFE3059308B3002FF088868793A65B95411306F300130B030ED30FC30D030EB\X0\Z\X2\306E56DE8EE265B954113092\X0\0\X2\30683059308B3002FF09\X0\\X\0D\X\0A\X\0D\X\0A\X2\305D306E5F6272B6FF086881306E56DE8EE2FF0960C55831306F30018868793A306E305F3081306E5F6272B6306B518590E830674F7F75283055308C308B5E7E4F555B66768430D130E930E130FC30BF309252A03048306663D04F9B3055308C308B30025F6272B660C558313068518590E8306E5E7E4F555B66768430D130E930E130FC30BF306B77DB76FE304C751F3058305F58345408306F30015E7E4F555B66768430D130E930E130FC30BF304C512A51483055308C308B30025E7E4F555B66768430D130E930E1FF0D30BF7DE896C630A230D730EA30B130FC30B730E730F33067306F3001\X0\CAD\X2\3068540C69D8306B30013053306E5024306F66F8304D8FBC307F5C02752830683059308B3002\X0\\X\0D\X\0A\X\0D\X\0A\X2\6CE8FF1A\X0\IFC2x4\X2\306E65B03057304430D730ED30D130C630A3\X0\','ja-JP',$);
 
-#110= IFCRELASSOCIATESLIBRARY('3hGJIoaQ54GQJo61lgGvUf',$,$,$,(#28),#197);
-#197= IFCLIBRARYREFERENCE($,$,$,'Generelle Eigenschaften die allen Betonbauteilen, einschlie\S\_lich Stahlbetonbauteilen, gemeinsam sind. Dieser Eigenschaftssatz kann den verschiedenen Bauelementklassen (Subtypen von IfcBuildingElement) zugeordnet werden.','de',$);
+#109= IFCRELASSOCIATESLIBRARY('1xIbBfa7r0avYiBWN4khaI',$,$,$,(#34),#197);
+#197= IFCLIBRARYREFERENCE($,$,'\X2\8F6C89D2\X0\','\X2\76F85BF94E8E7EB58F74768465CB8F6C89D230025BF951685C40575068077CFB4E2D7684975E578276F46881FF0C8BE55C5E60274E3A76F85BF94E8E\X0\Z\X2\8F74768489D25EA63002FF0882E58F6E5ED365B954115728\X0\Z\X2\8F744E0AFF0C52198F6C89D24E3A\X0\0\X2\3002FF09\X0\\X\0D\X\0A\X2\8BE55C5E6027624063D04F9B76845F6272B64FE1606F662F5BF9518590E85F6272B663CF8FF0548C51E04F5553C2657076848865514530025982679C51E04F5553C265704E0E8BE55C5E6027624063D04F9B76845F6272B65C5E60274E0D7B26FF0C5E944EE551E04F5553C265704E3A51C630025BF9\X0\CAD\X2\7B4951E04F557F168F917A0B5E8FFF0C8BE55C5E60275E944E3A53EA51997C7B578B3002\X0\\X\0D\X\0A\X2\6CE8FF1A\X0\IFC2x4\X2\65B06DFB5C5E6027\X0\','zh-CN',$);
 
-#111= IFCRELASSOCIATESLIBRARY('0W$Yx1B8bDaexDN$lr6DLA',$,$,$,(#28),#198);
-#198= IFCLIBRARYREFERENCE($,$,'Concrete Element General',$,'en',$);
+#110= IFCRELASSOCIATESLIBRARY('2iRYs$JY5FBxvtrIExQIn5',$,$,$,(#36),#198);
+#198= IFCLIBRARYREFERENCE($,$,'Neigungswinkel','Neigungswinkel des Balkens relative zur Horizontalen (0 Grad).\X\0D\X\0A\X\0D\X\0ADieser Parameter wird zus\S\dtzlich zur geometrischen Repr\S\dsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repr\S\dsention Priorit\S\dt. Dieser Parameter ist f\S\|r CAD Software write-only.','de-DE',$);
 
-#112= IFCRELASSOCIATESLIBRARY('2_OLlcmIH9oBmWMInVnTkZ',$,$,$,(#28),#199);
-#199= IFCLIBRARYREFERENCE($,$,$,'\X2\30B330F330AF30EA30FC30C889817D20306E7570306A308B30BF30A430D7306B5BFE3059308B5171901A306E4E00822C7684306A5C5E60273002\X0\ Pset \X2\306F\X0\ IfcBuildingElement \X2\306E591A304F306E30B530D630BF30A430D7306B3088306330664F7F304630533068304C3067304D308B3002\X0\','ja-JP',$);
+#111= IFCRELASSOCIATESLIBRARY('3lNSpMQsbFqQqEWRB3NhNF',$,$,$,(#36),#199);
+#199= IFCLIBRARYREFERENCE($,$,'Slope',$,'en',$);
 
-#113= IFCRELASSOCIATESLIBRARY('2Qmp5wmJH8ufAIY_zPhMZA',$,$,$,(#29),#200);
-#200= IFCLIBRARYREFERENCE($,$,'L\S\dnge','L\S\dnge der Railing entlang der Referenzlinie, ohne Ber\S\|cksichtigung von Abschr\S\dgungen, Ausklinkungen, und \S\dhnliches.','de-DE',$);
+#112= IFCRELASSOCIATESLIBRARY('1z$3AfHvDEvflcDSCBvIwE',$,$,$,(#36),#200);
+#200= IFCLIBRARYREFERENCE($,$,'Inclinaison','Angle d''inclinaison avec l''horizontale (0 degr\S\is). Cette propri\S\it\S\i  est donn\S\ie en compl\S\iment de la repr\S\isentation de la forme et des param\S\htres g\S\iom\S\itriques qui la d\S\iterminent. En cas d''incoh\S\irence entre ces param\S\htres g\S\iom\S\itriques et cette propri\S\it\S\i, ce sont les param\S\htres g\S\iom\S\itriques qui priment. Les applications qui d\S\iterminent la g\S\iom\S\itrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propri\S\it\S\i','fr-FR',$);
 
-#114= IFCRELASSOCIATESLIBRARY('15HrCT6Kz2uQ6uC23vh4b0',$,$,$,(#29),#201);
-#201= IFCLIBRARYREFERENCE($,$,'Length',$,'en',$);
+#113= IFCRELASSOCIATESLIBRARY('04U0wWDmj569lWKjvgTvHi',$,$,$,(#36),#201);
+#201= IFCLIBRARYREFERENCE($,$,'\X2\50BE659C\X0\','\X2\50BE659C89D25EA630026C345E733092\X0\0\X2\5EA630683059308B3002\X0\\X\0D\X\0A\X\0D\X\0A\X2\305D306E5F6272B6FF0850BE659C6881FF0960C55831306F30018868793A306E305F3081306E5F6272B6306B518590E830674F7F75283055308C308B5E7E4F555B66768430D130E930E130FC30BF309252A03048306663D04F9B3055308C308B30025F6272B660C558313068518590E8306E5E7E4F555B66768430D130E930E130FC30BF306B77DB76FE304C751F3058305F58345408306F30015E7E4F555B66768430D130E930E130FC30BF304C512A51483055308C308B30025E7E4F555B66768430D130E930E1FF0D30BF7DE896C630A230D730EA30B130FC30B730E730F33067306F3001\X0\CAD\X2\3068540C69D8306B30013053306E5024306F66F8304D8FBC307F5C02752830683059308B3002\X0\','ja-JP',$);
 
-#115= IFCRELASSOCIATESLIBRARY('29KnO9gV5FEPHEbMH5X$Lr',$,$,$,(#29),#202);
-#202= IFCLIBRARYREFERENCE($,$,'\X2\95773055\X0\','\X2\624B3059308A306E957730553002520765AD306A30694ED6306E51E6740630928003616E3057306A30443002\X0\','ja-JP',$);
+#114= IFCRELASSOCIATESLIBRARY('3tBrW6slb7Sfw3Uf7tl6LL',$,$,$,(#36),#202);
+#202= IFCLIBRARYREFERENCE($,$,'\X2\57615EA6\X0\','\X2\76F85BF94E8E6C345E73FF08\X0\0.0\X2\5EA6FF0965B95411768457615EA689D23002\X0\\X\0D\X\0A\X2\8BE55C5E6027624063D04F9B76845F6272B64FE1606F662F5BF9518590E85F6272B663CF8FF0548C51E04F5553C2657076848865514530025982679C51E04F5553C265704E0E8BE55C5E6027624063D04F9B76845F6272B65C5E60274E0D7B26FF0C5E944EE551E04F5553C265704E3A51C630025BF9\X0\CAD\X2\7B4951E04F557F168F917A0B5E8FFF0C8BE55C5E60275E944E3A53EA51997C7B578B3002\X0\','zh-CN',$);
 
-#116= IFCRELASSOCIATESLIBRARY('1cdOrD$n9EJ912jEiXb9ee',$,$,$,(#30),#203);
-#203= IFCLIBRARYREFERENCE($,$,$,'Basismengen f\S\|r alle Bauelemente vom Typ Gel\S\dnder.','de-DE',$);
+#115= IFCRELASSOCIATESLIBRARY('2Btdn_mMf5GBQmDuo6QEz8',$,$,$,(#37),#203);
+#203= IFCLIBRARYREFERENCE($,$,'Spannweite','Lichte Spannweite des Balkens f\S\|r die statische Anforderung,\X\0D\X\0A\X\0D\X\0ADieser Parameter wird zus\S\dtzlich zur geometrischen Repr\S\dsentation bereitgestellt. Im Fall der Inkonsistenz zwischen dem Parameter und der Geometrie hat die geometrische Repr\S\dsention Priorit\S\dt. Dieser Parameter ist f\S\|r CAD Software write-only.','de-DE',$);
 
-#117= IFCRELASSOCIATESLIBRARY('2$ai6xQGTClhrW8mUOEAyP',$,$,$,(#30),#204);
-#204= IFCLIBRARYREFERENCE($,$,'Railing Base Quantities',$,'en',$);
+#116= IFCRELASSOCIATESLIBRARY('0q7XT$UyXAWgW$4kXQMB5G',$,$,$,(#37),#204);
+#204= IFCLIBRARYREFERENCE($,$,'Span',$,'en',$);
 
-#118= IFCRELASSOCIATESLIBRARY('2xTdndJO9DX8zsSNqRi8Ya',$,$,$,(#30),#205);
-#205= IFCLIBRARYREFERENCE($,$,$,'\X2\624B3059308A306B95A2308F308B5171901A306E57FA672C657091CF60C55831306E5B9A7FA93002\X0\','ja-JP',$);
+#117= IFCRELASSOCIATESLIBRARY('2oeFlE1nD4EgHqc1BKuEPI',$,$,$,(#37),#205);
+#205= IFCLIBRARYREFERENCE($,$,'PorteeLibre','Port\S\ie libre de la poutre. Cette propri\S\it\S\i  est donn\S\ie en compl\S\iment de la repr\S\isentation de la forme et des param\S\htres g\S\iom\S\itriques qui la d\S\iterminent. En cas d''incoh\S\irence entre ces param\S\htres g\S\iom\S\itriques et cette propri\S\it\S\i, ce sont les param\S\htres g\S\iom\S\itriques qui priment. Les applications qui d\S\iterminent la g\S\iom\S\itrie comme les logiciels de CAO ne doivent pas autoriser la modification de cette propri\S\it\S\i.','fr-FR',$);
+
+#118= IFCRELASSOCIATESLIBRARY('1_9qbRfbXEkAIfEIrPX87Y',$,$,$,(#37),#206);
+#206= IFCLIBRARYREFERENCE($,$,'\X2\51689577\X0\','\X2\3053306E30AA30D630B830A730AF30C8306E516895773002\X0\\X\0D\X\0A\X\0D\X\0A\X2\305D306E5F6272B6FF0830AA30D630B830A730AF30C8306E51689577FF0960C55831306F30018868793A306E305F3081306E5F6272B6306B518590E830674F7F75283055308C308B5E7E4F555B66768430D130E930E130FC30BF309252A03048306663D04F9B3055308C308B30025F6272B660C558313068518590E8306E5E7E4F555B66768430D130E930E130FC30BF306B77DB76FE304C751F3058305F58345408306F30015E7E4F555B66768430D130E930E130FC30BF304C512A51483055308C308B30025E7E4F555B66768430D130E930E1FF0D30BF7DE896C630A230D730EA30B130FC30B730E730F33067306F3001\X0\CAD\X2\3068540C69D8306B30013053306E5024306F66F8304D8FBC307F5C02752830683059308B3002\X0\','ja-JP',$);
+
+#119= IFCRELASSOCIATESLIBRARY('0eBIHP6wL5VfGoUkyyocOr',$,$,$,(#37),#207);
+#207= IFCLIBRARYREFERENCE($,$,'\X2\8DE85EA6\X0\','\X2\8BE55BF98C61768451C08DE85EA63002\X0\\X\0D\X\0A\X2\8BE55C5E6027624063D04F9B76845F6272B64FE1606F662F5BF9518590E85F6272B663CF8FF0548C51E04F5553C2657076848865514530025982679C51E04F5553C265704E0E8BE55C5E6027624063D04F9B76845F6272B65C5E60274E0D7B26FF0C5E944EE551E04F5553C265704E3A51C630025BF9\X0\CAD\X2\7B4951E04F557F168F917A0B5E8FFF0C8BE55C5E60275E944E3A53EA51997C7B578B3002\X0\','zh-CN',$);
+
+#121= IFCRELASSOCIATESLIBRARY('128TAC0vvBpBs8vopSe9Zg',$,$,$,(#38),#208);
+#208= IFCLIBRARYREFERENCE($,$,'Status','Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. "Neu" (new) neues Bauteil als Erg\S\dnzung, "Bestand" (existing) bestehendes Bauteil, dass erhalten bleibt, "Abbruch" (demolish) Bauteil, das abgebrochen wird, "Tempor\S\dr" (temporary) Bauteil und andere Bauelemente, die vor\S\|bergehend eingebaut werden (wie Abst\S\|tzungen, etc.)','de-DE',$);
+
+#122= IFCRELASSOCIATESLIBRARY('31bLNkWLXE1OPkZZurT0KH',$,$,$,(#38),#209);
+#209= IFCLIBRARYREFERENCE($,$,'Status',$,'en',$);
+
+#123= IFCRELASSOCIATESLIBRARY('0G3F7sWWD6LBj9lUPpmh5O',$,$,$,(#38),#210);
+#210= IFCLIBRARYREFERENCE($,$,'Statut','Statut de l''\S\il\S\iment, principalement utilis\S\i dans les projets de r\S\inovation et de r\S\ihabilitation. Le statut a pour valeur NOUVEAU pour un nouvel \S\il\S\iment, EXISTANT pour un \S\il\S\iment existant qui est conserv\S\i, DEMOLI pour un \S\il\S\iment existant \S\` d\S\imolir et TEMPORAIRE pour un \S\il\S\iment temporaire (comme une structure support provisoire).','fr-FR',$);
+
+#124= IFCRELASSOCIATESLIBRARY('14s6tAlPfDXO_R0av4WOUX',$,$,$,(#38),#211);
+#211= IFCLIBRARYREFERENCE($,$,'\X2\72B6614B\X0\','\X2\89817D20FF084E3B306B30EA30CE30D930FC30B730E730F3307E305F306F65394FEE30D730ED30B830A730AF30C8306B304A30443066FF09306E72B6614B3002\X0\ \X2\72B6614B306F3001300C65B0898F\X0\(New)\X2\300DFF0D65B03057304F8FFD52A03055308C308B89817D203002300C65E25B58300DFF0D89817D20306F5B58572830573001304B30646B8B308A3082306E3002300C783458CA300DFF0D89817D20306F5B5857283057305F304C30015EC368C43055308C308B3082306E3002300C4E0066427684300DFF0D4E0066427684306B5B5857283059308B89817D20FF084E0066427684306B30B530DD30FC30C8305730663044308B69CB9020306E30883046306A3082306EFF093002\X0\','ja-JP',$);
+
+#125= IFCRELASSOCIATESLIBRARY('1HSfKYKmLAjA0mpri21N0W',$,$,$,(#39),#212);
+#212= IFCLIBRARYREFERENCE($,$,'Betonfestigkeitsklasse','Klassifikation der Betonfestigkeit gem\S\d\S\_ der aktuellen, im Projekt angewandten, Norm.','de-DE',$);
+
+#126= IFCRELASSOCIATESLIBRARY('1K1VjSYJnF6gth1rCnraM_',$,$,$,(#39),#213);
+#213= IFCLIBRARYREFERENCE($,$,'Strength Class',$,'en',$);
+
+#127= IFCRELASSOCIATESLIBRARY('0uRtvAd6125gJaNxlMwr6l',$,$,$,(#40),#214);
+#214= IFCLIBRARYREFERENCE($,$,'Structural Class',$,'en',$);
+
+#128= IFCRELASSOCIATESLIBRARY('1GyrdUkrTBVwFOBAgn0ClA',$,$,$,(#40),#215);
+#215= IFCLIBRARYREFERENCE($,$,'\X2\69CB902030AF30E930B9\X0\','\X2\69CB902030AF30E930B9306F30B330F330AF30EA30FC30C869CB902030925B9A7FA93057305F3002FF084F8B30483070300CFF11300DFF09\X0\','ja-JP',$);
+
+#129= IFCRELASSOCIATESLIBRARY('2wEhgE$C5DkAT_W8O799lz',$,$,$,(#40),#216);
+#216= IFCLIBRARYREFERENCE($,$,'\X2\AD6CC870\X0\ \X2\D074B798C2A4\X0\','\X2\AD6CC870\X0\ \X2\D074B798C2A4B294\X0\ \X2\CF58D06CB9ACD2B8\X0\ \X2\AD6CC870B97C\X0\ \X2\C815C758D588B2E4\X0\ (\X2\C608B97C\X0\ \X2\B4E4C5B4\X0\ "1")','ko-KR',$);
+
+#130= IFCRELASSOCIATESLIBRARY('2xx7TNtB9DYQiRwsnkW9o5',$,$,$,(#42),#217);
+#217= IFCLIBRARYREFERENCE($,$,'U-Wert','W\S\drmedurchgangskoeffizient (U-Wert) der Materialschichten.\X\0D\X\0AHier der Gesamtw\S\drmedurchgangskoeffizient des Balkens (in Richtung des W\S\drmeflusses), angegeben ohne den inneren und \S\du\S\_eren W\S\drme\S\|bergangswiderstand.','de-DE',$);
+
+#131= IFCRELASSOCIATESLIBRARY('3SWeE4Wx13z9Y1rppMyXPe',$,$,$,(#42),#218);
+#218= IFCLIBRARYREFERENCE($,$,'Thermal Transmittance',$,'en',$);
+
+#132= IFCRELASSOCIATESLIBRARY('3xAQkaSJH61v_iqLBFx60I',$,$,$,(#42),#219);
+#219= IFCLIBRARYREFERENCE($,$,'TransmissionThermique','Coefficient de transmission thermique surfacique (U). C''est le coefficient global de transmission thermique \S\` travers la poutre dans la direction du flux thermique (tous mat\S\iriaux inclus). Nouvelle propri\S\it\S\i de la version 2x4.','fr-FR',$);
+
+#133= IFCRELASSOCIATESLIBRARY('3VfP8G8S57rwoMkHGs$KrV',$,$,$,(#42),#220);
+#220= IFCLIBRARYREFERENCE($,$,'\X2\71B18CAB6D417387\X0\','\X2\71B18CAB6D417387\X0\U\X2\50243002\X0\\X\0D\X\0A\X2\305330533067306FFF08305930793066306E675065993092542B3080FF0968813092901A3057305F71B179FB52D5306E65B95411306B304A3051308B51684F53306E71B190846D4173873092793A30593002\X0\\X\0D\X\0A\X2\6CE8FF1A\X0\IFC2x4\X2\306E65B03057304430D730ED30D130C630A3\X0\','ja-JP',$);
+
+#134= IFCRELASSOCIATESLIBRARY('1joCYd$ff3cOTej_F8QnDp',$,$,$,(#42),#221);
+#221= IFCLIBRARYREFERENCE($,$,'\X2\5BFC70ED7CFB6570\X0\','\X2\6750659976845BFC70ED7CFB6570FF08\X0\U\X2\503CFF093002\X0\\X\0D\X\0A\X\0D\X\0A\X2\8868793A8BE5688157284F2070ED65B954114E0A768465744F535BFC70ED7CFB6570FF08530562EC6240670967506599FF093002\X0\\X\0D\X\0A\X\0D\X\0A\X2\6CE8FF1A\X0\IFC2x4\X2\65B06DFB5C5E6027\X0\','zh-CN',$);
+
+#135= IFCRELASSOCIATESLIBRARY('2ZsMvlbdX0IuJcDQtTS6Ke',$,$,$,(#46),#222);
+#222= IFCLIBRARYREFERENCE($,$,'Beam Common',$,'en',$);
+
+#136= IFCRELASSOCIATESLIBRARY('1roxoTPF95cQl9XMki2Rfu',$,$,$,(#46),#223);
+#223= IFCLIBRARYREFERENCE($,$,$,'D\S\ifinition de l''IAI : propri\S\it\S\is communes \S\` la d\S\ifinition de toutes les instances de la classe IfcBeam','fr-FR',$);
+
+#137= IFCRELASSOCIATESLIBRARY('3EUogjNnLD6wStUt6Bpx1Q',$,$,$,(#46),#224);
+#224= IFCLIBRARYREFERENCE($,$,$,'IfcBeam(\X2\6881\X0\)\X2\30AA30D630B830A730AF30C8306B95A23059308B5171901A30D730ED30D130C630A330BB30C330C85B9A7FA93002\X0\','ja-JP',$);
+
+#138= IFCRELASSOCIATESLIBRARY('30bt6XuDTESh_dxeGmw6Jr',$,$,$,(#46),#225);
+#225= IFCLIBRARYREFERENCE($,$,$,'\X2\62406709\X0\IfcBeam\X2\5B9E4F8B76845B9A4E494E2D901A752876845C5E60273002\X0\','zh-CN',$);
+
+#139= IFCRELASSOCIATESLIBRARY('3kT6bJGubAheOD2AKOeT1Q',$,$,$,(#47),#226);
+#226= IFCLIBRARYREFERENCE($,$,$,'Generelle Eigenschaften die allen Betonbauteilen, einschlie\S\_lich Stahlbetonbauteilen, gemeinsam sind. Dieser Eigenschaftssatz kann den verschiedenen Bauelementklassen (Subtypen von IfcBuildingElement) zugeordnet werden.','de',$);
+
+#140= IFCRELASSOCIATESLIBRARY('3eMuALgYL3tekkxCWhPj1P',$,$,$,(#47),#227);
+#227= IFCLIBRARYREFERENCE($,$,'Concrete Element General',$,'en',$);
+
+#141= IFCRELASSOCIATESLIBRARY('2ApFg$Km5B5v5FwZj4D393',$,$,$,(#47),#228);
+#228= IFCLIBRARYREFERENCE($,$,$,'\X2\30B330F330AF30EA30FC30C889817D20306E7570306A308B30BF30A430D7306B5BFE3059308B5171901A306E4E00822C7684306A5C5E60273002\X0\ Pset \X2\306F\X0\ IfcBuildingElement \X2\306E591A304F306E30B530D630BF30A430D7306B3088306330664F7F304630533068304C3067304D308B3002\X0\','ja-JP',$);
+
+#142= IFCRELASSOCIATESLIBRARY('2lsqHL0nb1jfPQ14S57R29',$,$,$,(#53),#229);
+#229= IFCLIBRARYREFERENCE($,$,'L\S\dnge','L\S\dnge der Railing entlang der Referenzlinie, ohne Ber\S\|cksichtigung von Abschr\S\dgungen, Ausklinkungen, und \S\dhnliches.','de-DE',$);
+
+#143= IFCRELASSOCIATESLIBRARY('1v$qeOpnfBZxl6etx_x5F6',$,$,$,(#53),#230);
+#230= IFCLIBRARYREFERENCE($,$,'Length',$,'en',$);
+
+#144= IFCRELASSOCIATESLIBRARY('1TE7A6XXnD$fKWCKv_DZWt',$,$,$,(#53),#231);
+#231= IFCLIBRARYREFERENCE($,$,'\X2\95773055\X0\','\X2\624B3059308A306E957730553002520765AD306A30694ED6306E51E6740630928003616E3057306A30443002\X0\','ja-JP',$);
+
+#145= IFCRELASSOCIATESLIBRARY('3lhWoWiJnDC8wXOTRKomuS',$,$,$,(#58),#232);
+#232= IFCLIBRARYREFERENCE($,$,$,'Basismengen f\S\|r alle Bauelemente vom Typ Gel\S\dnder.','de-DE',$);
+
+#146= IFCRELASSOCIATESLIBRARY('1$d7PZnuj0Pg62rljz3KU3',$,$,$,(#58),#233);
+#233= IFCLIBRARYREFERENCE($,$,'Railing Base Quantities',$,'en',$);
+
+#147= IFCRELASSOCIATESLIBRARY('3QgJywKvbB1w19JO8S5jx4',$,$,$,(#58),#234);
+#234= IFCLIBRARYREFERENCE($,$,$,'\X2\624B3059308A306B95A2308F308B5171901A306E57FA672C657091CF60C55831306E5B9A7FA93002\X0\','ja-JP',$);
 ENDSEC;
 
 END-ISO-10303-21;

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertySetDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ifdguid="e185ecf8b84944b4af33edd0963bb044" templatetype="" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4X3" />
+  <Name>SECC_Concrete</Name>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcBuiltElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBuiltElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="755bfbb50be54c2485cd6b2d754544b4">
+      <Name>MLCT-Cementklass</Name>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ea642b12d46e4426b3bf2fad279d6726">
+      <Name>MLVX-Vattencementtal</Name>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="4d3e9c238fc449f4b7d95600375609ea">
+      <Name>TOLL-Livslangdsklass</Name>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

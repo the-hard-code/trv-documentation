@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ifcXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/ifc/IFC4x1/final" xsi:schemaLocation="http://standards.buildingsmart.org/IFC/RELEASE/IFC4_1/FINAL/XML/IFC4x1.xsd">
 	<header>
-		<time_stamp>2023-10-08T13:01:04</time_stamp>
+		<time_stamp>2023-10-25T17:03:58</time_stamp>
 	</header>
 	<IfcProjectLibrary GlobalId="2OqsW47Dz0LgTmf4DAn1f4" Name="IFC Templates">
 		<Declares>
 			<IfcRelDeclares GlobalId="3RyLNYXkX479wspBr_nf6n" Name="SimpleProperties">
 				<RelatedDefinitions>
+					<IfcSimplePropertyTemplate id="CEMarkning_06Gg9sPhv1gvPVhFpDcs" GlobalId="06Gg9sPhv1gvPVhFp$Dcs$" Name="CE-Markning" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
 					<IfcSimplePropertyTemplate id="ConcreteCover_07PBZZQdn2TOMV5JJgFkm9" GlobalId="07PBZZQdn2TOMV5JJgFkm9" Name="ConcreteCover" Description="The protective concrete cover at the reinforcing bars according to local building regulations." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
 					<IfcSimplePropertyTemplate id="ConcreteCoverAtLinks_2_yow0qSiHuO00025QrEV" GlobalId="2_yow0qSiHuO00025QrE$V" Name="ConcreteCoverAtLinks" Description="The protective concrete cover at the reinforcement links according to local building regulations." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
 					<IfcSimplePropertyTemplate id="ConcreteCoverAtMainBars_2uKs0qSiHuO00025QrEV" GlobalId="2u$Ks0qSiHuO00025QrE$V" Name="ConcreteCoverAtMainBars" Description="The protective concrete cover at the main reinforcing bars according to local building regulations." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPositiveLengthMeasure" />
@@ -15,8 +16,21 @@
 					<IfcSimplePropertyTemplate id="DimensionalAccuracyClass_2akL20qSiHuO00025QrEV" GlobalId="2akL20qSiHuO00025QrE$V" Name="DimensionalAccuracyClass" Description="Classification designation of the dimensional accuracy requirement according to local standards." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					<IfcSimplePropertyTemplate id="ExposureClass_2RxWltAjDAPhxrUt6toXTR" GlobalId="2RxWltAjDAPhxrUt6toXTR" Name="ExposureClass" Description="Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					<IfcSimplePropertyTemplate id="FireRating_0uXnw0qSGHuO00025QrEV" GlobalId="0uXnw0qSGHuO00025QrE$V" Name="FireRating" Description="Fire rating for the element. It is given according to the national fire safety classification." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="Foreteelsetillkomst_3okl9ftSL3p9JTjkl1ktdc" GlobalId="3okl9ftSL3p9JTjkl1ktdc" Name="Foreteelsetillkomst" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcDate" />
+					<IfcSimplePropertyTemplate id="Foreteelsetyp_3YnGrlbo59K8cBxid3jiu_" GlobalId="3YnGrlbo59K8cBxid3jiu_" Name="Foreteelsetyp" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="GemensamtMittracke_0wdrP1OxP34fqka860x2SW" GlobalId="0wdrP1OxP34fqka860x2SW" Name="GemensamtMittracke" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
+					<IfcSimplePropertyTemplate id="Hogkapacitetsracke_2FAS_ndDj8zQhlH2Ih3dOa" GlobalId="2FAS_ndDj8zQhlH2Ih3dOa" Name="Hogkapacitetsracke" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
+					<IfcSimplePropertyTemplate id="Infastning_0VebjjPsj84QluVOH0qvzz" GlobalId="0VebjjPsj84QluVOH0qvzz" Name="Infastning" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					<IfcSimplePropertyTemplate id="IsExternal_0eRpy0qSGHuO00025QrEV" GlobalId="0eRpy0qSGHuO00025QrE$V" Name="IsExternal" Description="Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
+					<IfcSimplePropertyTemplate id="KantbalkLangd_2QRwQy9MfFZxCAVlKnK7a8" GlobalId="2QRwQy9MfFZxCAVlKnK7a8" Name="KantbalkLangd" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLengthMeasure" />
+					<IfcSimplePropertyTemplate id="Konfidentialitetsniva_0eksMIYlP8guOZmxAXgdv1" GlobalId="0eksMIYlP8guOZmxAXgdv1" Name="Konfidentialitetsniva" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="Lage_27hRGC7nf49OybF5c6Z6Ja" GlobalId="27hRGC7nf49OybF5c6Z6Ja" Name="Lage" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					<IfcSimplePropertyTemplate id="LoadBearing_0pmcg0qSGHuO00025QrEV" GlobalId="0pmcg0qSGHuO00025QrE$V" Name="LoadBearing" Description="Indicates whether the object is intended to carry loads (TRUE) or not (FALSE)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
+					<IfcSimplePropertyTemplate id="MLCTCementklass_1rMkr2_LC98NDQorrHKIq" GlobalId="1rM$kr2_LC98NDQorrHKIq" Name="MLCT-Cementklass" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="MLVXVattencementtal_3gP2iIr6v49hEBwqddMSc" GlobalId="3gP2iIr6v49hE$BwqddMSc" Name="MLVX-Vattencementtal" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="RackeLage_0OqvkI3OL21R71KhebArbd" GlobalId="0OqvkI3OL21R71KhebArbd" Name="RackeLage" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="RackeLangd_1A6obEJgP48vYRcNPgvq4W" GlobalId="1A6obEJgP48vYRcNPgvq4W" Name="RackeLangd" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLengthMeasure" />
+					<IfcSimplePropertyTemplate id="RackeMaterial_1teytLaxb139HC7gj1eqyv" GlobalId="1teytLaxb139HC7gj1eqyv" Name="RackeMaterial" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					<IfcSimplePropertyTemplate id="Reference_04ga0qSGHuO00025QrEV" GlobalId="04g$a0qSGHuO00025QrE$V" Name="Reference" Description="Reference ID for this specified type in this project (e.g. type &apos;A-1&apos;), Also referred to as &quot;construction type&quot;. It should be provided as an alternative to the name of the &quot;object type&quot;, if the software does not support object types." TemplateType="p_singlevalue" PrimaryMeasureType="IfcIdentifier" />
 					<IfcSimplePropertyTemplate id="ReinforcementAreaRatio_03QJXaBBz9ugaDD64qh7Hr" GlobalId="03QJXaBBz9ugaDD64qh7Hr" Name="ReinforcementAreaRatio" Description="The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element." TemplateType="p_singlevalue" PrimaryMeasureType="IfcAreaDensityMeasure" />
 					<IfcSimplePropertyTemplate id="ReinforcementStrengthClass_2uZA8bB4j05BpoYRkzMMEO" GlobalId="2uZA8bB4j05BpoYRkzMMEO" Name="ReinforcementStrengthClass" Description="Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
@@ -26,6 +40,7 @@
 The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.
 
 Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="IfcPlaneAngleMeasure" />
+					<IfcSimplePropertyTemplate id="Sakerhetsstandard_2x4h37_bjB6wFBDIvfawug" GlobalId="2x4h37_bjB6wFBDIvfawug" Name="Sakerhetsstandard" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					<IfcSimplePropertyTemplate id="Slope_0UvTS0qSGHuO00025QrEV" GlobalId="0UvTS0qSGHuO00025QrE$V" Name="Slope" Description="Slope angle - relative to horizontal (0.0 degrees).
 
 The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only." TemplateType="p_singlevalue" PrimaryMeasureType="IfcPlaneAngleMeasure" />
@@ -47,9 +62,13 @@ The shape information is provided in addition to the shape representation and th
 					</IfcSimplePropertyTemplate>
 					<IfcSimplePropertyTemplate id="StrengthClass_2MEGt4Gr1s8oshAXjpacJ" GlobalId="2MEGt4G$r1s8oshAXjpacJ" Name="StrengthClass" Description="Classification of the concrete strength in accordance with the concrete design code which is applied in the project." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					<IfcSimplePropertyTemplate id="StructuralClass_24YP60qSiHuO00025QrEV" GlobalId="24YP60qSiHuO00025QrE$V" Name="StructuralClass" Description="The structural class defined for the concrete structure (e.g. &apos;1&apos;)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="TekniskBeskrivning_14KEMYpEv2ThB919YcOMmd" GlobalId="14KEMYpEv2ThB919YcOMmd" Name="TekniskBeskrivning" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 					<IfcSimplePropertyTemplate id="ThermalTransmittance_0lbaq0qSGHuO00025QrEV" GlobalId="0lbaq0qSGHuO00025QrE$V" Name="ThermalTransmittance" Description="Thermal transmittance coefficient (U-Value) of the element. Here the total thermal transmittance coefficient through the beam within the direction of the thermal flow (including all materials).
 
 Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="IfcThermalTransmittanceMeasure" />
+					<IfcSimplePropertyTemplate id="TOLLLivslangdsklass_1DFfmZZyH9zBVPLW0tLWdg" GlobalId="1DFfmZZyH9zBVPLW0tLWdg" Name="TOLL-Livslangdsklass" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
+					<IfcSimplePropertyTemplate id="Vagrackesreflex_0WGjJxBQH79hIuTjdcVBHS" GlobalId="0WGjJxBQH79hIuTjdcVBHS" Name="Vagrackesreflex" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" />
+					<IfcSimplePropertyTemplate id="Vagrackestyp_1OtrFMVM57VOTeJJdyqaAm" GlobalId="1OtrFMVM57VOTeJJdyqaAm" Name="Vagrackestyp" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLabel" />
 				</RelatedDefinitions>
 			</IfcRelDeclares>
 			<IfcRelDeclares GlobalId="3M4U3yWxr3_gsGvVZ3qXJS" Name="PropertySets">
@@ -83,11 +102,54 @@ Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="Ifc
 							<IfcSimplePropertyTemplate xsi:nil="true" href="ReinforcementStrengthClass_2uZA8bB4j05BpoYRkzMMEO" />
 						</HasPropertyTemplates>
 					</IfcPropertySetTemplate>
+					<IfcPropertySetTemplate GlobalId="3XXUpuk4b4jAypxT2MEx14" Name="SECC_Concrete" Description="" ApplicableEntity="IfcBuiltElement">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="MLCTCementklass_1rMkr2_LC98NDQorrHKIq" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="MLVXVattencementtal_3gP2iIr6v49hEBwqddMSc" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="TOLLLivslangdsklass_1DFfmZZyH9zBVPLW0tLWdg" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
+					<IfcPropertySetTemplate GlobalId="3niYh53CrEsOrkY4AZoGCp" Name="SETRV_Metadata" Description="" ApplicableEntity="IfcBuiltElement">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Konfidentialitetsniva_0eksMIYlP8guOZmxAXgdv1" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
+					<IfcPropertySetTemplate GlobalId="3iS_$ulInEXxpjoTyw2veI" Name="SETRVx_BaTManKantbalk" Description="" ApplicableEntity="IfcBuiltElement">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="KantbalkLangd_2QRwQy9MfFZxCAVlKnK7a8" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Lage_27hRGC7nf49OybF5c6Z6Ja" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
+					<IfcPropertySetTemplate GlobalId="28pIBCt21FtfP0UHDdcJ7p" Name="SETRVx_BaTManRacke" Description="" ApplicableEntity="">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Infastning_0VebjjPsj84QluVOH0qvzz" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="RackeLage_0OqvkI3OL21R71KhebArbd" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="RackeLangd_1A6obEJgP48vYRcNPgvq4W" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="RackeMaterial_1teytLaxb139HC7gj1eqyv" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
+					<IfcPropertySetTemplate GlobalId="31l9oKZ2LCkhmbCXgHJvK6" Name="SETRVx_NVDBvagracke" Description="" ApplicableEntity="">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="CEMarkning_06Gg9sPhv1gvPVhFpDcs" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Foreteelsetillkomst_3okl9ftSL3p9JTjkl1ktdc" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Foreteelsetyp_3YnGrlbo59K8cBxid3jiu_" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="GemensamtMittracke_0wdrP1OxP34fqka860x2SW" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Hogkapacitetsracke_2FAS_ndDj8zQhlH2Ih3dOa" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Sakerhetsstandard_2x4h37_bjB6wFBDIvfawug" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="TekniskBeskrivning_14KEMYpEv2ThB919YcOMmd" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Vagrackesreflex_0WGjJxBQH79hIuTjdcVBHS" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="Vagrackestyp_1OtrFMVM57VOTeJJdyqaAm" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
 				</RelatedDefinitions>
 			</IfcRelDeclares>
 			<IfcRelDeclares GlobalId="1$c0OOaRDF_OBDoEs$xzcD" Name="Quantities">
 				<RelatedDefinitions>
 					<IfcSimplePropertyTemplate id="Length_25UysMQb2a8qWjqTa2SG7" GlobalId="25Uys$MQb2a8qWjqTa2SG7" Name="Length" Description="Total nominal length of the railing, not taking into account any cut-out&apos;s or other processing features." TemplateType="q_length" />
+					<IfcSimplePropertyTemplate id="USDMBredd_2rSYgI4en4mw63yZqiAgIo" GlobalId="2rSYgI4en4mw63yZqiAgIo" Name="USDM-Bredd" Description="" />
+					<IfcSimplePropertyTemplate id="USDMHojd_3v6RVFJAz2SO_GPEb69sjl" GlobalId="3v6RVFJAz2SO_GPEb69sjl" Name="USDM-Hojd" Description="" />
+					<IfcSimplePropertyTemplate id="USDMLangd_1zzKDgWXT51wnLTZAOfcm_" GlobalId="1zzKDgWXT51wnLTZAOfcm_" Name="USDM-Langd" Description="" TemplateType="q_length" />
+					<IfcSimplePropertyTemplate id="USDMVolym_1QMOFMEvr06g8ZYlhvzLaf" GlobalId="1QMOFMEvr06g8ZYlhvzLaf" Name="USDM-Volym" Description="" TemplateType="q_volume" />
 				</RelatedDefinitions>
 			</IfcRelDeclares>
 			<IfcRelDeclares GlobalId="1CpAEUB6v1Fhb57tduNMhL" Name="QuantitySets">
@@ -95,6 +157,14 @@ Note: new property in IFC4" TemplateType="p_singlevalue" PrimaryMeasureType="Ifc
 					<IfcPropertySetTemplate GlobalId="1Fh58OFtTD3fz8LEdf4$TK" Name="Qto_RailingBaseQuantities" Description="Base quantities that are common to the definition of all occurrences of railings." TemplateType="qto_occurrencedriven" ApplicableEntity="IfcRailing">
 						<HasPropertyTemplates>
 							<IfcSimplePropertyTemplate xsi:nil="true" href="Length_25UysMQb2a8qWjqTa2SG7" />
+						</HasPropertyTemplates>
+					</IfcPropertySetTemplate>
+					<IfcPropertySetTemplate GlobalId="3uf_3EKVX5XOtKMi11TLss" Name="SECC_DimensionNominella" Description="" TemplateType="qto_occurrencedriven" ApplicableEntity="IfcBuiltElement">
+						<HasPropertyTemplates>
+							<IfcSimplePropertyTemplate xsi:nil="true" href="USDMBredd_2rSYgI4en4mw63yZqiAgIo" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="USDMHojd_3v6RVFJAz2SO_GPEb69sjl" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="USDMLangd_1zzKDgWXT51wnLTZAOfcm_" />
+							<IfcSimplePropertyTemplate xsi:nil="true" href="USDMVolym_1QMOFMEvr06g8ZYlhvzLaf" />
 						</HasPropertyTemplates>
 					</IfcPropertySetTemplate>
 				</RelatedDefinitions>
