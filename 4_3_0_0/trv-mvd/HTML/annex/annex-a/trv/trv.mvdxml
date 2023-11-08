@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="f0da4b35-c729-4d4d-973c-a3df8d321408" name="mvd">
+<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://buildingsmart-tech.org/mvd/XML/1.1" xsi:schemaLocation="http://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" uuid="c620bbd9-ee9a-4afa-888b-c4b92bcea6c8" name="mvd">
 	<Templates>
 		<ConceptTemplate uuid="a322fdd7-cd28-4ea7-8797-f6cf124ab3d6" name="Partial Templates" applicableSchema="IFC4">
 			<Definitions>
